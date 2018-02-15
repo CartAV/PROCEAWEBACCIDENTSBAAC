@@ -1,0 +1,33 @@
+{
+  "pages": [
+    {
+      "id": "RN1ARyn",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "antoinefa",
+  "listed": true,
+  "name": "Default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1518701300143
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1518701300143
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
