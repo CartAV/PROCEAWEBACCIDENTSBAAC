@@ -10,14 +10,32 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "pattern": "^(\\S{2})(\\S{7})(\\S{5})(\\S{2})(\\S{1})(\\S{2})(\\S{2})",
+        "found_col": false,
+        "prefix": "",
+        "column": "data",
+        "extractAllOccurrences": false
+      },
+      "type": "RegexpExtractor",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
