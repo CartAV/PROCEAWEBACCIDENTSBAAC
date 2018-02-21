@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519232276389
+    "lastModifiedOn": 1519232282644
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,20 @@
   },
   "schema": {
     "userModified": true,
-    "columns": []
+    "columns": [
+      {
+        "name": "source",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "data",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      }
+    ]
   },
   "metrics": {
     "probes": [
