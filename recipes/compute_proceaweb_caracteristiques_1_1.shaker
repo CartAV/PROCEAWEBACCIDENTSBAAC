@@ -87,7 +87,7 @@
                 "from": "11"
               },
               {
-                "to": "première première immat moisimmat année",
+                "to": "première immat mois",
                 "from": "12"
               },
               {
@@ -229,6 +229,48 @@
           },
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
           "type": "PythonUDF",
+          "disabled": false,
+          "metaType": "PROCESSOR"
+        }
+      ],
+      "disabled": false,
+      "metaType": "GROUP"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Dates",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "outputColumn": "datv",
+            "columns": [
+              "première immat année",
+              "première immat mois"
+            ],
+            "join": ""
+          },
+          "type": "ColumnsConcat",
+          "disabled": false,
+          "metaType": "PROCESSOR"
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "datv"
+            ],
+            "timezone_id": "UTC",
+            "lang": "auto",
+            "formats": [
+              "yyMM"
+            ]
+          },
+          "type": "DateParser",
           "disabled": false,
           "metaType": "PROCESSOR"
         }
