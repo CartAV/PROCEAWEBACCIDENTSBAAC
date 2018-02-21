@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519233055134
+    "lastModifiedOn": 1519235231477
   },
   "creationTag": {
     "versionNumber": 0,
@@ -132,10 +132,16 @@
         "maxLength": 16200
       },
       {
-        "name": "Lumière",
-        "type": "bigint",
+        "name": "date",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "lum",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       },
       {
         "name": "Département",
@@ -150,28 +156,28 @@
         "maxLength": 16200
       },
       {
-        "name": "Localisation",
-        "type": "bigint",
+        "name": "agg",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
-        "name": "Intersection",
-        "type": "bigint",
+        "name": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
-        "name": "Conditions atmosphériques",
-        "type": "bigint",
+        "name": "atm",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
-        "name": "Type de collision",
-        "type": "bigint",
+        "name": "col",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "Adresse postale",
