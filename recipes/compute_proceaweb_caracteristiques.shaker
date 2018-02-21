@@ -33,8 +33,8 @@
       "metaType": "PROCESSOR"
     },
     {
-      "alwaysShowComment": false,
-      "preview": true,
+      "alwaysShowComment": true,
+      "preview": false,
       "params": {
         "renamings": [
           {
@@ -119,7 +119,89 @@
           }
         ]
       },
+      "comment": "Mapping officiel de Proceaweb",
       "type": "ColumnRenamer",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "renamings": [
+          {
+            "to": "lum",
+            "from": "Lumière"
+          },
+          {
+            "to": "int",
+            "from": "Intersection"
+          },
+          {
+            "to": "agg",
+            "from": "Localisation"
+          },
+          {
+            "to": "atm",
+            "from": "Conditions atmosphériques"
+          },
+          {
+            "to": "col",
+            "from": "Type de collision"
+          }
+        ]
+      },
+      "comment": "Mapping BAAC CartAV",
+      "type": "ColumnRenamer",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "usePythonUnicode": true,
+        "stopOnError": true,
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic\u003d {\n      \"lum\": {\n        \"1\": \"plein jour\",\n        \"2\": \"crépuscule ou aube\",\n        \"3\": \"nuit sans éclairage public\",\n        \"4\": \"nuit avec éclairage public non allumé\",\n        \"5\": \"nuit avec éclairage public allumé\"\n          },\n      \"agg\": {\n        \"1\": \"hors agglomération\",\n        \"2\": \"en agglomération\"\n      },\n      \"int\": {\n        \"1\": \"hors intersection\",\n        \"2\": \"intersection en X\",\n        \"3\": \"intersection en T\",\n        \"4\": \"intersection en Y\",\n        \"5\": \"intersection +4 branches\",\n        \"6\": \"giratoire\",\n        \"7\": \"place\",\n        \"8\": \"passage à niveau\",\n        \"9\": \"autre intersection\"\n      },\n      \"atm\": {\n        \"1\": \"météo normale\",\n        \"2\": \"pluie légère\",\n        \"3\": \"pluie forte\",\n        \"4\": \"neige - grêle\",\n        \"5\": \"brouillard - fumée\",\n        \"6\": \"vent fort - tempête\",\n        \"7\": \"temps éblouissant\",\n        \"8\": \"temps couvert\",\n        \"9\": \"autre météo\"\n      },\n      \"col\": {\n        \"1\": \"2 véhicules frontal\",\n        \"2\": \"2 véhicules par l’arrière\",\n        \"3\": \"2 véhicules côté\",\n        \"4\": \"3+ véhicules en chaine\",\n        \"5\": \"3+ véhicules autre\",\n        \"6\": \"autre collision\",\n        \"7\": \"Sans collision\"\n      }\n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        else:\n            row[key] \u003d \"\"\n    return row\n",
+        "mode": "ROW"
+      },
+      "type": "PythonUDF",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "outputColumn": "date",
+        "columns": [
+          "An",
+          "Mois",
+          "Jour",
+          "Heure",
+          "Minute"
+        ],
+        "join": ""
+      },
+      "type": "ColumnsConcat",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "date"
+        ],
+        "timezone_id": "UTC",
+        "lang": "auto",
+        "formats": [
+          "yyMMddHHmm"
+        ]
+      },
+      "type": "DateParser",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
