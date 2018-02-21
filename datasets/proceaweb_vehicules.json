@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519243280807
+    "lastModifiedOn": 1519245273278
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,140 @@
   },
   "schema": {
     "userModified": true,
-    "columns": []
+    "columns": [
+      {
+        "name": "Code Unité",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro P.V.",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro de feuillet",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Lette conventionnelle",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Code route",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Véhicule en fuite",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "senc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "catv",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "département ou pays",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "première première immat moisimmat année",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat année",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "prop",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "spev",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "facv",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "assu",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "obs",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "obsm",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "choc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "manv",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "nombre d\u0027occupants",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "code CNIT",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      }
+    ]
   },
   "metrics": {
     "probes": [
