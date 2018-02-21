@@ -1,0 +1,262 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "analysisColumnData": {},
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Formattage proceaweb",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{5})(.{1})(.{1})(.{1})(.{2}).(.{1})(.{1})(.{4})(.{4})(.{1}).(.{3})(.{3})(.{1})(.{1})(.{1})....(.{2})",
+            "found_col": false,
+            "prefix": "",
+            "column": "data",
+            "extractAllOccurrences": false
+          },
+          "type": "RegexpExtractor",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": true,
+          "preview": false,
+          "params": {
+            "renamings": [
+              {
+                "to": "source_bis",
+                "from": "1"
+              },
+              {
+                "to": "Code Unité",
+                "from": "2"
+              },
+              {
+                "to": "Numéro P.V.",
+                "from": "3"
+              },
+              {
+                "to": "Numéro de feuillet",
+                "from": "4"
+              },
+              {
+                "to": "Organisme",
+                "from": "5"
+              },
+              {
+                "to": "Code route",
+                "from": "6"
+              },
+              {
+                "to": "Catégorie",
+                "from": "7"
+              },
+              {
+                "to": "Numéro de voie",
+                "from": "8"
+              },
+              {
+                "to": "Bis ou ter",
+                "from": "9"
+              },
+              {
+                "to": "Lettre indice de voie",
+                "from": "10"
+              },
+              {
+                "to": "Régime de circulation",
+                "from": "11"
+              },
+              {
+                "to": "Nb voies de circulation",
+                "from": "12"
+              },
+              {
+                "to": "Voie spéciale",
+                "from": "13"
+              },
+              {
+                "to": "Profil en long",
+                "from": "14"
+              },
+              {
+                "to": "PK PR",
+                "from": "15"
+              },
+              {
+                "to": "distance PK PR",
+                "from": "16"
+              },
+              {
+                "to": "Tracé en plan",
+                "from": "17"
+              },
+              {
+                "to": "Largeur terre-plein",
+                "from": "18"
+              },
+              {
+                "to": "Largeur de route",
+                "from": "19"
+              },
+              {
+                "to": "Etat de la surface",
+                "from": "20"
+              },
+              {
+                "to": "Aménagement infrastructure",
+                "from": "21"
+              },
+              {
+                "to": "Situation de l\u0027accident",
+                "from": "22"
+              },
+              {
+                "to": "Proximité d\u0027une école",
+                "from": "23"
+              }
+            ]
+          },
+          "type": "ColumnRenamer",
+          "comment": "Mapping officiel de Proceaweb",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "appliesTo": "COLUMNS",
+            "columns": [
+              "source",
+              "source_bis",
+              "data"
+            ],
+            "keep": false
+          },
+          "type": "ColumnsSelector",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        }
+      ],
+      "metaType": "GROUP",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Mapping BAAC/CartAV",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "renamings": [
+              {
+                "to": "catr",
+                "from": "Catégorie"
+              },
+              {
+                "to": "circ",
+                "from": "Régime de circulation"
+              },
+              {
+                "to": "vosp",
+                "from": "Voie spéciale"
+              },
+              {
+                "to": "prof",
+                "from": "Profil en long"
+              },
+              {
+                "to": "plan",
+                "from": "Tracé en plan"
+              },
+              {
+                "to": "surf",
+                "from": "Etat de la surface"
+              },
+              {
+                "to": "infra",
+                "from": "Aménagement infrastructure"
+              },
+              {
+                "to": "situ",
+                "from": "Situation de l\u0027accident"
+              },
+              {
+                "to": "env1",
+                "from": "Proximité d\u0027une école"
+              }
+            ]
+          },
+          "type": "ColumnRenamer",
+          "comment": "Mapping BAAC CartAV",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": true,
+          "preview": false,
+          "params": {
+            "usePythonUnicode": true,
+            "stopOnError": true,
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n          \"catr\": {\n            \"1\": \"autoroute\",\n            \"2\": \"route nationale\",\n            \"3\": \"route départementale\",\n            \"4\": \"voie communale\",\n            \"5\": \"hors réseau public\",\n            \"6\": \"parking\",\n            \"9\": \"autre route\"\n          },\n          \"circ\": {\n            \"1\": \"sens unique\",\n            \"2\": \"bidirectionnel\",\n            \"3\": \"chaussées séparées\",\n            \"4\": \"affectation variable\"\n          },\n          \"vosp\": {\n            \"1\": \"piste cyclable\",\n            \"2\": \"banque cyclable\",\n            \"3\": \"voie réservée\"\n          },\n          \"prof\": {\n            \"1\": \"plat\",\n            \"2\": \"pente\",\n            \"3\": \"sommet de côte\",\n            \"4\": \"bas de côte\"\n          },\n          \"plan\": {\n            \"1\": \"rectiligne\",\n            \"2\": \"courbe à gauche\",\n            \"3\": \"courbe à droite\",\n            \"4\": \"en S\"\n          },\n          \"surf\": {\n            \"1\": \"surface normale\",\n            \"2\": \"surface mouillée\",\n            \"3\": \"flaques\",\n            \"4\": \"surface innondée\",\n            \"5\": \"surface enneigée\",\n            \"6\": \"boue\",\n            \"7\": \"surface verglacée\",\n            \"8\": \"corps gras-huile\",\n            \"9\": \"autre surface\"\n          },\n          \"infra\": {\n            \"1\": \"souterrain ou tunnel\",\n            \"2\": \"pont\",\n            \"3\": \"échangeur\",\n            \"4\": \"rails\",\n            \"5\": \"carrefour aménagé\",\n            \"6\": \"zone piétonne\",\n            \"7\": \"zone de péage\"\n          },\n          \"situ\": {\n            \"1\": \"chaussée\",\n            \"2\": \"bande d\u0027arrêt d\u0027urgence\",\n            \"3\": \"accotement\",\n            \"4\": \"trottoir\",\n            \"5\": \"piste cyclable\"\n          },\n          \"env1\": {\n            \"03\": \"école proche\",\n            \"99\": \"pas d\u0027école à proximté\"\n          }\n        }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "mode": "ROW"
+          },
+          "type": "PythonUDF",
+          "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        }
+      ],
+      "metaType": "GROUP",
+      "disabled": false
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "maxStoredBytes": -1,
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "latestPartitionsN": 1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    "autoRefreshSample": false
+  }
+}
