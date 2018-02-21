@@ -20,15 +20,106 @@
   "steps": [
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
-        "pattern": "^(\\S{2})(\\S{7})(\\S{5})(\\S{2})(\\S{1})(\\S{2})(\\S{2})",
+        "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{2})(.{2})(.{2}).(.{2})(.{2})(.{1})(.{3})(.{3})(.{1})(.{1})(.{1})(.{1})(.{24}).(.{15})(.{1})",
         "found_col": false,
         "prefix": "",
         "column": "data",
         "extractAllOccurrences": false
       },
       "type": "RegexpExtractor",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "renamings": [
+          {
+            "to": "source_bis",
+            "from": "1"
+          },
+          {
+            "to": "Code Unité",
+            "from": "2"
+          },
+          {
+            "to": "Numéro P.V.",
+            "from": "3"
+          },
+          {
+            "to": "Numéro de feuillet",
+            "from": "4"
+          },
+          {
+            "to": "Organisme",
+            "from": "5"
+          },
+          {
+            "to": "Jour",
+            "from": "6"
+          },
+          {
+            "to": "Mois",
+            "from": "7"
+          },
+          {
+            "to": "An",
+            "from": "8"
+          },
+          {
+            "to": "Heure",
+            "from": "9"
+          },
+          {
+            "to": "Minute",
+            "from": "10"
+          },
+          {
+            "to": "Lumière",
+            "from": "11"
+          },
+          {
+            "to": "Département",
+            "from": "12"
+          },
+          {
+            "to": "Commune",
+            "from": "13"
+          },
+          {
+            "to": "Localisation",
+            "from": "14"
+          },
+          {
+            "to": "Intersection",
+            "from": "15"
+          },
+          {
+            "to": "Conditions atmosphériques",
+            "from": "16"
+          },
+          {
+            "to": "Type de collision",
+            "from": "17"
+          },
+          {
+            "to": "Adresse postale",
+            "from": "18"
+          },
+          {
+            "to": "Coordonnées GPS",
+            "from": "19"
+          },
+          {
+            "to": "Id BAAC 2002",
+            "from": "20"
+          }
+        ]
+      },
+      "type": "ColumnRenamer",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
