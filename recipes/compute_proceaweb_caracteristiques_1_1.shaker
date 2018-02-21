@@ -1,22 +1,22 @@
 {
   "explorationFilters": [],
   "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "globalSearchQuery": "",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
   "origin": "PREPARE_RECIPE",
+  "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "sorting": [],
   "steps": [
     {
       "alwaysShowComment": false,
@@ -27,15 +27,15 @@
           "alwaysShowComment": false,
           "preview": false,
           "params": {
-            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{5})(.{1})(.{1})(.{1})(.{2}).(.{1})(.{1})(.{4})(.{4})(.{1}).(.{3})(.{3})(.{1})(.{1})(.{1})....(.{2})",
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{2})(.{3})(.{2})(.{2}).{2}.{2}.{8}(.{1})(.{1})(.{1}).(.{1})(.{2})(.{1})(.{1})(.{2})(.{3})....(.*)",
             "found_col": false,
             "prefix": "",
             "column": "data",
             "extractAllOccurrences": false
           },
           "type": "RegexpExtractor",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": true,
@@ -63,83 +63,83 @@
                 "from": "5"
               },
               {
-                "to": "Code route",
+                "to": "Lette conventionnelle",
                 "from": "6"
               },
               {
-                "to": "Catégorie",
+                "to": "Code route",
                 "from": "7"
               },
               {
-                "to": "Numéro de voie",
+                "to": "Véhicule en fuite",
                 "from": "8"
               },
               {
-                "to": "Bis ou ter",
+                "to": "Sens de circulation",
                 "from": "9"
               },
               {
-                "to": "Lettre indice de voie",
+                "to": "Catégorie administrative",
                 "from": "10"
               },
               {
-                "to": "Régime de circulation",
+                "to": "département ou pays",
                 "from": "11"
               },
               {
-                "to": "Nb voies de circulation",
+                "to": "première première immat moisimmat année",
                 "from": "12"
               },
               {
-                "to": "Voie spéciale",
+                "to": "première immat année",
                 "from": "13"
               },
               {
-                "to": "Profil en long",
+                "to": "appartenant à",
                 "from": "14"
               },
               {
-                "to": "PK PR",
+                "to": "véhicule spécial",
                 "from": "15"
               },
               {
-                "to": "distance PK PR",
+                "to": "facteur lié au véhicule",
                 "from": "16"
               },
               {
-                "to": "Tracé en plan",
+                "to": "assurance",
                 "from": "17"
               },
               {
-                "to": "Largeur terre-plein",
+                "to": "obstacle fixe",
                 "from": "18"
               },
               {
-                "to": "Largeur de route",
+                "to": "obstacle mobile",
                 "from": "19"
               },
               {
-                "to": "Etat de la surface",
+                "to": "point de choc initial",
                 "from": "20"
               },
               {
-                "to": "Aménagement infrastructure",
+                "to": "manoeuvre",
                 "from": "21"
               },
               {
-                "to": "Situation de l\u0027accident",
+                "to": "nombre d\u0027occupants",
                 "from": "22"
               },
               {
-                "to": "Proximité d\u0027une école",
+                "to": "code CNIT",
                 "from": "23"
               }
             ]
           },
-          "type": "ColumnRenamer",
           "comment": "Mapping officiel de Proceaweb",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "ColumnRenamer",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": false,
@@ -154,12 +154,12 @@
             "keep": false
           },
           "type": "ColumnsSelector",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": false,
+          "metaType": "PROCESSOR"
         }
       ],
-      "metaType": "GROUP",
-      "disabled": false
+      "disabled": false,
+      "metaType": "GROUP"
     },
     {
       "alwaysShowComment": false,
@@ -172,47 +172,51 @@
           "params": {
             "renamings": [
               {
-                "to": "catr",
-                "from": "Catégorie"
+                "to": "senc",
+                "from": "Sens de circulation"
               },
               {
-                "to": "circ",
-                "from": "Régime de circulation"
+                "to": "catv",
+                "from": "Catégorie administrative"
               },
               {
-                "to": "vosp",
-                "from": "Voie spéciale"
+                "to": "obsm",
+                "from": "obstacle mobile"
               },
               {
-                "to": "prof",
-                "from": "Profil en long"
+                "to": "obs",
+                "from": "obstacle fixe"
               },
               {
-                "to": "plan",
-                "from": "Tracé en plan"
+                "to": "choc",
+                "from": "point de choc initial"
               },
               {
-                "to": "surf",
-                "from": "Etat de la surface"
+                "to": "manv",
+                "from": "manoeuvre"
               },
               {
-                "to": "infra",
-                "from": "Aménagement infrastructure"
+                "to": "spev",
+                "from": "véhicule spécial"
               },
               {
-                "to": "situ",
-                "from": "Situation de l\u0027accident"
+                "to": "facv",
+                "from": "facteur lié au véhicule"
               },
               {
-                "to": "env1",
-                "from": "Proximité d\u0027une école"
+                "to": "assu",
+                "from": "assurance"
+              },
+              {
+                "to": "prop",
+                "from": "appartenant à"
               }
             ]
           },
-          "type": "ColumnRenamer",
           "comment": "Mapping BAAC CartAV",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "ColumnRenamer",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": true,
@@ -220,17 +224,17 @@
           "params": {
             "usePythonUnicode": true,
             "stopOnError": true,
-            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n          \"catr\": {\n            \"1\": \"autoroute\",\n            \"2\": \"route nationale\",\n            \"3\": \"route départementale\",\n            \"4\": \"voie communale\",\n            \"5\": \"hors réseau public\",\n            \"6\": \"parking\",\n            \"9\": \"autre route\"\n          },\n          \"circ\": {\n            \"1\": \"sens unique\",\n            \"2\": \"bidirectionnel\",\n            \"3\": \"chaussées séparées\",\n            \"4\": \"affectation variable\"\n          },\n          \"vosp\": {\n            \"1\": \"piste cyclable\",\n            \"2\": \"banque cyclable\",\n            \"3\": \"voie réservée\"\n          },\n          \"prof\": {\n            \"1\": \"plat\",\n            \"2\": \"pente\",\n            \"3\": \"sommet de côte\",\n            \"4\": \"bas de côte\"\n          },\n          \"plan\": {\n            \"1\": \"rectiligne\",\n            \"2\": \"courbe à gauche\",\n            \"3\": \"courbe à droite\",\n            \"4\": \"en S\"\n          },\n          \"surf\": {\n            \"1\": \"surface normale\",\n            \"2\": \"surface mouillée\",\n            \"3\": \"flaques\",\n            \"4\": \"surface innondée\",\n            \"5\": \"surface enneigée\",\n            \"6\": \"boue\",\n            \"7\": \"surface verglacée\",\n            \"8\": \"corps gras-huile\",\n            \"9\": \"autre surface\"\n          },\n          \"infra\": {\n            \"1\": \"souterrain ou tunnel\",\n            \"2\": \"pont\",\n            \"3\": \"échangeur\",\n            \"4\": \"rails\",\n            \"5\": \"carrefour aménagé\",\n            \"6\": \"zone piétonne\",\n            \"7\": \"zone de péage\"\n          },\n          \"situ\": {\n            \"1\": \"chaussée\",\n            \"2\": \"bande d\u0027arrêt d\u0027urgence\",\n            \"3\": \"accotement\",\n            \"4\": \"trottoir\",\n            \"5\": \"piste cyclable\"\n          },\n          \"env1\": {\n            \"03\": \"école proche\",\n            \"99\": \"pas d\u0027école à proximté\"\n          }\n        }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"senc\": {\n        \"0\": \"\",\n        \"1\": \"PK-PR-num rue croissant\",\n        \"2\": \"PK-PR-num rue décroissant\"\n      },\n      \"catv\": {\n        \"00\": \"\",\n        \"10\": \"utilitaire\",\n        \"11\": \"utilitaire+caravane (ref obsolète)\",\n        \"12\": \"utilitaire+remorque (ref obsolète)\",\n        \"13\": \"poids lourd\",\n        \"14\": \"poids lourd\",\n        \"15\": \"poids lourd\",\n        \"16\": \"tracteur\",\n        \"17\": \"tracteur+semi-remorque\",\n        \"18\": \"transport en commun (ref obsolète)\",\n        \"19\": \"tramway (ref obsolète)\",\n        \"20\": \"engin spécial\",\n        \"21\": \"tracteur\",\n        \"30\": \"scooter -50cm3\",\n        \"31\": \"motocyclette +50cm3-125cm3\",\n        \"33\": \"motocyclette +125cm3\",\n        \"34\": \"scooter +125cm3\",\n        \"35\": \"quad -50cm3\",\n        \"36\": \"quad +50cm3\",\n        \"37\": \"bus\",\n        \"39\": \"train\",\n        \"40\": \"tramway\",\n        \"99\": \"autre véhicule\",\n        \"01\": \"bicyclette\",\n        \"02\": \"cyclomoteur -50cm3\",\n        \"03\": \"voiturette\",\n        \"04\": \"scooter immatriculé (ref obsolète)\",\n        \"05\": \"motocyclette (ref obsolète)\",\n        \"06\": \"side-car (ref obsolète)\",\n        \"07\": \"voiture\",\n        \"08\": \"voiture+caravane (ref obsolète)\",\n        \"09\": \"voiture+remorque (ref obsolète)\"\n      },\n      \"obsm\": {\n        \"0\": \"\",\n        \"1\": \"choc piéton\",\n        \"2\": \"choc véhicule\",\n        \"4\": \"choc sur rail\",\n        \"6\": \"choc animal domestique\",\n        \"9\": \"choc autre obstacle mobile\"\n      },\n      \"obs\": {\n        \"00\": \"\",\n        \"01\": \"Véhicule en stationnement\",\n        \"02\": \"Arbre\",\n        \"03\": \"Glissière métallique\",\n        \"04\": \"Glissière béton\",\n        \"05\": \"Autre glissière\",\n        \"06\": \"Bâtiment, mur, pile de pont\",\n        \"07\": \"Support de signalisation verticale ou poste d’appel d’urgence\",\n        \"08\": \"Poteau\",\n        \"09\": \"Mobilier urbain\",\n        \"10\": \"Parapet\",\n        \"11\": \"Ilot, refuge, borne haute\",\n        \"12\": \"Bordure de trottoir\",\n        \"13\": \"Fossé, talus, paroi rocheuse\",\n        \"14\": \"Autre obstacle fixe sur chaussée\",\n        \"15\": \"Autre obstacle fixe sur trottoir ou accotement\",\n        \"16\": \"Sortie de chaussée sans obtacle\"\n      },\n      \"choc\": {\n        \"0\": \"\",\n        \"1\": \"avant\",\n        \"2\": \"avant droit\",\n        \"3\": \"avant gauche\",\n        \"4\": \"arrière\",\n        \"5\": \"arrière droit\",\n        \"6\": \"arrière gauche\",\n        \"7\": \"côté droit\",\n        \"8\": \"côté gauche\",\n        \"9\": \"multiples\"\n      },\n      \"manv\": {\n        \"00\": \"\",\n        \"01\": \"sans changement de direction\",\n        \"02\": \"même sens, même file\",\n        \"03\": \"entre 2 files\",\n        \"04\": \"en marche arrière\",\n        \"05\": \"à contresens\",\n        \"06\": \"en franchissant le terre-plein central\",\n        \"07\": \"dans le couloir bus, dans le même sens\",\n        \"08\": \"dans le couloir bus, dans le sens inverse\",\n        \"09\": \"en s’insérant\",\n        \"10\": \"en faisant demi-tour sur la chaussée\",\n        \"11\": \"changeant de file à gauche\",\n        \"12\": \"changeant de file à droite\",\n        \"13\": \"déporté à gauche\",\n        \"14\": \"déporté à droite\",\n        \"15\": \"tournant à gauche\",\n        \"16\": \"tournant à droite\",\n        \"17\": \"tournant à gauche\",\n        \"18\": \"tournant à droite\",\n        \"19\": \"traversant la chaussée\",\n        \"20\": \"manoeuvre de stationnement\",\n        \"21\": \"manoeuvre d’évitement\",\n        \"22\": \"ouverture de porte\",\n        \"23\": \"arrêté non stationné\",\n        \"24\": \"stationné\"\n      },\n      \"prop\": {\n          \"0\": \"\",\n          \"1\": \"conducteur\",\n          \"2\": \"véhicule volé\",\n          \"3\": \"propriétaire consentant\",\n          \"4\": \"administration\",\n          \"5\": \"entreprise\"\n      },\n      \"spev\": {\n          \"0\": \"\",\n          \"1\": \"taxi\",\n          \"2\": \"ambulance\",\n          \"3\": \"pompiers\",\n          \"4\": \"police - gendarmerie\",\n          \"5\": \"transports scolaires\",\n          \"6\": \"matières dangereuses\",\n          \"9\": \"autres\"\n      },\n      \"assu\": {\n          \"0\": \"\",\n          \"1\": \"oui\",\n          \"2\": \"non\",\n          \"3\": \"non présentation\"\n      },\n      \"facv\": {\n          \"0\": \"\",\n          \"1\": \"défectuosité mécanique\",\n          \"2\": \"éclairage - signalisation\",\n          \"3\": \"pneu usé\",\n          \"4\": \"éclatement de pneu\",\n          \"5\": \"chargement\",\n          \"6\": \"déplacement du véhicule\",\n          \"7\": \"incendie du véhicule\",\n          \"9\": \"autre\"\n      }   \n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
             "mode": "ROW"
           },
-          "type": "PythonUDF",
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "PythonUDF",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         }
       ],
-      "metaType": "GROUP",
-      "disabled": false
+      "disabled": false,
+      "metaType": "GROUP"
     }
   ],
   "exploreUIParams": {
@@ -239,14 +243,15 @@
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
+    "autoRefreshSample": false,
     "selection": {
-      "maxStoredBytes": -1,
-      "maxRecords": 10000,
       "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
-      "latestPartitionsN": 1,
       "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
       "ordering": {
         "enabled": false,
         "rules": []
@@ -256,7 +261,6 @@
         "enabled": false,
         "distinct": false
       }
-    },
-    "autoRefreshSample": false
+    }
   }
 }
