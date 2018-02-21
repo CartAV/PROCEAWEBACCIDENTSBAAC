@@ -16,6 +16,10 @@
             "proceaweb_caracteristiques_src": {
               "repartition": 10,
               "cache": false
+            },
+            "proceaweb_lieux_src": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -50,11 +54,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519235524491
+    "lastModifiedOn": 1519241273113
   },
   "creationTag": {
     "versionNumber": 0,
