@@ -35,16 +35,20 @@
         {
           "ref": "proceaweb_usagers_src",
           "appendMode": false
+        },
+        {
+          "ref": "proceaweb_caracteristiques_complement_src",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519232131192
+    "lastModifiedOn": 1519232282800
   },
   "creationTag": {
     "versionNumber": 0,
