@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519245273278
+    "lastModifiedOn": 1519245467977
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,10 +120,16 @@
         "maxLength": 16200
       },
       {
-        "name": "première première immat moisimmat année",
+        "name": "première immat mois",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "datv",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "première immat année",
