@@ -128,6 +128,22 @@
           "type": "ColumnRenamer",
           "disabled": false,
           "metaType": "PROCESSOR"
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "appliesTo": "COLUMNS",
+            "columns": [
+              "source",
+              "source_bis",
+              "data"
+            ],
+            "keep": false
+          },
+          "type": "ColumnsSelector",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         }
       ],
       "disabled": false,
