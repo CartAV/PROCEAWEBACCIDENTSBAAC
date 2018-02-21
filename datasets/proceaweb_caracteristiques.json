@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519231881568
+    "lastModifiedOn": 1519233055134
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,43 +72,121 @@
         "maxLength": 16200
       },
       {
-        "name": "1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "2",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "3",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "4",
+        "name": "source_bis",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "5",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "6",
+        "name": "Code Unité",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "7",
+        "name": "Numéro P.V.",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro de feuillet",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Jour",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Mois",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "An",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Heure",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Minute",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Lumière",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Département",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Commune",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Localisation",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Intersection",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Conditions atmosphériques",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Type de collision",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Adresse postale",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Coordonnées GPS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Id BAAC 2002",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
