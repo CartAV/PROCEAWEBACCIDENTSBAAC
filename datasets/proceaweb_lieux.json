@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519241272933
+    "lastModifiedOn": 1519241485874
   },
   "creationTag": {
     "versionNumber": 0,
@@ -121,7 +121,7 @@
       },
       {
         "name": "Nb voies de circulation",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -157,13 +157,13 @@
       },
       {
         "name": "Largeur terre-plein",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Largeur de route",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
