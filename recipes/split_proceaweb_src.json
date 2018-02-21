@@ -21,10 +21,6 @@
     "main": {
       "items": [
         {
-          "ref": "proceaweb_accidents_src",
-          "appendMode": false
-        },
-        {
           "ref": "proceaweb_caracteristiques_src",
           "appendMode": false
         },
@@ -44,11 +40,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519231471470
+    "lastModifiedOn": 1519232131192
   },
   "creationTag": {
     "versionNumber": 0,
