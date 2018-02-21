@@ -1,0 +1,91 @@
+{
+  "randomColumns": [],
+  "centileSplits": [
+    {
+      "share": 50.0,
+      "outputIndex": 0
+    }
+  ],
+  "rangeSplits": [
+    {
+      "outputIndex": 0,
+      "filter": {
+        "enabled": false,
+        "uiData": {
+          "conditions": [],
+          "mode": "\u0026\u0026"
+        },
+        "distinct": false
+      }
+    }
+  ],
+  "defaultOutputIndex": 1,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "seed": 1337,
+  "centileOrders": [],
+  "filterSplits": [
+    {
+      "outputIndex": 0,
+      "filter": {
+        "enabled": false,
+        "uiData": {
+          "conditions": [],
+          "mode": "\u0026\u0026"
+        },
+        "distinct": false
+      }
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "share": 50.0,
+      "outputIndex": 0
+    }
+  ],
+  "rangeSetTime": false,
+  "centileTDigest": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "randomSplits": [
+    {
+      "share": 50.0,
+      "outputIndex": 0
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "preFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "centileShuffle": false
+}

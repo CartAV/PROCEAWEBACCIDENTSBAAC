@@ -1,0 +1,64 @@
+{
+  "type": "split",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "proceaweb_src",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "proceaweb_accidents_src",
+          "appendMode": false
+        },
+        {
+          "ref": "proceaweb_caracteristiques_src",
+          "appendMode": false
+        },
+        {
+          "ref": "proceaweb_lieux_src",
+          "appendMode": false
+        },
+        {
+          "ref": "proceaweb_vehicules_src",
+          "appendMode": false
+        },
+        {
+          "ref": "proceaweb_usagers_src",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1519231356902
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1519231356902
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
