@@ -1,11 +1,11 @@
 {
-  "randomColumns": [],
   "centileSplits": [
     {
-      "share": 50.0,
+      "share": 50,
       "outputIndex": 0
     }
   ],
+  "randomColumns": [],
   "rangeSplits": [
     {
       "outputIndex": 0,
@@ -22,8 +22,25 @@
   "defaultOutputIndex": 1,
   "valueSplits": [
     {
-      "outputIndex": 0,
+      "outputIndex": 1,
+      "value": "1",
       "caseSensitive": false
+    },
+    {
+      "outputIndex": 2,
+      "value": "2"
+    },
+    {
+      "outputIndex": 3,
+      "value": "3"
+    },
+    {
+      "outputIndex": 4,
+      "value": "4"
+    },
+    {
+      "outputIndex": 0,
+      "value": "5"
     }
   ],
   "seed": 1337,
@@ -37,17 +54,36 @@
           "conditions": [],
           "mode": "\u0026\u0026"
         },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "maxLength": -1,
+                "timestampNoTzAsDate": false,
+                "name": "source",
+                "type": "string"
+              },
+              {
+                "maxLength": -1,
+                "timestampNoTzAsDate": false,
+                "name": "data",
+                "type": "string"
+              }
+            ]
+          }
+        },
         "distinct": false
       }
     }
   ],
+  "rangeSetTime": false,
+  "mode": "VALUES",
   "randomColumnsSplits": [
     {
-      "share": 50.0,
+      "share": 50,
       "outputIndex": 0
     }
   ],
-  "rangeSetTime": false,
   "centileTDigest": false,
   "engineParams": {
     "hive": {
@@ -77,12 +113,13 @@
   },
   "randomSplits": [
     {
-      "share": 50.0,
+      "share": 50,
       "outputIndex": 0
     }
   ],
-  "computedColumns": [],
+  "column": "source",
   "writeComputedColumnsInOutput": false,
+  "computedColumns": [],
   "preFilter": {
     "enabled": false,
     "distinct": false
