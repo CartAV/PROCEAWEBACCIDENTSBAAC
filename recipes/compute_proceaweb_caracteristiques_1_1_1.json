@@ -24,6 +24,10 @@
             "proceaweb_vehicules_src": {
               "repartition": 10,
               "cache": false
+            },
+            "proceaweb_usagers_src": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -58,11 +62,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519280481823
+    "lastModifiedOn": 1519284182726
   },
   "creationTag": {
     "versionNumber": 0,

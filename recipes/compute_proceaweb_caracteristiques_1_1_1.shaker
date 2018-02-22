@@ -1,22 +1,22 @@
 {
   "explorationFilters": [],
   "maxProcessedMemTableBytes": -1,
+  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "globalSearchQuery": "",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
   "origin": "PREPARE_RECIPE",
+  "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "sorting": [],
   "steps": [
     {
       "alwaysShowComment": false,
@@ -27,15 +27,15 @@
           "alwaysShowComment": false,
           "preview": false,
           "params": {
-            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{2})(.{3})(.{2})(.{2}).{2}.{2}.{8}(.{1})(.{1})(.{1}).(.{1})(.{2})(.{1})(.{1})(.{2})(.{3})....(.*)",
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{1}).{2}.{2}.{2}(.{1})(.{1})...(.{3})(.{2})(.{4})(.{1})(.{1})(.{3})(.{1})(.{2})(.{2})(.{1})(.{5})(.{5})(.{1})(.{1})(.{1})(.{1})(.{1}).{1}.{3}(.{1})(.{1})",
             "found_col": false,
             "prefix": "",
             "column": "data",
             "extractAllOccurrences": false
           },
           "type": "RegexpExtractor",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": true,
@@ -67,79 +67,111 @@
                 "from": "6"
               },
               {
-                "to": "Code route",
+                "to": "Place",
                 "from": "7"
               },
               {
-                "to": "Véhicule en fuite",
+                "to": "Responsabilité présumée",
                 "from": "8"
               },
               {
-                "to": "Sens de circulation",
+                "to": "Catégorie",
                 "from": "9"
               },
               {
-                "to": "Catégorie administrative",
+                "to": "Gravité",
                 "from": "10"
               },
               {
-                "to": "département ou pays",
+                "to": "Catégorie socio professionnelle",
                 "from": "11"
               },
               {
-                "to": "première immat mois",
+                "to": "Sexe",
                 "from": "12"
               },
               {
-                "to": "première immat année",
+                "to": "Résidence : département ou pays",
                 "from": "13"
               },
               {
-                "to": "appartenant à",
+                "to": "Naissance mois",
                 "from": "14"
               },
               {
-                "to": "véhicule spécial",
+                "to": "Naissance année",
                 "from": "15"
               },
               {
-                "to": "facteur lié au véhicule",
+                "to": "facteur lié à l\u0027usager",
                 "from": "16"
               },
               {
-                "to": "assurance",
+                "to": "alcoolémie",
                 "from": "17"
               },
               {
-                "to": "obstacle fixe",
+                "to": "taux alcooléie",
                 "from": "18"
               },
               {
-                "to": "obstacle mobile",
+                "to": "permis de conduire",
                 "from": "19"
               },
               {
-                "to": "point de choc initial",
+                "to": "mois permis",
                 "from": "20"
               },
               {
-                "to": "manoeuvre",
+                "to": "année permis",
                 "from": "21"
               },
               {
-                "to": "nombre d\u0027occupants",
+                "to": "trajet",
                 "from": "22"
               },
               {
-                "to": "code CNIT",
+                "to": "NATINF 1",
                 "from": "23"
+              },
+              {
+                "to": "NATINF 2",
+                "from": "24"
+              },
+              {
+                "to": "équipement sécurité existence",
+                "from": "25"
+              },
+              {
+                "to": "équipement sécurité usage",
+                "from": "26"
+              },
+              {
+                "to": "manoeuvre lieu piéton",
+                "from": "27"
+              },
+              {
+                "to": "manoeuvre action piéton",
+                "from": "28"
+              },
+              {
+                "to": "piéton",
+                "from": "29"
+              },
+              {
+                "to": "drogue dépistage",
+                "from": "30"
+              },
+              {
+                "to": "drogue prise de sang",
+                "from": "31"
               }
             ]
           },
-          "type": "ColumnRenamer",
           "comment": "Mapping officiel de Proceaweb",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "ColumnRenamer",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": false,
@@ -154,12 +186,12 @@
             "keep": false
           },
           "type": "ColumnsSelector",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": false,
+          "metaType": "PROCESSOR"
         }
       ],
-      "metaType": "GROUP",
-      "disabled": false
+      "disabled": false,
+      "metaType": "GROUP"
     },
     {
       "alwaysShowComment": false,
@@ -172,51 +204,168 @@
           "params": {
             "renamings": [
               {
-                "to": "senc",
-                "from": "Sens de circulation"
+                "to": "grav",
+                "from": "Gravité"
               },
               {
-                "to": "catv",
-                "from": "Catégorie administrative"
+                "to": "catu",
+                "from": "Catégorie"
               },
               {
-                "to": "obsm",
-                "from": "obstacle mobile"
+                "to": "sexe",
+                "from": "Sexe"
               },
               {
-                "to": "obs",
-                "from": "obstacle fixe"
+                "to": "trajet",
+                "from": "trajet"
               },
               {
-                "to": "choc",
-                "from": "point de choc initial"
+                "to": "secu",
+                "from": "équipement sécurité usage"
               },
               {
-                "to": "manv",
-                "from": "manoeuvre"
+                "to": "sece",
+                "from": "équipement sécurité existence"
               },
               {
-                "to": "spev",
-                "from": "véhicule spécial"
+                "to": "actp",
+                "from": "manoeuvre action piéton"
               },
               {
-                "to": "facv",
-                "from": "facteur lié au véhicule"
+                "to": "locp",
+                "from": "manoeuvre lieu piéton"
               },
               {
-                "to": "assu",
-                "from": "assurance"
+                "to": "etatp",
+                "from": "piéton"
               },
               {
-                "to": "prop",
-                "from": "appartenant à"
+                "to": "drogd",
+                "from": "drogue dépistage"
+              },
+              {
+                "to": "drogp",
+                "from": "drogue prise de sang"
+              },
+              {
+                "to": "natinf1",
+                "from": "NATINF 1"
+              },
+              {
+                "to": "natinf2",
+                "from": "NATINF 2"
+              },
+              {
+                "to": "perm",
+                "from": "permis de conduire"
+              },
+              {
+                "to": "alco",
+                "from": "alcoolémie"
+              },
+              {
+                "to": "alcot",
+                "from": "taux alcooléie"
+              },
+              {
+                "to": "facu",
+                "from": "facteur lié à l\u0027usager"
+              },
+              {
+                "to": "depu",
+                "from": "Résidence : département ou pays"
+              },
+              {
+                "to": "catso",
+                "from": "Catégorie socio professionnelle"
+              },
+              {
+                "to": "resp",
+                "from": "Responsabilité présumée"
+              },
+              {
+                "to": "place",
+                "from": "Place"
+              },
+              {
+                "to": "num_veh",
+                "from": "Lette conventionnelle"
+              },
+              {
+                "to": "an_nais",
+                "from": "Naissance année"
+              },
+              {
+                "to": "mo_nais",
+                "from": "Naissance mois"
               }
             ]
           },
-          "type": "ColumnRenamer",
           "comment": "Mapping BAAC CartAV",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "ColumnRenamer",
+          "disabled": false,
+          "metaType": "PROCESSOR"
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "matching": "SUBSTRING",
+            "stopAfterFirstMatch": false,
+            "appliesTo": "SINGLE_COLUMN",
+            "normalization": "EXACT",
+            "columns": [
+              "secu"
+            ],
+            "mapping": [
+              {
+                "to": "0",
+                "from": "3"
+              }
+            ],
+            "output": ""
+          },
+          "type": "FindReplace",
+          "disabled": false,
+          "metaType": "PROCESSOR"
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "matching": "SUBSTRING",
+            "stopAfterFirstMatch": false,
+            "appliesTo": "SINGLE_COLUMN",
+            "normalization": "EXACT",
+            "columns": [
+              "sece"
+            ],
+            "mapping": [
+              {
+                "to": "0",
+                "from": "9"
+              }
+            ],
+            "output": ""
+          },
+          "type": "FindReplace",
+          "disabled": false,
+          "metaType": "PROCESSOR"
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "outputColumn": "secu",
+            "columns": [
+              "sece",
+              "secu"
+            ],
+            "join": ""
+          },
+          "type": "ColumnsConcat",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": true,
@@ -224,17 +373,17 @@
           "params": {
             "usePythonUnicode": true,
             "stopOnError": true,
-            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"senc\": {\n        \"0\": \"\",\n        \"1\": \"PK-PR-num rue croissant\",\n        \"2\": \"PK-PR-num rue décroissant\"\n      },\n      \"catv\": {\n        \"00\": \"\",\n        \"10\": \"utilitaire\",\n        \"11\": \"utilitaire+caravane (ref obsolète)\",\n        \"12\": \"utilitaire+remorque (ref obsolète)\",\n        \"13\": \"poids lourd\",\n        \"14\": \"poids lourd\",\n        \"15\": \"poids lourd\",\n        \"16\": \"tracteur\",\n        \"17\": \"tracteur+semi-remorque\",\n        \"18\": \"transport en commun (ref obsolète)\",\n        \"19\": \"tramway (ref obsolète)\",\n        \"20\": \"engin spécial\",\n        \"21\": \"tracteur\",\n        \"30\": \"scooter -50cm3\",\n        \"31\": \"motocyclette +50cm3-125cm3\",\n        \"33\": \"motocyclette +125cm3\",\n        \"34\": \"scooter +125cm3\",\n        \"35\": \"quad -50cm3\",\n        \"36\": \"quad +50cm3\",\n        \"37\": \"bus\",\n        \"39\": \"train\",\n        \"40\": \"tramway\",\n        \"99\": \"autre véhicule\",\n        \"01\": \"bicyclette\",\n        \"02\": \"cyclomoteur -50cm3\",\n        \"03\": \"voiturette\",\n        \"04\": \"scooter immatriculé (ref obsolète)\",\n        \"05\": \"motocyclette (ref obsolète)\",\n        \"06\": \"side-car (ref obsolète)\",\n        \"07\": \"voiture\",\n        \"08\": \"voiture+caravane (ref obsolète)\",\n        \"09\": \"voiture+remorque (ref obsolète)\"\n      },\n      \"obsm\": {\n        \"0\": \"\",\n        \"1\": \"choc piéton\",\n        \"2\": \"choc véhicule\",\n        \"4\": \"choc sur rail\",\n        \"6\": \"choc animal domestique\",\n        \"9\": \"choc autre obstacle mobile\"\n      },\n      \"obs\": {\n        \"00\": \"\",\n        \"01\": \"Véhicule en stationnement\",\n        \"02\": \"Arbre\",\n        \"03\": \"Glissière métallique\",\n        \"04\": \"Glissière béton\",\n        \"05\": \"Autre glissière\",\n        \"06\": \"Bâtiment, mur, pile de pont\",\n        \"07\": \"Support de signalisation verticale ou poste d’appel d’urgence\",\n        \"08\": \"Poteau\",\n        \"09\": \"Mobilier urbain\",\n        \"10\": \"Parapet\",\n        \"11\": \"Ilot, refuge, borne haute\",\n        \"12\": \"Bordure de trottoir\",\n        \"13\": \"Fossé, talus, paroi rocheuse\",\n        \"14\": \"Autre obstacle fixe sur chaussée\",\n        \"15\": \"Autre obstacle fixe sur trottoir ou accotement\",\n        \"16\": \"Sortie de chaussée sans obtacle\"\n      },\n      \"choc\": {\n        \"0\": \"\",\n        \"1\": \"avant\",\n        \"2\": \"avant droit\",\n        \"3\": \"avant gauche\",\n        \"4\": \"arrière\",\n        \"5\": \"arrière droit\",\n        \"6\": \"arrière gauche\",\n        \"7\": \"côté droit\",\n        \"8\": \"côté gauche\",\n        \"9\": \"multiples\"\n      },\n      \"manv\": {\n        \"00\": \"\",\n        \"01\": \"sans changement de direction\",\n        \"02\": \"même sens, même file\",\n        \"03\": \"entre 2 files\",\n        \"04\": \"en marche arrière\",\n        \"05\": \"à contresens\",\n        \"06\": \"en franchissant le terre-plein central\",\n        \"07\": \"dans le couloir bus, dans le même sens\",\n        \"08\": \"dans le couloir bus, dans le sens inverse\",\n        \"09\": \"en s’insérant\",\n        \"10\": \"en faisant demi-tour sur la chaussée\",\n        \"11\": \"changeant de file à gauche\",\n        \"12\": \"changeant de file à droite\",\n        \"13\": \"déporté à gauche\",\n        \"14\": \"déporté à droite\",\n        \"15\": \"tournant à gauche\",\n        \"16\": \"tournant à droite\",\n        \"17\": \"tournant à gauche\",\n        \"18\": \"tournant à droite\",\n        \"19\": \"traversant la chaussée\",\n        \"20\": \"manoeuvre de stationnement\",\n        \"21\": \"manoeuvre d’évitement\",\n        \"22\": \"ouverture de porte\",\n        \"23\": \"arrêté non stationné\",\n        \"24\": \"stationné\"\n      },\n      \"prop\": {\n          \"0\": \"\",\n          \"1\": \"conducteur\",\n          \"2\": \"véhicule volé\",\n          \"3\": \"propriétaire consentant\",\n          \"4\": \"administration\",\n          \"5\": \"entreprise\"\n      },\n      \"spev\": {\n          \"0\": \"\",\n          \"1\": \"taxi\",\n          \"2\": \"ambulance\",\n          \"3\": \"pompiers\",\n          \"4\": \"police - gendarmerie\",\n          \"5\": \"transports scolaires\",\n          \"6\": \"matières dangereuses\",\n          \"9\": \"autres\"\n      },\n      \"assu\": {\n          \"0\": \"\",\n          \"1\": \"oui\",\n          \"2\": \"non\",\n          \"3\": \"non présentation\"\n      },\n      \"facv\": {\n          \"0\": \"\",\n          \"1\": \"défectuosité mécanique\",\n          \"2\": \"éclairage - signalisation\",\n          \"3\": \"pneu usé\",\n          \"4\": \"éclatement de pneu\",\n          \"5\": \"chargement\",\n          \"6\": \"déplacement du véhicule\",\n          \"7\": \"incendie du véhicule\",\n          \"9\": \"autre\"\n      }   \n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"grav\": {\n        \"1\": \"indemne\",\n        \"2\": \"tué\",\n        \"3\": \"hospitalisé\",\n        \"4\": \"blessé léger\"\n      },\n      \"catu\": {\n        \"1\": \"conducteur\",\n        \"2\": \"passager\",\n        \"3\": \"piéton\",\n        \"4\": \"trottinette\"\n      },\n      \"sexe\": {\n        \"1\": \"homme\",\n        \"2\": \"femme\"\n      },\n      \"trajet\": {\n        \"1\": \"domicile travail\",\n        \"2\": \"domicile école\",\n        \"3\": \"courses\",\n        \"4\": \"professionnel\",\n        \"5\": \"loisirs\",\n        \"9\": \"autres\"\n      },\n      \"secu\": {\n        \"11\": \"avec ceinture\",\n        \"12\": \"sans ceinture\",\n        \"10\": \"sans ceinture\",  \n        \"21\": \"avec casque\",\n        \"22\": \"sans casque\",\n        \"22\": \"sans casque\",  \n        \"31\": \"avec siège enfant\",\n        \"32\": \"sans siège enfant\",\n        \"30\": \"sans siège enfant\",\n        \"41\": \"avec réflecteur\",\n        \"42\": \"sans réflecteur\",\n        \"40\": \"sans réflecteur\",  \n        \"00\": \"\",\n        \"01\": \"avec\",\n        \"01\": \"sans\"  \n      },\n      \"actp\": {\n        \"0\": \"\",\n        \"1\": \"piéton sens véhicule\",\n        \"2\": \"piéton sens inverse véhicule\",\n        \"3\": \"piéton traversant\",\n        \"4\": \"piéton masqué\",\n        \"5\": \"piéton jouant\",\n        \"6\": \"piéton avec animal\"\n      },\n      \"locp\": {\n        \"0\": \"\",\n        \"1\": \"plus de 50m un passage piéton\",\n        \"2\": \"moins de 50m passage piéton\",\n        \"3\": \"sans signalisation lumineuse\",\n        \"4\": \"avec signalisation lumineuse\"\n      },\n      \"etatp\": {\n        \"0\": \"\",\n        \"1\": \"piéton seul\",\n        \"2\": \"piéton accompagné\",\n        \"3\": \"piéton en groupe\"\n      },\n      \"resp\": {\n          \"0\": \"non\",\n          \"1\": \"présumé\"\n      },\n        \"catso\": {\n            \"1\": \"conducteur professionnel\",\n            \"2\": \"agriculteur\",\n            \"3\": \"indépendant\",\n            \"4\": \"cadre supérieur\",\n            \"5\": \"employé\",\n            \"6\": \"ouvrier\",\n            \"7\": \"retraité\",\n            \"8\": \"chômeur\",\n            \"A\": \"étudiant\",\n            \"9\": \"autre\"\n        },\n        \"facu\": {\n            \"0\": \"\",\n            \"1\": \"malaise - fatigue\",\n            \"2\": \"médicament - drogue\",\n            \"3\": \"infirmité\",\n            \"4\": \"attention perturbée\",\n            \"5\": \"ivresse apparente\"\n        },\n        \"alco\": {\n            \"0\": \"\",\n            \"1\": \"impossible\",\n            \"2\": \"refusé\",\n            \"3\": \"prise de sang\",\n            \"4\": \"éthylomètre\",\n            \"5\": \"résultat non connu\",\n            \"6\": \"dépistage négatif\"\n        },\n        \"perm\": {\n            \"0\": \"\",\n            \"1\": \"valide\",\n            \"2\": \"périmé\",\n            \"3\": \"suspendu\",\n            \"4\": \"conduite en auto-école\",\n            \"5\": \"catégorie non valable\",\n            \"6\": \"défaut de permis\",\n            \"7\": \"conduite accompagnée\"\n        }\n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
             "mode": "ROW"
           },
-          "type": "PythonUDF",
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "type": "PythonUDF",
+          "disabled": false,
+          "metaType": "PROCESSOR"
         }
       ],
-      "metaType": "GROUP",
-      "disabled": false
+      "disabled": false,
+      "metaType": "GROUP"
     },
     {
       "alwaysShowComment": false,
@@ -253,8 +402,8 @@
             "join": ""
           },
           "type": "ColumnsConcat",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": true,
+          "metaType": "PROCESSOR"
         },
         {
           "alwaysShowComment": false,
@@ -271,12 +420,12 @@
             ]
           },
           "type": "DateParser",
-          "metaType": "PROCESSOR",
-          "disabled": false
+          "disabled": true,
+          "metaType": "PROCESSOR"
         }
       ],
-      "metaType": "GROUP",
-      "disabled": false
+      "disabled": true,
+      "metaType": "GROUP"
     }
   ],
   "exploreUIParams": {
@@ -285,14 +434,15 @@
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
+    "autoRefreshSample": false,
     "selection": {
-      "maxStoredBytes": -1,
-      "maxRecords": 10000,
       "targetRatio": 0.02,
+      "maxRecords": 10000,
+      "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
-      "latestPartitionsN": 1,
       "samplingMethod": "HEAD_SEQUENTIAL",
+      "latestPartitionsN": 1,
       "ordering": {
         "enabled": false,
         "rules": []
@@ -302,7 +452,6 @@
         "enabled": false,
         "distinct": false
       }
-    },
-    "autoRefreshSample": false
+    }
   }
 }
