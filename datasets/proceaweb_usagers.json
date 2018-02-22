@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519284182352
+    "lastModifiedOn": 1519284875453
   },
   "creationTag": {
     "versionNumber": 0,
@@ -168,13 +168,13 @@
         "maxLength": 16200
       },
       {
-        "name": "mois permis",
+        "name": "mo_perm",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "année permis",
+        "name": "an_perm",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -196,12 +196,6 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
-      },
-      {
-        "name": "sece",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
       },
       {
         "name": "secu",
@@ -229,15 +223,15 @@
       },
       {
         "name": "drogd",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "drogp",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       }
     ]
   },
