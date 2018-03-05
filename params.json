@@ -1,10 +1,29 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "proceaweb_lieux",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "proceaweb_lieux",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS_BRUT",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "owner": "antoinefa",
@@ -127,11 +146,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519235471944
+    "lastModifiedOn": 1520274762338
   },
   "creationTag": {
     "versionNumber": 0,
