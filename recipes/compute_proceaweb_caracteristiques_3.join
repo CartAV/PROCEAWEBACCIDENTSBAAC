@@ -25,7 +25,93 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Code Unité",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Code Unité",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Numéro P.V.",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Numéro P.V.",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Numéro de feuillet",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Numéro de feuillet",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Organisme",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Organisme",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -55,127 +141,347 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Code Unité",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Numéro P.V.",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Numéro de feuillet",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Organisme",
+            "type": "bigint"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "jour",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "mois",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "an",
+            "type": "bigint"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Heure",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Minute",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "hrmn",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "lum",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "com",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Coordonnées GPS",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "gps",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "lat",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "long",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Id BAAC 2002",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "inconnu1",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "inconnu2",
+            "type": "bigint"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "inconnu3",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "inconnu4",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "adr2",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false,
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Code Unité",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Numéro P.V.",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Numéro de feuillet",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Organisme",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "jour",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "an",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "Heure",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Minute",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "date",
-      "table": 0
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "hrmn",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "com",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Coordonnées GPS",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "gps",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "long",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "Id BAAC 2002",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "inconnu1",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "inconnu2",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "inconnu3",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "inconnu4",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "adr2",
-      "table": 1
+      "table": 1,
+      "type": "string"
     }
   ]
 }
