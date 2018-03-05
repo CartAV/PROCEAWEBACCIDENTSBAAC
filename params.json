@@ -8,6 +8,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "proceaweb_vehicules",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -16,6 +23,16 @@
       {
         "type": "DATASET",
         "localName": "proceaweb_lieux",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS_BRUT",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "proceaweb_vehicules",
         "rules": [
           {
             "targetProject": "ACCIDENTS_BRUT",
@@ -146,11 +163,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520274762338
+    "lastModifiedOn": 1520274775383
   },
   "creationTag": {
     "versionNumber": 0,
