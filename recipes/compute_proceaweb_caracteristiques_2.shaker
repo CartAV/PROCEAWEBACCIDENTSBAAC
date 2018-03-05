@@ -1,0 +1,360 @@
+{
+  "explorationFilters": [],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "analysisColumnData": {},
+  "globalSearchQuery": "",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "origin": "PREPARE_RECIPE",
+  "coloring": {
+    "individualColumns": [],
+    "scheme": "MEANING_AND_STATUS",
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Formattage proceaweb",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{2})(.{2})(.{2}).(.{2})(.{2})(.{1})(.{3})(.{3})(.{1})(.{1})(.{1})(.{1})(.{24}).(.{15})(.{1})",
+            "found_col": false,
+            "prefix": "",
+            "column": "data",
+            "extractAllOccurrences": false
+          },
+          "type": "RegexpExtractor",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": true,
+          "preview": false,
+          "params": {
+            "renamings": [
+              {
+                "to": "source_bis",
+                "from": "1"
+              },
+              {
+                "to": "Code Unité",
+                "from": "2"
+              },
+              {
+                "to": "Numéro P.V.",
+                "from": "3"
+              },
+              {
+                "to": "Numéro de feuillet",
+                "from": "4"
+              },
+              {
+                "to": "Organisme",
+                "from": "5"
+              },
+              {
+                "to": "Jour",
+                "from": "6"
+              },
+              {
+                "to": "Mois",
+                "from": "7"
+              },
+              {
+                "to": "An",
+                "from": "8"
+              },
+              {
+                "to": "Heure",
+                "from": "9"
+              },
+              {
+                "to": "Minute",
+                "from": "10"
+              },
+              {
+                "to": "Lumière",
+                "from": "11"
+              },
+              {
+                "to": "Département",
+                "from": "12"
+              },
+              {
+                "to": "Commune",
+                "from": "13"
+              },
+              {
+                "to": "Localisation",
+                "from": "14"
+              },
+              {
+                "to": "Intersection",
+                "from": "15"
+              },
+              {
+                "to": "Conditions atmosphériques",
+                "from": "16"
+              },
+              {
+                "to": "Type de collision",
+                "from": "17"
+              },
+              {
+                "to": "Adresse postale",
+                "from": "18"
+              },
+              {
+                "to": "Coordonnées GPS",
+                "from": "19"
+              },
+              {
+                "to": "Id BAAC 2002",
+                "from": "20"
+              }
+            ]
+          },
+          "type": "ColumnRenamer",
+          "comment": "Mapping officiel de Proceaweb",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "appliesTo": "COLUMNS",
+            "columns": [
+              "source",
+              "source_bis",
+              "data"
+            ],
+            "keep": false
+          },
+          "type": "ColumnsSelector",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        }
+      ],
+      "metaType": "GROUP",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Mapping BAAC/CartAV",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "pattern": "(.)(.......)(.......)",
+            "found_col": false,
+            "prefix": "gps",
+            "column": "Coordonnées GPS",
+            "extractAllOccurrences": false
+          },
+          "type": "RegexpExtractor",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "outputColumn": "hrmn",
+            "columns": [
+              "Heure",
+              "Minute"
+            ],
+            "join": ""
+          },
+          "type": "ColumnsConcat",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "renamings": [
+              {
+                "to": "lum",
+                "from": "Lumière"
+              },
+              {
+                "to": "int",
+                "from": "Intersection"
+              },
+              {
+                "to": "agg",
+                "from": "Localisation"
+              },
+              {
+                "to": "atm",
+                "from": "Conditions atmosphériques"
+              },
+              {
+                "to": "col",
+                "from": "Type de collision"
+              },
+              {
+                "to": "jour",
+                "from": "Jour"
+              },
+              {
+                "to": "mois",
+                "from": "Mois"
+              },
+              {
+                "to": "an",
+                "from": "An"
+              },
+              {
+                "to": "com",
+                "from": "Commune"
+              },
+              {
+                "to": "adr",
+                "from": "Adresse postale"
+              },
+              {
+                "to": "gps",
+                "from": "gps1"
+              },
+              {
+                "to": "lat",
+                "from": "gps2"
+              },
+              {
+                "to": "long",
+                "from": "gps3"
+              },
+              {
+                "to": "dep",
+                "from": "Département"
+              }
+            ]
+          },
+          "type": "ColumnRenamer",
+          "comment": "Mapping BAAC CartAV",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "outputColumn": "Num_Acc",
+            "columns": [
+              "Code Unité",
+              "Numéro P.V.",
+              "Numéro de feuillet"
+            ],
+            "join": ""
+          },
+          "type": "ColumnsConcat",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": true,
+          "preview": false,
+          "params": {
+            "usePythonUnicode": true,
+            "stopOnError": true,
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic\u003d {\n      \"lum\": {\n        \"1\": \"plein jour\",\n        \"2\": \"crépuscule ou aube\",\n        \"3\": \"nuit sans éclairage public\",\n        \"4\": \"nuit avec éclairage public non allumé\",\n        \"5\": \"nuit avec éclairage public allumé\"\n          },\n      \"agg\": {\n        \"1\": \"hors agglomération\",\n        \"2\": \"en agglomération\"\n      },\n      \"int\": {\n        \"1\": \"hors intersection\",\n        \"2\": \"intersection en X\",\n        \"3\": \"intersection en T\",\n        \"4\": \"intersection en Y\",\n        \"5\": \"intersection +4 branches\",\n        \"6\": \"giratoire\",\n        \"7\": \"place\",\n        \"8\": \"passage à niveau\",\n        \"9\": \"autre intersection\"\n      },\n      \"atm\": {\n        \"1\": \"météo normale\",\n        \"2\": \"pluie légère\",\n        \"3\": \"pluie forte\",\n        \"4\": \"neige - grêle\",\n        \"5\": \"brouillard - fumée\",\n        \"6\": \"vent fort - tempête\",\n        \"7\": \"temps éblouissant\",\n        \"8\": \"temps couvert\",\n        \"9\": \"autre météo\"\n      },\n      \"col\": {\n        \"1\": \"2 véhicules frontal\",\n        \"2\": \"2 véhicules par l’arrière\",\n        \"3\": \"2 véhicules côté\",\n        \"4\": \"3+ véhicules en chaine\",\n        \"5\": \"3+ véhicules autre\",\n        \"6\": \"autre collision\",\n        \"7\": \"Sans collision\"\n      }\n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        else:\n            row[key] \u003d \"\"\n    return row\n",
+            "mode": "ROW"
+          },
+          "type": "PythonUDF",
+          "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        }
+      ],
+      "metaType": "GROUP",
+      "disabled": false
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "name": "Dates",
+      "steps": [
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "outputColumn": "date",
+            "columns": [
+              "an",
+              "mois",
+              "jour",
+              "Heure",
+              "Minute"
+            ],
+            "join": ""
+          },
+          "type": "ColumnsConcat",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        },
+        {
+          "alwaysShowComment": false,
+          "preview": false,
+          "params": {
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "date"
+            ],
+            "timezone_id": "UTC",
+            "lang": "auto",
+            "formats": [
+              "yyMMddHHmm"
+            ]
+          },
+          "type": "DateParser",
+          "metaType": "PROCESSOR",
+          "disabled": false
+        }
+      ],
+      "metaType": "GROUP",
+      "disabled": false
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "previewMode": "ALL_ROWS",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "maxStoredBytes": -1,
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "partitionSelectionMethod": "ALL",
+      "withinFirstN": -1,
+      "latestPartitionsN": 1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "maxReadUncompressedBytes": -1,
+      "filter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    "autoRefreshSample": false
+  }
+}
