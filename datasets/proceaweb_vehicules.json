@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519245467977
+    "lastModifiedOn": 1520272181105
   },
   "creationTag": {
     "versionNumber": 0,
@@ -78,13 +78,19 @@
         "maxLength": 16200
       },
       {
+        "name": "Num_Acc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "Organisme",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Lette conventionnelle",
+        "name": "num_veh",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -186,7 +192,7 @@
         "maxLength": 16200
       },
       {
-        "name": "nombre d\u0027occupants",
+        "name": "occutc",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
