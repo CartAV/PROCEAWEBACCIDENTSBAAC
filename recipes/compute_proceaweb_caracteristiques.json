@@ -43,18 +43,18 @@
     "main": {
       "items": [
         {
-          "ref": "proceaweb_caracteristiques",
+          "ref": "proceaweb_caracteristiques_incomplet",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520272915642
+    "lastModifiedOn": 1520274024877
   },
   "creationTag": {
     "versionNumber": 0,
