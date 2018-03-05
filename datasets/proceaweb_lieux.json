@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519241485874
+    "lastModifiedOn": 1520273265647
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,12 @@
       },
       {
         "name": "Numéro de feuillet",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -120,8 +126,8 @@
         "maxLength": 16200
       },
       {
-        "name": "Nb voies de circulation",
-        "type": "bigint",
+        "name": "nbv",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -138,13 +144,13 @@
         "maxLength": 16200
       },
       {
-        "name": "PK PR",
+        "name": "pr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "distance PK PR",
+        "name": "pr1",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -156,14 +162,14 @@
         "maxLength": 16200
       },
       {
-        "name": "Largeur terre-plein",
-        "type": "bigint",
+        "name": "lartpc",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "Largeur de route",
-        "type": "bigint",
+        "name": "larrout",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
