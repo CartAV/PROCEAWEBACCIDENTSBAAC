@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519235444839
+    "lastModifiedOn": 1520272887887
   },
   "creationTag": {
     "versionNumber": 0,
@@ -78,25 +78,31 @@
         "maxLength": 16200
       },
       {
+        "name": "Num_Acc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "Organisme",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Jour",
+        "name": "jour",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "Mois",
+        "name": "mois",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "An",
+        "name": "an",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -120,19 +126,25 @@
         "maxLength": -1
       },
       {
+        "name": "hrmn",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "lum",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "Département",
+        "name": "dep",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "Commune",
+        "name": "com",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -162,13 +174,31 @@
         "maxLength": 16200
       },
       {
-        "name": "Adresse postale",
+        "name": "adr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Coordonnées GPS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "gps",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "lat",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "long",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
