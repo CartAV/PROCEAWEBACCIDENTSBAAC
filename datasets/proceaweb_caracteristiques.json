@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520274218935
+    "lastModifiedOn": 1520274712357
   },
   "creationTag": {
     "versionNumber": 0,
@@ -229,12 +229,6 @@
       },
       {
         "name": "inconnu4",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "adr2",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
