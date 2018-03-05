@@ -108,6 +108,22 @@
       ],
       "disabled": false,
       "metaType": "GROUP"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "outputColumn": "Num_Acc",
+        "columns": [
+          "Code Unité",
+          "Numéro P.V.",
+          "Numéro de feuillet"
+        ],
+        "join": ""
+      },
+      "type": "ColumnsConcat",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
