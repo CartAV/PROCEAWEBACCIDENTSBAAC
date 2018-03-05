@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519284875453
+    "lastModifiedOn": 1520272410015
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,12 @@
       },
       {
         "name": "Numéro de feuillet",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -138,6 +144,12 @@
         "maxLength": 16200
       },
       {
+        "name": "datn",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "an_nais",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -172,6 +184,12 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "datp",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "an_perm",
