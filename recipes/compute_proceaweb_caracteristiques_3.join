@@ -28,88 +28,88 @@
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Code Unité",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Code Unité",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         },
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Numéro P.V.",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Numéro P.V.",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         },
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Numéro de feuillet",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Numéro de feuillet",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         },
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         },
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Organisme",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Organisme",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
       "type": "LEFT"
@@ -188,10 +188,10 @@
             "type": "string"
           },
           {
-            "maxLength": -1,
+            "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "an",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "maxLength": 16200,
@@ -331,7 +331,6 @@
     }
   },
   "enableAutoCastInJoinConditions": false,
-  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Code Unité",
@@ -371,7 +370,7 @@
     {
       "name": "an",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "Heure",
@@ -483,5 +482,6 @@
       "table": 1,
       "type": "string"
     }
-  ]
+  ],
+  "computedColumns": []
 }
