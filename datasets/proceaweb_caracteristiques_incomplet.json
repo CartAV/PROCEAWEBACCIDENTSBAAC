@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520274024709
+    "lastModifiedOn": 1520428376489
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,9 +103,9 @@
       },
       {
         "name": "an",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "Heure",
