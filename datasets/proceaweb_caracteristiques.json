@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520428351354
+    "lastModifiedOn": 1521034761717
   },
   "creationTag": {
     "versionNumber": 0,
@@ -210,10 +210,10 @@
         "maxLength": 16200
       },
       {
-        "name": "inconnu1",
-        "type": "string",
+        "name": "Code route",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "inconnu2",
