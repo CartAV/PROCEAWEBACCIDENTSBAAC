@@ -44,6 +44,28 @@
         },
         "sql": "SELECT * FROM \"proceaweb_lieux\"",
         "expandedSql": "SELECT * FROM \"proceaweb_lieux\""
+      },
+      {
+        "mode": "SQL",
+        "id": "7Q59gjMZzoWT",
+        "runOn": 1521025541036,
+        "runIn": 132,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "7a56DuG7",
+        "hash": "6b4066a3ac9ce8171fd555661c938855",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"",
+        "expandedSql": "SELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\""
       }
     ]
   }
