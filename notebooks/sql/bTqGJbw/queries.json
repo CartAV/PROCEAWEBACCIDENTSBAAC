@@ -66,6 +66,28 @@
         },
         "sql": "SELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"",
         "expandedSql": "SELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\""
+      },
+      {
+        "mode": "SQL",
+        "id": "4oy3RnW475uN",
+        "runOn": 1521025566659,
+        "runIn": 50,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "0w9Zv6Jy",
+        "hash": "8e122ced66b506758d005750f9c26ff8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c",
+        "expandedSql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c"
       }
     ]
   }
