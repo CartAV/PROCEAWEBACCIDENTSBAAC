@@ -63,7 +63,7 @@
                 "from": "5"
               },
               {
-                "to": "inconnu1",
+                "to": "Code route",
                 "from": "6"
               },
               {
@@ -111,7 +111,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "outputColumn": "Num_Acc",
         "columns": [
@@ -122,6 +122,26 @@
         "join": ""
       },
       "type": "ColumnsConcat",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matchingMode": "FULL_STRING",
+        "values": [
+          "1"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Code route"
+        ],
+        "action": "KEEP_ROW"
+      },
+      "type": "FilterOnValue",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
