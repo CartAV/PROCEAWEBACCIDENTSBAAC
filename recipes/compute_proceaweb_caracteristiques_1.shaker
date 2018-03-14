@@ -283,6 +283,26 @@
       ],
       "disabled": false,
       "metaType": "GROUP"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matchingMode": "FULL_STRING",
+        "values": [
+          "1"
+        ],
+        "booleanMode": "AND",
+        "normalizationMode": "EXACT",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Code route"
+        ],
+        "action": "KEEP_ROW"
+      },
+      "type": "FilterOnValue",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
