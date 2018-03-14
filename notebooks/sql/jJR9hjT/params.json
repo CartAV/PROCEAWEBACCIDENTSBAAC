@@ -1,0 +1,24 @@
+{
+  "connection": "vertica_poc",
+  "name": "Laurent\u0027s notebook",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1521025431696
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1521025431696
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
