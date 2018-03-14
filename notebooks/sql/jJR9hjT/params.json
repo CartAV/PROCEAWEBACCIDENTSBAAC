@@ -1,14 +1,28 @@
 {
   "connection": "vertica_poc",
   "name": "Laurent\u0027s notebook",
-  "cells": [],
+  "cells": [
+    {
+      "id": "6d4pd4sppas",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521025431696
+    "lastModifiedOn": 1521025434516
   },
   "creationTag": {
     "versionNumber": 0,
