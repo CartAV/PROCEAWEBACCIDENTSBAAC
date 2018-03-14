@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "fbgs6knfwvh": [
+      {
+        "mode": "SQL",
+        "id": "87IqyAUVAOmM",
+        "runOn": 1521025487527,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "shuiSdN5",
+        "hash": "d21127261192bd3a3ae7ed3f78983e93",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"proceaweb_lieux_src\"",
+        "expandedSql": "SELECT * FROM \"proceaweb_lieux_src\""
+      }
+    ]
+  }
+}
