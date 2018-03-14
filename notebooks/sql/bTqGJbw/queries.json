@@ -22,6 +22,28 @@
         },
         "sql": "SELECT * FROM \"proceaweb_lieux_src\"",
         "expandedSql": "SELECT * FROM \"proceaweb_lieux_src\""
+      },
+      {
+        "mode": "SQL",
+        "id": "MqavI1gZnP0h",
+        "runOn": 1521025497436,
+        "runIn": 106,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "oz7oIhkh",
+        "hash": "5430aef22d67b560df8db8f68c1cba80",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"proceaweb_lieux\"",
+        "expandedSql": "SELECT * FROM \"proceaweb_lieux\""
       }
     ]
   }
