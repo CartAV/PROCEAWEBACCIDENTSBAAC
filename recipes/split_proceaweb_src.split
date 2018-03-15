@@ -23,8 +23,8 @@
   "valueSplits": [
     {
       "outputIndex": 0,
-      "value": "1",
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": "1"
     },
     {
       "outputIndex": 1,
@@ -85,6 +85,12 @@
     }
   ],
   "centileTDigest": false,
+  "randomSplits": [
+    {
+      "share": 50,
+      "outputIndex": 0
+    }
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -111,15 +117,9 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "randomSplits": [
-    {
-      "share": 50,
-      "outputIndex": 0
-    }
-  ],
-  "column": "source",
-  "writeComputedColumnsInOutput": false,
   "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "column": "source",
   "preFilter": {
     "enabled": false,
     "distinct": false
