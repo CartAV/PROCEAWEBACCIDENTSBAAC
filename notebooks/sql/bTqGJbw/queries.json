@@ -88,6 +88,28 @@
         },
         "sql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c",
         "expandedSql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c"
+      },
+      {
+        "mode": "SQL",
+        "id": "2hlP51ggWIe6",
+        "runOn": 1521108867782,
+        "runIn": 62,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ikMyxf3s",
+        "hash": "8e122ced66b506758d005750f9c26ff8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c",
+        "expandedSql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c"
       }
     ]
   }
