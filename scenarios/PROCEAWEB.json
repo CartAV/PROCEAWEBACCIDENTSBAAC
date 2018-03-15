@@ -5,11 +5,11 @@
   "name": "ProceaWeb",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521109368731
+    "lastModifiedOn": 1521109473375
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,40 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_d_proceaweb_lieux_d_proceaweb_caracteristiques_d_proceaweb_usagers_d_proceaweb_vehicules",
+        "type": "build_flowitem",
+        "name": "Build ProceaWeb",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "proceaweb_lieux",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "proceaweb_caracteristiques",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "proceaweb_usagers",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "proceaweb_vehicules",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
