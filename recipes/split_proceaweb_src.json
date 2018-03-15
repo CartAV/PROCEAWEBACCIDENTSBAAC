@@ -14,8 +14,9 @@
           "ref": "proceaweb_src",
           "deps": [
             {
+              "out": "proceaweb_caracteristiques_src",
               "idim": "date",
-              "func": "latest_available",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -50,11 +51,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521109167309
+    "lastModifiedOn": 1521133381275
   },
   "creationTag": {
     "versionNumber": 0,

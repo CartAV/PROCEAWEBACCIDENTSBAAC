@@ -23,8 +23,8 @@
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false,
-      "value": "1"
+      "value": "1",
+      "caseSensitive": false
     },
     {
       "outputIndex": 1,
@@ -117,9 +117,9 @@
       "outputIndex": 0
     }
   ],
-  "computedColumns": [],
-  "writeComputedColumnsInOutput": false,
   "column": "source",
+  "writeComputedColumnsInOutput": false,
+  "computedColumns": [],
   "preFilter": {
     "enabled": false,
     "distinct": true
