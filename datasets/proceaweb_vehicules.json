@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520272181105
+    "lastModifiedOn": 1521641947460
   },
   "creationTag": {
     "versionNumber": 0,
@@ -199,6 +199,12 @@
       },
       {
         "name": "code CNIT",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
