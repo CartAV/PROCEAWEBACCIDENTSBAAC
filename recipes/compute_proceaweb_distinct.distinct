@@ -36,6 +36,25 @@
   ],
   "postFilter": {
     "enabled": false,
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false
   },
   "globalCount": false,
