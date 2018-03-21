@@ -470,7 +470,7 @@
             "timezone_id": "UTC",
             "lang": "auto",
             "formats": [
-              "yyMM"
+              "yyyyMM"
             ]
           },
           "type": "DateParser",
