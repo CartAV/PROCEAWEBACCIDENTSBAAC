@@ -17,7 +17,7 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": false,
+          "enabled": true,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
@@ -25,7 +25,7 @@
                 "input": "Num_Acc",
                 "operator": "contains",
                 "col": "Numéro P.V.",
-                "string": "50610001701",
+                "string": "692660008201",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
