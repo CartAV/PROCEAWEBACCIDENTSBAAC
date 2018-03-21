@@ -487,11 +487,11 @@
   },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "autoRefreshSample": false,
     "selection": {
       "targetRatio": 0.02,
-      "maxRecords": 10000,
+      "maxRecords": 1000000,
       "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
@@ -504,6 +504,17 @@
       "maxReadUncompressedBytes": -1,
       "filter": {
         "enabled": false,
+        "uiData": {
+          "conditions": [
+            {
+              "num": 0.0,
+              "col": "data",
+              "input": "source",
+              "operator": "contains"
+            }
+          ],
+          "mode": "\u0026\u0026"
+        },
         "distinct": false
       }
     }
