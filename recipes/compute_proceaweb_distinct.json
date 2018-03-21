@@ -16,8 +16,7 @@
             {
               "out": "proceaweb_distinct",
               "idim": "date",
-              "odim": "date",
-              "func": "equals",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -36,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521641215413
+    "lastModifiedOn": 1521641257970
   },
   "creationTag": {
     "versionNumber": 0,
