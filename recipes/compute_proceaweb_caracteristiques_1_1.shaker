@@ -108,9 +108,7 @@
         "columnType": "ALPHANUM",
         "column": "Num_Acc",
         "currentMode": "ALPHANUM",
-        "selectedValues": {
-          "00950180001401": true
-        },
+        "selectedValues": {},
         "type": "facet"
       },
       "$$hashKey": "object:9856",
