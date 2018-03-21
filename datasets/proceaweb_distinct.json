@@ -37,11 +37,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521641196804
+    "lastModifiedOn": 1521641213975
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,6 +77,12 @@
       },
       {
         "name": "data",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
