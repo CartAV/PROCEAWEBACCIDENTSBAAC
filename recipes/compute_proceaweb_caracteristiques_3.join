@@ -28,88 +28,88 @@
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Code Unité",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Code Unité",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         },
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Numéro P.V.",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Numéro P.V.",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         },
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Numéro de feuillet",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Numéro de feuillet",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         },
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         },
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Organisme",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Organisme",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
       "type": "LEFT"
@@ -206,12 +206,6 @@
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "date",
-            "type": "date"
-          },
-          {
             "maxLength": 16200,
             "timestampNoTzAsDate": false,
             "name": "hrmn",
@@ -298,6 +292,12 @@
           {
             "maxLength": -1,
             "timestampNoTzAsDate": false,
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
             "name": "Code route",
             "type": "bigint"
           },
@@ -331,6 +331,7 @@
     }
   },
   "enableAutoCastInJoinConditions": false,
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Code Unité",
@@ -381,11 +382,6 @@
       "name": "Minute",
       "table": 0,
       "type": "string"
-    },
-    {
-      "name": "date",
-      "table": 0,
-      "type": "date"
     },
     {
       "name": "hrmn",
@@ -458,6 +454,11 @@
       "type": "bigint"
     },
     {
+      "name": "date",
+      "table": 0,
+      "type": "date"
+    },
+    {
       "name": "Code route",
       "table": 1,
       "type": "bigint"
@@ -482,6 +483,5 @@
       "table": 1,
       "type": "string"
     }
-  ],
-  "computedColumns": []
+  ]
 }
