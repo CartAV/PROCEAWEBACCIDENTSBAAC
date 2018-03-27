@@ -17,11 +17,31 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": false
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "data",
+                "operator": "contains",
+                "col": "data",
+                "string": "26910000801",
+                "num": 0.0
+              }
+            ]
+          }
         },
         "partitionSelectionMethod": "SELECTED",
         "selectedPartitions": [
-          "2017-03"
+          "2017-09",
+          "2017-08",
+          "2017-07",
+          "2017-06",
+          "2017-05",
+          "2017-04",
+          "2017-03",
+          "2017-02",
+          "2017-01"
         ],
         "latestPartitionsN": 1,
         "ordering": {
@@ -35,13 +55,15 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 4
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
