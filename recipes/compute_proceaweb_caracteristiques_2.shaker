@@ -115,6 +115,7 @@
       "params": {
         "outputColumn": "Num_Acc",
         "columns": [
+          "date",
           "Code Unité",
           "Numéro P.V.",
           "Numéro de feuillet"
@@ -127,7 +128,30 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
+      "params": {
+        "matching": "SUBSTRING",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "Num_Acc"
+        ],
+        "mapping": [
+          {
+            "to": "",
+            "from": "-"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
       "params": {
         "matchingMode": "FULL_STRING",
         "values": [
