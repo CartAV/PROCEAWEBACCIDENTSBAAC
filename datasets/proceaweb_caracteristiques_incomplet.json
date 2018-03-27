@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520428376489
+    "lastModifiedOn": 1522161932267
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,12 +120,6 @@
         "maxLength": 16200
       },
       {
-        "name": "date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "hrmn",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -206,6 +200,12 @@
       {
         "name": "Id BAAC 2002",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "date",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
