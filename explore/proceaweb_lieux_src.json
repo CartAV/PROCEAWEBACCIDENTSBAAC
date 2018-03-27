@@ -24,8 +24,8 @@
               {
                 "input": "data",
                 "operator": "contains",
-                "col": "data",
-                "string": "692660008201",
+                "col": "source",
+                "string": "26910000801",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
