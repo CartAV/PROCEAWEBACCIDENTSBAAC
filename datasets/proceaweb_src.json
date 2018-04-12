@@ -30,7 +30,7 @@
     "charset": "latin1"
   },
   "partitioning": {
-    "filePathPattern": "C__Users_0483216_Desktop_fiches BAAC %Y_%Y..%M_proceaweb.txt",
+    "filePathPattern": "C__Users_0483216_Desktop.*_fiches BAAC %Y_%Y..%M_proceaweb.txt",
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": [
@@ -44,11 +44,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1521108097058
+    "lastModifiedOn": 1523554543680
   },
   "creationTag": {
     "versionNumber": 0,
