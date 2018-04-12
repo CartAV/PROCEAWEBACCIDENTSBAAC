@@ -31,7 +31,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "appliesTo": "SINGLE_COLUMN",
         "columns": [
@@ -40,6 +40,30 @@
         "keep": false
       },
       "type": "ColumnsSelector",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "COLUMNS",
+        "normalization": "EXACT",
+        "columns": [
+          "jour",
+          "mois"
+        ],
+        "mapping": [
+          {
+            "to": "",
+            "from": "^0"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
