@@ -22,10 +22,10 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "Num_Acc",
+                "input": "date",
                 "operator": "contains",
                 "col": "Numéro P.V.",
-                "string": "26910000801",
+                "string": "2017-12",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 4
+      "_refreshTrigger": 5
     },
     "vizSampling": {
       "autoRefreshSample": false,
