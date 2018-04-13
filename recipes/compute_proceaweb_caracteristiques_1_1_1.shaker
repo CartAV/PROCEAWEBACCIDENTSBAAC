@@ -1,5 +1,40 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "NUMERICAL",
+        "column": "Organisme",
+        "currentMode": "NUMERICAL",
+        "selectedValues": {},
+        "type": "facet"
+      },
+      "$$hashKey": "object:44020",
+      "validityFilter": {
+        "column": "Organisme",
+        "params": {
+          "nok": false,
+          "empty": true,
+          "ok": false,
+          "type": "LongMeaning"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "Organisme",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "Organisme",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -179,8 +214,8 @@
           "params": {
             "appliesTo": "COLUMNS",
             "columns": [
-              "source",
               "source_bis",
+              "source",
               "data"
             ],
             "keep": false
@@ -508,7 +543,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "appliesTo": "SINGLE_COLUMN",
         "columns": [
