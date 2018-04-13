@@ -17,7 +17,7 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": true,
+          "enabled": false,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
@@ -33,15 +33,7 @@
         },
         "partitionSelectionMethod": "SELECTED",
         "selectedPartitions": [
-          "2017-09",
-          "2017-08",
-          "2017-07",
-          "2017-06",
-          "2017-05",
-          "2017-04",
-          "2017-03",
-          "2017-02",
-          "2017-01"
+          "2017-12"
         ],
         "latestPartitionsN": 1,
         "ordering": {
@@ -49,13 +41,13 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 100000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 4
+      "_refreshTrigger": 6
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -140,6 +132,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
