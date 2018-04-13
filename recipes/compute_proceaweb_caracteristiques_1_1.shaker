@@ -462,6 +462,20 @@
       ],
       "disabled": false,
       "metaType": "GROUP"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Organisme"
+        ],
+        "keep": false
+      },
+      "type": "RemoveRowsOnEmpty",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
@@ -469,7 +483,7 @@
   },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "autoRefreshSample": false,
     "selection": {
       "targetRatio": 0.02,
@@ -485,7 +499,19 @@
       },
       "maxReadUncompressedBytes": -1,
       "filter": {
-        "enabled": false,
+        "enabled": true,
+        "uiData": {
+          "conditions": [
+            {
+              "num": 0.0,
+              "col": "data",
+              "input": "date",
+              "string": "2017-12",
+              "operator": "contains"
+            }
+          ],
+          "mode": "\u0026\u0026"
+        },
         "distinct": false
       }
     }
