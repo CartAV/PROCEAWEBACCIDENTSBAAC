@@ -505,6 +505,20 @@
       ],
       "disabled": false,
       "metaType": "GROUP"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "Organisme"
+        ],
+        "keep": false
+      },
+      "type": "RemoveRowsOnEmpty",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
