@@ -17,7 +17,7 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": true,
+          "enabled": false,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
@@ -31,20 +31,23 @@
             ]
           }
         },
-        "partitionSelectionMethod": "ALL",
+        "partitionSelectionMethod": "SELECTED",
+        "selectedPartitions": [
+          "2018-01"
+        ],
         "latestPartitionsN": 1,
         "ordering": {
           "enabled": false,
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 200000,
+        "maxRecords": 15000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 7
     },
     "vizSampling": {
       "autoRefreshSample": false,
