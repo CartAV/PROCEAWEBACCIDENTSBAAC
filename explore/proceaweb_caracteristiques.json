@@ -17,7 +17,7 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": true,
+          "enabled": false,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
@@ -37,14 +37,14 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "RANDOM_FIXED_RATIO",
         "maxRecords": 10000,
-        "targetRatio": 0.02,
+        "targetRatio": 0.1,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -217,7 +217,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoge3PMQrCMBSA4Z7BUawZvUdvJJTmGD2FS0dJcXDI1TpFCmq6Fvr98OANj5CvaY5eiCn/mP6z98/uz00OMeVrTGPZz8PrVrtt4/wo++U+nTbefZe98s+vWd8CAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0uStIcWKqEtRK1O6dkAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAaElEQVRoge3PoQ2AMBRFUdZAEDSTsA6OxepZDUEwCCoIEB7nJN/0N2lv07Dp57Ls8/ZfHiE4neB0gtMJTic4neB0gtMJTic4neB0vw4+m9rd2r6dynA86+Yy3vGmYMGCBQv+bDAAABetPm04xNwnKE8AAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
