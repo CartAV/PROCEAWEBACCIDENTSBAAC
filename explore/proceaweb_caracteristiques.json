@@ -418,7 +418,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by date and mois",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -460,7 +460,43 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "mois",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -552,7 +588,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAATUlEQVRoge3PMQ0AIAwAwVrAAJXIiDDYsVYNTITkPnkBF6G7cu7z6jZWBwYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgaW9FsFojjOsah66JQAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAB70lEQVRoQ2NkIAGs2v+KJ8xR7AsJWgadUkZSXLTu+Iv9gTtUGRgbPzuSom8wqSXLwww22WA/6D7dwnAl4cqQ8jzFHs6xj2PIUCwbMp6mioftPOYxaBbk/mFgZGSZel6NQc9LosbOX+foYErKMLfQxMMGnhIMNgE6gzLWifYwX+EqoQVhdmtBhRZyHgYlafQYHhYeli/fsr8/wIRh1MM0iGHZ8i3rmBgYBB92+lA9WxCdpEmN4RNLyxkefvnnMXn79p+kFl6jHiY1xPCop2kMm7u6/2FkYmKxSckhKWkO2Rge9TCRSXM0hokMKGKUjeZhXKFETrU0moeJSXMMDAyjeZjIgCJG2WgeHs3D0BAYLbSgY1q4+sOgzsNoKU1MqTJaShMZSkQqGy2lR0vp0VKauFHL0VKayEIFpGy0LU1CYBFSOlpKj5bSo6X0aCmNdTJttFoiVHwiyQ+Kakm2bEvthCBThqBtygwMNjlg5+k83cwA6h7au89j0CzK+cfAwMQ05bw6g6GnBMPx5aUMFs4e/xiZmJgUbusekely2E+sn2XLthQzMDBwTfAzPhK0S5WBwS6LwfT5tv/f//1nzAPZ5zyPQb0sj2HSWXWwkcbeMgxHlxYzWDu7MSjcNWZgYPjDgMs+oqslYh072NWNOA8DAAluAFb+PPJZAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
