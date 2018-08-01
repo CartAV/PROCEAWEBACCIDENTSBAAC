@@ -111,6 +111,30 @@
         "sql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c",
         "expandedSql": "SELECT COUNT(*), c\nFROM (\nSELECT COUNT(*) c,  \"Code Unité\", \"Numéro P.V.\" FROM \"proceaweb_lieux\"\nGROUP BY \"Code Unité\", \"Numéro P.V.\"\n    ) a GROUP BY c"
       }
+    ],
+    "dynvqbdf39e": [
+      {
+        "mode": "SQL",
+        "id": "evwOUlqAVzXX",
+        "runOn": 1533118840931,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "VufN67UV",
+        "hash": "881c0e42af61a520ca45583e636193af",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) \nFROM \"proceaweb_distinct\"",
+        "expandedSql": "SELECT COUNT(*) \nFROM \"proceaweb_distinct\""
+      }
     ]
   }
 }
