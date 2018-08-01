@@ -156,6 +156,28 @@
         },
         "sql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date",
         "expandedSql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date"
+      },
+      {
+        "mode": "SQL",
+        "id": "326nDuZZRQKY",
+        "runOn": 1533118892306,
+        "runIn": 236,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "DyDl2PQo",
+        "hash": "62c93894e23f588a29b5b1ed19fc09d8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date\nORDER BY date dESC",
+        "expandedSql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date\nORDER BY date dESC"
       }
     ]
   }
