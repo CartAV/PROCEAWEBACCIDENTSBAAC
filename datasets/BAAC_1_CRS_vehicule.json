@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1533222753933
+    "lastModifiedOn": 1533222754150
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,7 +55,6 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "63c380432da080cbc745e003ec3278edcf58cf4cc52245ab701befb1fae1e3ce",
     "uploadConnection": "Default (in DSS data dir.)",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
