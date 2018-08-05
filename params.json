@@ -127,10 +127,14 @@
         "preventOverride": false
       }
     },
+    "container": {
+      "containerMode": "NONE"
+    },
     "datasetsCreationSettings": {
       "useGlobal": true,
       "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
-      "virtualizable": false
+      "virtualizable": false,
+      "allowUploadsWithoutConnection": true
     },
     "hiveEngineCreationSettings": {
       "useGlobal": true,
@@ -142,7 +146,14 @@
     "impalaEngineCreationSettings": {
       "useGlobal": true,
       "streamMode": true
-    }
+    },
+    "wikiSettings": {
+      "promoted": false
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
+    },
+    "path": "/Accidents"
   },
   "name": "Proceaweb - accidents BAAC",
   "projectStatus": "Sandbox",
@@ -197,11 +208,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1521034429219
+    "lastModifiedOn": 1533461618066
   },
   "creationTag": {
     "versionNumber": 0,
