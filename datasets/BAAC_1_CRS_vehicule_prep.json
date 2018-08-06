@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1533547403008
+    "lastModifiedOn": 1533558563218
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,8 +62,9 @@
         "type": "bigint"
       },
       {
-        "name": "obstacleFixeHeurte",
-        "type": "bigint"
+        "name": "obs",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "immatriculationDpt",
@@ -89,25 +90,31 @@
         "maxLength": 16200
       },
       {
-        "name": "vehiculeSpecial",
+        "name": "spev",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "assurance",
-        "type": "bigint"
+        "name": "assu",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "manoeuvrePrincipaleAvantAccident",
-        "type": "bigint"
+        "name": "manv",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "sensCirculation",
-        "type": "bigint"
+        "name": "senc",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
-        "name": "categorieAdmin",
-        "type": "bigint"
+        "name": "catv",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
         "name": "cNIT",
@@ -119,23 +126,28 @@
         "type": "bigint"
       },
       {
-        "name": "pointChocInitial",
-        "type": "bigint"
+        "name": "choc",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
-        "name": "obstacleMobileHeurte",
-        "type": "bigint"
+        "name": "obsm",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
         "name": "nbOccupantsTC",
         "type": "bigint"
       },
       {
-        "name": "appartenantA",
-        "type": "bigint"
+        "name": "prop",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "facteursPresumesVehicule",
+        "name": "facv",
         "type": "string",
         "maxLength": 16200
       },
