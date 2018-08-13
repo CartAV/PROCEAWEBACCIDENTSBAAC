@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534174240500
+    "lastModifiedOn": 1534174545309
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,7 @@
         "maxLength": 16200
       },
       {
-        "name": "premiereMC",
+        "name": "première immat",
         "type": "string",
         "maxLength": 16200
       },
@@ -116,7 +116,7 @@
         "maxLength": 16200
       },
       {
-        "name": "enFuite",
+        "name": "Véhicule en fuite",
         "type": "bigint"
       },
       {
@@ -146,11 +146,16 @@
         "maxLength": 16200
       },
       {
-        "name": "static_value",
+        "name": "_facv",
         "type": "bigint"
       },
       {
-        "name": "rowLength",
+        "name": "_spev",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "_manv",
         "type": "bigint"
       }
     ],
