@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534176888606
+    "lastModifiedOn": 1534177488493
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,12 +63,12 @@
         "maxLength": 16200
       },
       {
-        "name": "manoeuvrePietonLocalisation",
+        "name": "locp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "stupsIdentifies",
+        "name": "drogp",
         "type": "string",
         "maxLength": 16200
       },
@@ -78,19 +78,22 @@
         "maxLength": 16200
       },
       {
-        "name": "permisConduire",
-        "type": "bigint"
+        "name": "perm",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "gravite",
-        "type": "bigint"
+        "name": "grav",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "categorie",
-        "type": "bigint"
+        "name": "catu",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "manoeuvrePietonAction",
+        "name": "actp",
         "type": "string",
         "maxLength": 16200
       },
@@ -109,16 +112,17 @@
         "type": "bigint"
       },
       {
-        "name": "dateNaissance",
+        "name": "datenaiss",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "verifAlcoolemie",
-        "type": "bigint"
+        "name": "alco",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "tauxAlcoolemie",
+        "name": "alcot",
         "type": "string",
         "maxLength": 16200
       },
@@ -136,7 +140,7 @@
         "maxLength": 16200
       },
       {
-        "name": "dateObtentionPermisConduire",
+        "name": "dateperm",
         "type": "string",
         "maxLength": 16200
       },
@@ -145,21 +149,23 @@
         "type": "bigint"
       },
       {
-        "name": "manoeuvrePietonEtat",
+        "name": "etatp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "presumeResponsable",
+        "name": "resp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "depu",
         "type": "bigint"
       },
       {
-        "name": "dptResidence",
-        "type": "bigint"
-      },
-      {
-        "name": "verifPresenceStups",
-        "type": "bigint"
+        "name": "drogd",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "paysResidence",
@@ -167,12 +173,17 @@
         "maxLength": 16200
       },
       {
-        "name": "equipementsDeSecurite",
+        "name": "secu",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "facteursPresumesUsager",
+        "name": "facu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
         "type": "string",
         "maxLength": 16200
       }
