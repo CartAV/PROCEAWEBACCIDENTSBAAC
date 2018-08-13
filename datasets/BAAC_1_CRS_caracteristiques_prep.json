@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534177560988
+    "lastModifiedOn": 1534178172932
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,7 +63,7 @@
         "maxLength": 16200
       },
       {
-        "name": "codeCommuneInsee",
+        "name": "com",
         "type": "bigint"
       },
       {
@@ -71,11 +71,11 @@
         "type": "bigint"
       },
       {
-        "name": "localisation",
+        "name": "agg",
         "type": "bigint"
       },
       {
-        "name": "intersection",
+        "name": "int",
         "type": "bigint"
       },
       {
@@ -83,15 +83,15 @@
         "type": "bigint"
       },
       {
-        "name": "lumiere",
+        "name": "lum",
         "type": "bigint"
       },
       {
-        "name": "conditionAtmospherique",
+        "name": "atm",
         "type": "bigint"
       },
       {
-        "name": "typeCollision",
+        "name": "col",
         "type": "bigint"
       },
       {
@@ -100,7 +100,7 @@
         "maxLength": 16200
       },
       {
-        "name": "adressePostale",
+        "name": "adr",
         "type": "string",
         "maxLength": 16200
       },
