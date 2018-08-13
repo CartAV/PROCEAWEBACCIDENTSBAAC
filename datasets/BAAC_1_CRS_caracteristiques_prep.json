@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534178172932
+    "lastModifiedOn": 1534178248129
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,11 +72,13 @@
       },
       {
         "name": "agg",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "int",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "identifiantBAAC",
@@ -84,15 +86,18 @@
       },
       {
         "name": "lum",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "atm",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "col",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "heureAccident",
@@ -106,6 +111,11 @@
       },
       {
         "name": "coordonneesGeo",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
         "type": "string",
         "maxLength": 16200
       }
