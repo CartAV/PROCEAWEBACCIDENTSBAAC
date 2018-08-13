@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534174006817
+    "lastModifiedOn": 1534174240500
   },
   "creationTag": {
     "versionNumber": 0,
@@ -144,6 +144,14 @@
         "name": "immatriculationParticuliere",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "static_value",
+        "type": "bigint"
+      },
+      {
+        "name": "rowLength",
+        "type": "bigint"
       }
     ],
     "userModified": true
