@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,154 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[\\{\"facteurPresumeLieu\":\\[(.+)\\]\\}\\]",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "facteursPresumesLieu"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\{\"xml_text\":\"([A-Z]+)\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": ",",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "facteursPresumesLieu"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "categorieRoute",
+            "to": "catr"
+          },
+          {
+            "from": "regimeCirculation",
+            "to": "circ"
+          },
+          {
+            "from": "voieSpeciale",
+            "to": "vosp"
+          },
+          {
+            "from": "profilEnLong",
+            "to": "prof"
+          },
+          {
+            "from": "traceEnPlan",
+            "to": "plan"
+          },
+          {
+            "from": "etatSurface",
+            "to": "surf"
+          },
+          {
+            "from": "amenagementInfra",
+            "to": "infra"
+          },
+          {
+            "from": "situationAccident",
+            "to": "situ"
+          },
+          {
+            "from": "pKPR",
+            "to": "pr"
+          },
+          {
+            "from": "distanceAuPKPR",
+            "to": "pr1"
+          },
+          {
+            "from": "nbTotalVoiesCirculation",
+            "to": "nbv"
+          },
+          {
+            "from": "voieNumero",
+            "to": "voie"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
