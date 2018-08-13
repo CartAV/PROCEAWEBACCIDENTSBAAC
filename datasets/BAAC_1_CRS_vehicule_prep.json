@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534174545309
+    "lastModifiedOn": 1534174795030
   },
   "creationTag": {
     "versionNumber": 0,
@@ -146,17 +146,9 @@
         "maxLength": 16200
       },
       {
-        "name": "_facv",
-        "type": "bigint"
-      },
-      {
-        "name": "_spev",
+        "name": "mapping_error",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "_manv",
-        "type": "bigint"
       }
     ],
     "userModified": true
