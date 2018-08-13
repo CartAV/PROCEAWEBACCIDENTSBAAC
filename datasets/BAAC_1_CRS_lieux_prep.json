@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534175198511
+    "lastModifiedOn": 1534175396488
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,11 +68,13 @@
       },
       {
         "name": "vosp",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "plan",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "pr",
@@ -88,7 +90,8 @@
       },
       {
         "name": "catr",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "voieIndiceNum",
@@ -96,11 +99,13 @@
       },
       {
         "name": "circ",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "surf",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "pr1",
@@ -108,7 +113,8 @@
       },
       {
         "name": "situ",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "infra",
@@ -116,7 +122,8 @@
       },
       {
         "name": "prof",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "regimePriorite",
@@ -129,6 +136,11 @@
       },
       {
         "name": "voieIndiceAlpha",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
         "type": "string",
         "maxLength": 16200
       }
