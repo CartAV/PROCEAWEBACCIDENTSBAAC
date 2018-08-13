@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534174843036
+    "lastModifiedOn": 1534175198511
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,20 +62,20 @@
         "type": "bigint"
       },
       {
-        "name": "voieNumero",
+        "name": "voie",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "voieSpeciale",
+        "name": "vosp",
         "type": "bigint"
       },
       {
-        "name": "traceEnPlan",
+        "name": "plan",
         "type": "bigint"
       },
       {
-        "name": "pKPR",
+        "name": "pr",
         "type": "bigint"
       },
       {
@@ -83,11 +83,11 @@
         "type": "bigint"
       },
       {
-        "name": "nbTotalVoiesCirculation",
+        "name": "nbv",
         "type": "bigint"
       },
       {
-        "name": "categorieRoute",
+        "name": "catr",
         "type": "bigint"
       },
       {
@@ -95,27 +95,27 @@
         "type": "bigint"
       },
       {
-        "name": "regimeCirculation",
+        "name": "circ",
         "type": "bigint"
       },
       {
-        "name": "etatSurface",
+        "name": "surf",
         "type": "bigint"
       },
       {
-        "name": "distanceAuPKPR",
+        "name": "pr1",
         "type": "bigint"
       },
       {
-        "name": "situationAccident",
+        "name": "situ",
         "type": "bigint"
       },
       {
-        "name": "amenagementInfra",
+        "name": "infra",
         "type": "bigint"
       },
       {
-        "name": "profilEnLong",
+        "name": "prof",
         "type": "bigint"
       },
       {
