@@ -29,7 +29,144 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "[{\"xsi:nil\":\"true\"}]"
+        ],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[\\{\"facteurPresumeVehicule\":\\[(.+)\\]\\}\\]",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "facteursPresumesVehicule"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\{\"xml_text\":\"([0-9]+)\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": ",",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "facteursPresumesVehicule"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "sensCirculation",
+            "to": "senc"
+          },
+          {
+            "from": "categorieAdmin",
+            "to": "catv"
+          },
+          {
+            "from": "obstacleMobileHeurte",
+            "to": "obsm"
+          },
+          {
+            "from": "obstacleFixeHeurte",
+            "to": "obs"
+          },
+          {
+            "from": "pointChocInitial",
+            "to": "choc"
+          },
+          {
+            "from": "manoeuvrePrincipaleAvantAccident",
+            "to": "manv"
+          },
+          {
+            "from": "vehiculeSpecial",
+            "to": "spev"
+          },
+          {
+            "from": "facteursPresumesVehicule",
+            "to": "facv"
+          },
+          {
+            "from": "assurance",
+            "to": "assu"
+          },
+          {
+            "from": "appartenantA",
+            "to": "prop"
+          },
+          {
+            "from": "nbOccupantsTC",
+            "to": "occutc"
+          },
+          {
+            "from": "lettreConventionnelle",
+            "to": "num_veh"
+          },
+          {
+            "from": "cNIT",
+            "to": "code CNIT"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
