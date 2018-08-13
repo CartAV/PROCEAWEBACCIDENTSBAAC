@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,98 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "lumiere",
+            "to": "lum"
+          },
+          {
+            "from": "intersection",
+            "to": "int"
+          },
+          {
+            "from": "localisation",
+            "to": "agg"
+          },
+          {
+            "from": "conditionAtmospherique",
+            "to": "atm"
+          },
+          {
+            "from": "typeCollision",
+            "to": "col"
+          },
+          {
+            "from": "codeCommuneInsee",
+            "to": "com"
+          },
+          {
+            "from": "adressePostale",
+            "to": "adr"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\.*\"latitude\":\"([0-9]+\\.[0-9]+)\"\\.*",
+            "to": "$1"
+          },
+          {
+            "from": "\\.*\"longitude\":\"([0-9]+\\.[0-9]+)\"\\.*",
+            "to": "$1"
+          },
+          {
+            "from": "\\[\\{",
+            "to": ""
+          },
+          {
+            "from": "\\}\\]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "coordonneesGeo"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
