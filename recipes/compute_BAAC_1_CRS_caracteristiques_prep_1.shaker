@@ -70,41 +70,6 @@
       "alwaysShowComment": false
     },
     {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "mapping": [
-          {
-            "from": "\\.*\"latitude\":\"([0-9]+\\.[0-9]+)\"\\.*",
-            "to": "$1"
-          },
-          {
-            "from": "\\.*\"longitude\":\"([0-9]+\\.[0-9]+)\"\\.*",
-            "to": "$1"
-          },
-          {
-            "from": "\\[\\{",
-            "to": ""
-          },
-          {
-            "from": "\\}\\]",
-            "to": ""
-          }
-        ],
-        "normalization": "EXACT",
-        "columns": [
-          "coordonneesGeo"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
-        "matching": "PATTERN"
-      },
-      "alwaysShowComment": false
-    },
-    {
       "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,

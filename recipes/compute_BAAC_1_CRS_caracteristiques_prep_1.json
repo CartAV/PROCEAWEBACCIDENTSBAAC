@@ -16,6 +16,10 @@
             "BAAC_1_CRS_caracteristiques": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_2018_caracs": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259513680
+    "lastModifiedOn": 1534259528452
   },
   "creationTag": {
     "versionNumber": 0,
