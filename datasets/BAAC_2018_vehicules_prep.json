@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259255926
+    "lastModifiedOn": 1534259376669
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,22 +58,24 @@
   "schema": {
     "columns": [
       {
+        "name": "catv",
+        "type": "bigint"
+      },
+      {
         "name": "typeMotorisation",
         "type": "bigint"
       },
       {
-        "name": "obs",
-        "type": "string",
-        "maxLength": 16200
+        "name": "Véhicule en fuite",
+        "type": "bigint"
+      },
+      {
+        "name": "spev",
+        "type": "bigint"
       },
       {
         "name": "immatriculationDpt",
         "type": "bigint"
-      },
-      {
-        "name": "num_veh",
-        "type": "string",
-        "maxLength": 16200
       },
       {
         "name": "codeRoute",
@@ -85,17 +87,17 @@
         "maxLength": 16200
       },
       {
-        "name": "première immat",
+        "name": "obsm",
+        "type": "bigint"
+      },
+      {
+        "name": "senc",
+        "type": "bigint"
+      },
+      {
+        "name": "obs",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "spev",
-        "type": "bigint"
-      },
-      {
-        "name": "assu",
-        "type": "bigint"
       },
       {
         "name": "manv",
@@ -103,11 +105,22 @@
         "maxLength": 16200
       },
       {
-        "name": "senc",
+        "name": "immatriculationParticuliere",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "occutc",
         "type": "bigint"
       },
       {
-        "name": "catv",
+        "name": "assu",
         "type": "bigint"
       },
       {
@@ -116,7 +129,7 @@
         "maxLength": 16200
       },
       {
-        "name": "Véhicule en fuite",
+        "name": "prop",
         "type": "bigint"
       },
       {
@@ -124,24 +137,12 @@
         "type": "bigint"
       },
       {
-        "name": "obsm",
-        "type": "bigint"
-      },
-      {
-        "name": "occutc",
-        "type": "bigint"
-      },
-      {
-        "name": "prop",
-        "type": "bigint"
-      },
-      {
-        "name": "facv",
+        "name": "num_veh",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "immatriculationParticuliere",
+        "name": "facv",
         "type": "string",
         "maxLength": 16200
       },
