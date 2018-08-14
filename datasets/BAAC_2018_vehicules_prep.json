@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259376669
+    "lastModifiedOn": 1534260184154
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,27 +58,7 @@
   "schema": {
     "columns": [
       {
-        "name": "catv",
-        "type": "bigint"
-      },
-      {
-        "name": "typeMotorisation",
-        "type": "bigint"
-      },
-      {
-        "name": "Véhicule en fuite",
-        "type": "bigint"
-      },
-      {
-        "name": "spev",
-        "type": "bigint"
-      },
-      {
-        "name": "immatriculationDpt",
-        "type": "bigint"
-      },
-      {
-        "name": "codeRoute",
+        "name": "assu",
         "type": "bigint"
       },
       {
@@ -87,20 +67,7 @@
         "maxLength": 16200
       },
       {
-        "name": "obsm",
-        "type": "bigint"
-      },
-      {
-        "name": "senc",
-        "type": "bigint"
-      },
-      {
-        "name": "obs",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "manv",
+        "name": "numPV",
         "type": "string",
         "maxLength": 16200
       },
@@ -116,11 +83,16 @@
         "maxLength": 16200
       },
       {
-        "name": "occutc",
+        "name": "statutBaac",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "catv",
         "type": "bigint"
       },
       {
-        "name": "assu",
+        "name": "Véhicule en fuite",
         "type": "bigint"
       },
       {
@@ -129,8 +101,41 @@
         "maxLength": 16200
       },
       {
-        "name": "prop",
+        "name": "typeMotorisation",
         "type": "bigint"
+      },
+      {
+        "name": "facv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "obsm",
+        "type": "bigint"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "obs",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "choc",
@@ -142,7 +147,32 @@
         "maxLength": 16200
       },
       {
-        "name": "facv",
+        "name": "manv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "senc",
+        "type": "bigint"
+      },
+      {
+        "name": "spev",
+        "type": "bigint"
+      },
+      {
+        "name": "immatriculationDpt",
+        "type": "bigint"
+      },
+      {
+        "name": "prop",
+        "type": "bigint"
+      },
+      {
+        "name": "occutc",
+        "type": "bigint"
+      },
+      {
+        "name": "organisme",
         "type": "string",
         "maxLength": 16200
       },
