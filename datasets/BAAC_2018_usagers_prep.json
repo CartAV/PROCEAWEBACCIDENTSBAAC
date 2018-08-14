@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259428529
+    "lastModifiedOn": 1534260203065
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,6 +58,20 @@
   "schema": {
     "columns": [
       {
+        "name": "nationalite2",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "statutBaac",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "numeroUsager",
+        "type": "bigint"
+      },
+      {
         "name": "nationalite",
         "type": "string",
         "maxLength": 16200
@@ -68,26 +82,16 @@
         "maxLength": 16200
       },
       {
-        "name": "trajet",
+        "name": "placeDansVehicule",
         "type": "bigint"
       },
       {
-        "name": "grav",
+        "name": "resp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "datenaiss",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "alco",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "drogp",
+        "name": "numPV",
         "type": "string",
         "maxLength": 16200
       },
@@ -97,21 +101,31 @@
         "maxLength": 16200
       },
       {
-        "name": "etatp",
+        "name": "lettreConventionnelle",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "actp",
+        "name": "cSP",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "datenaiss",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "placeDansVehicule",
+        "name": "depu",
         "type": "bigint"
       },
       {
-        "name": "nationalite2",
+        "name": "sexe",
+        "type": "bigint"
+      },
+      {
+        "name": "perm",
         "type": "string",
         "maxLength": 16200
       },
@@ -121,7 +135,27 @@
         "maxLength": 16200
       },
       {
-        "name": "catu",
+        "name": "typeAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "organisme",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "etatp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateHeureDernModFO",
         "type": "string",
         "maxLength": 16200
       },
@@ -136,29 +170,16 @@
         "maxLength": 16200
       },
       {
-        "name": "numeroUsager",
-        "type": "bigint"
-      },
-      {
         "name": "alcot",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "lettreConventionnelle",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "sexe",
+        "name": "trajet",
         "type": "bigint"
       },
       {
-        "name": "depu",
-        "type": "bigint"
-      },
-      {
-        "name": "perm",
+        "name": "drogp",
         "type": "string",
         "maxLength": 16200
       },
@@ -168,18 +189,27 @@
         "maxLength": 16200
       },
       {
+        "name": "alco",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "facu",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "cSP",
+        "name": "catu",
         "type": "string",
-        "meaning": "Text",
         "maxLength": 16200
       },
       {
-        "name": "resp",
+        "name": "grav",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "actp",
         "type": "string",
         "maxLength": 16200
       },
