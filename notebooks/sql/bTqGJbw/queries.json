@@ -179,6 +179,30 @@
         "sql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date\nORDER BY date dESC",
         "expandedSql": "SELECT COUNT(*), date\nFROM \"proceaweb_distinct\"\nGROUP BY date\nORDER BY date dESC"
       }
+    ],
+    "ri45aps887": [
+      {
+        "mode": "SQL",
+        "id": "AAwNWUQnUyLI",
+        "runOn": 1534238266691,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "OGWzJ0SB",
+        "hash": "8fa65ceee9adfbad4030804373e44404",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT MAX(\"Num_Acc\")\nFROM \"proceaweb_lieux\"\n",
+        "expandedSql": "SELECT MAX(\"Num_Acc\")\nFROM \"proceaweb_lieux\"\n"
+      }
     ]
   }
 }
