@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259195443
+    "lastModifiedOn": 1534260030727
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,15 +85,15 @@
   "schema": {
     "columns": [
       {
+        "name": "lumiere",
+        "type": "string"
+      },
+      {
         "name": "localisation",
         "type": "string"
       },
       {
-        "name": "heureAccident",
-        "type": "string"
-      },
-      {
-        "name": "lumiere",
+        "name": "typeCollision",
         "type": "string"
       },
       {
@@ -101,11 +101,23 @@
         "type": "string"
       },
       {
-        "name": "conditionAtmospherique",
+        "name": "identifiantBAAC",
+        "type": "string"
+      },
+      {
+        "name": "dateHeureDernModFO",
         "type": "string"
       },
       {
         "name": "codeCommuneInsee",
+        "type": "string"
+      },
+      {
+        "name": "departement",
+        "type": "string"
+      },
+      {
+        "name": "adressePostale",
         "type": "string"
       },
       {
@@ -117,19 +129,31 @@
         "type": "string"
       },
       {
-        "name": "typeCollision",
+        "name": "conditionAtmospherique",
         "type": "string"
       },
       {
-        "name": "identifiantBAAC",
+        "name": "heureAccident",
         "type": "string"
       },
       {
-        "name": "adressePostale",
+        "name": "statutBaac",
         "type": "string"
       },
       {
-        "name": "departement",
+        "name": "numPV",
+        "type": "string"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string"
+      },
+      {
+        "name": "typeAccident",
+        "type": "string"
+      },
+      {
+        "name": "organisme",
         "type": "string"
       }
     ],
