@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259219664
+    "lastModifiedOn": 1534259982783
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,27 +85,7 @@
   "schema": {
     "columns": [
       {
-        "name": "categorieAdmin",
-        "type": "string"
-      },
-      {
-        "name": "typeMotorisation",
-        "type": "string"
-      },
-      {
-        "name": "enFuite",
-        "type": "string"
-      },
-      {
-        "name": "vehiculeSpecial",
-        "type": "string"
-      },
-      {
-        "name": "immatriculationDpt",
-        "type": "string"
-      },
-      {
-        "name": "codeRoute",
+        "name": "assurance",
         "type": "string"
       },
       {
@@ -113,19 +93,7 @@
         "type": "string"
       },
       {
-        "name": "obstacleMobileHeurte",
-        "type": "string"
-      },
-      {
-        "name": "sensCirculation",
-        "type": "string"
-      },
-      {
-        "name": "obstacleFixeHeurte",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePrincipaleAvantAccident",
+        "name": "numPV",
         "type": "string"
       },
       {
@@ -137,11 +105,15 @@
         "type": "string"
       },
       {
-        "name": "nbOccupantsTC",
+        "name": "statutBaac",
         "type": "string"
       },
       {
-        "name": "assurance",
+        "name": "categorieAdmin",
+        "type": "string"
+      },
+      {
+        "name": "enFuite",
         "type": "string"
       },
       {
@@ -149,7 +121,35 @@
         "type": "string"
       },
       {
-        "name": "appartenantA",
+        "name": "typeMotorisation",
+        "type": "string"
+      },
+      {
+        "name": "facteursPresumesVehicule",
+        "type": "string"
+      },
+      {
+        "name": "codeRoute",
+        "type": "string"
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string"
+      },
+      {
+        "name": "typeAccident",
+        "type": "string"
+      },
+      {
+        "name": "obstacleMobileHeurte",
+        "type": "string"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string"
+      },
+      {
+        "name": "obstacleFixeHeurte",
         "type": "string"
       },
       {
@@ -161,7 +161,31 @@
         "type": "string"
       },
       {
-        "name": "facteursPresumesVehicule",
+        "name": "manoeuvrePrincipaleAvantAccident",
+        "type": "string"
+      },
+      {
+        "name": "sensCirculation",
+        "type": "string"
+      },
+      {
+        "name": "vehiculeSpecial",
+        "type": "string"
+      },
+      {
+        "name": "immatriculationDpt",
+        "type": "string"
+      },
+      {
+        "name": "appartenantA",
+        "type": "string"
+      },
+      {
+        "name": "nbOccupantsTC",
+        "type": "string"
+      },
+      {
+        "name": "organisme",
         "type": "string"
       }
     ],
