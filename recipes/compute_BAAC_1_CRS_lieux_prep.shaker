@@ -39,7 +39,7 @@
         "output": "",
         "mapping": [
           {
-            "from": "[{\"xsi:nil\":\"true\"}]",
+            "from": "{\"xsi:nil\":\"true\"}",
             "to": ""
           }
         ],
@@ -60,7 +60,7 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\[\\{\"facteurPresumeLieu\":\\[(.+)\\]\\}\\]",
+            "from": "\\{\"facteurPresumeLieu\":\\[(.+)\\]\\}",
             "to": "$1"
           }
         ],
@@ -83,19 +83,15 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\{\"xml_text\":\"([A-Z]+)\"\\}",
+            "from": "\\{\"xml_text\":\"([^\"]+)\"\\}",
             "to": "$1"
-          },
-          {
-            "from": ",",
-            "to": ""
           }
         ],
         "normalization": "EXACT",
         "columns": [
           "facteursPresumesLieu"
         ],
-        "appliesTo": "SINGLE_COLUMN",
+        "appliesTo": "ALL",
         "stopAfterFirstMatch": false,
         "matching": "PATTERN"
       },
