@@ -25,12 +25,138 @@
   "formatParams": {
     "hasNoTopLevelElement": false,
     "shortTextMode": true,
-    "retrievalMode": "simple",
+    "retrievalMode": "explicit",
     "ancestorCapture": "none",
-    "rootPath": "/baac/accidents/accident/lieux/lieu",
+    "rootPath": "/baac/accidents/accident",
     "charset": "utf-8",
     "overrideFileCharset": false,
-    "cellContentMapping": [],
+    "cellContentMapping": [
+      {
+        "from": "lieux/lieu/codeRoute",
+        "to": "codeRoute",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/categorieRoute",
+        "to": "categorieRoute",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/voieNumero",
+        "to": "voieNumero",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/voieIndiceNum",
+        "to": "voieIndiceNum",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/voieIndiceAlpha",
+        "to": "voieIndiceAlpha",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/regimeCirculation",
+        "to": "regimeCirculation",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/nbTotalVoiesCirculation",
+        "to": "nbTotalVoiesCirculation",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/regimePriorite",
+        "to": "regimePriorite",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/voieSpeciale",
+        "to": "voieSpeciale",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/profilEnLong",
+        "to": "profilEnLong",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/pKPR",
+        "to": "pKPR",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/distanceAuPKPR",
+        "to": "distanceAuPKPR",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/traceEnPlan",
+        "to": "traceEnPlan",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/etatSurface",
+        "to": "etatSurface",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/amenagementInfra",
+        "to": "amenagementInfra",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/situationAccident",
+        "to": "situationAccident",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/vMA",
+        "to": "vMA",
+        "unique": true
+      },
+      {
+        "from": "lieux/lieu/facteursPresumesLieu",
+        "to": "facteursPresumesLieu",
+        "unique": true
+      },
+      {
+        "from": "codeUnite",
+        "to": "codeUnite",
+        "unique": true
+      },
+      {
+        "from": "numPV",
+        "to": "numPV",
+        "unique": true
+      },
+      {
+        "from": "organisme",
+        "to": "organisme",
+        "unique": true
+      },
+      {
+        "from": "typeAccident",
+        "to": "typeAccident",
+        "unique": true
+      },
+      {
+        "from": "statutBaac",
+        "to": "statutBaac",
+        "unique": true
+      },
+      {
+        "from": "dateHeureDernModFO",
+        "to": "dateHeureDernModFO",
+        "unique": true
+      },
+      {
+        "from": "IdTechniqueFO",
+        "to": "IdTechniqueFO",
+        "unique": true
+      }
+    ],
     "ancestorMapping": [],
     "compress": ""
   },
@@ -40,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1533222683506
+    "lastModifiedOn": 1534240234608
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,117 +191,89 @@
     }
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
-        "name": "regimePriorite",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "voieNumero",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "amenagementInfra",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "pKPR",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "traceEnPlan",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "distanceAuPKPR",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "codeRoute",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "vMA",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbTotalVoiesCirculation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "voieSpeciale",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "situationAccident",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "profilEnLong",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "categorieRoute",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
-        "name": "regimeCirculation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "name": "voieNumero",
+        "type": "string"
       },
       {
-        "name": "etatSurface",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "facteursPresumesLieu",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "name": "voieIndiceNum",
+        "type": "string"
       },
       {
         "name": "voieIndiceAlpha",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
+      },
+      {
+        "name": "regimeCirculation",
+        "type": "string"
+      },
+      {
+        "name": "nbTotalVoiesCirculation",
+        "type": "string"
+      },
+      {
+        "name": "regimePriorite",
+        "type": "string"
+      },
+      {
+        "name": "voieSpeciale",
+        "type": "string"
+      },
+      {
+        "name": "profilEnLong",
+        "type": "string"
+      },
+      {
+        "name": "pKPR",
+        "type": "string"
+      },
+      {
+        "name": "distanceAuPKPR",
+        "type": "string"
+      },
+      {
+        "name": "traceEnPlan",
+        "type": "string"
+      },
+      {
+        "name": "etatSurface",
+        "type": "string"
+      },
+      {
+        "name": "amenagementInfra",
+        "type": "string"
+      },
+      {
+        "name": "situationAccident",
+        "type": "string"
+      },
+      {
+        "name": "vMA",
+        "type": "string"
+      },
+      {
+        "name": "facteursPresumesLieu",
+        "type": "string"
+      },
+      {
+        "name": "lettreConventionnelle",
+        "type": "string"
+      },
+      {
+        "name": "enFuite",
+        "type": "string"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
