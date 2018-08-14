@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259397259
+    "lastModifiedOn": 1534259428529
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,48 +68,13 @@
         "maxLength": 16200
       },
       {
-        "name": "drogp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "cSP",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "perm",
-        "type": "string",
-        "maxLength": 16200
+        "name": "trajet",
+        "type": "bigint"
       },
       {
         "name": "grav",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "catu",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "actp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nationalite2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lettreConventionnelle",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "placeDansVehicule",
-        "type": "bigint"
       },
       {
         "name": "datenaiss",
@@ -122,17 +87,9 @@
         "maxLength": 16200
       },
       {
-        "name": "alcot",
+        "name": "drogp",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "numeroUsager",
-        "type": "bigint"
-      },
-      {
-        "name": "sexe",
-        "type": "bigint"
       },
       {
         "name": "infractions",
@@ -140,30 +97,31 @@
         "maxLength": 16200
       },
       {
-        "name": "dateperm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "trajet",
-        "type": "bigint"
-      },
-      {
         "name": "etatp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "resp",
+        "name": "actp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "depu",
+        "name": "placeDansVehicule",
         "type": "bigint"
       },
       {
+        "name": "nationalite2",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "drogd",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "catu",
         "type": "string",
         "maxLength": 16200
       },
@@ -178,7 +136,50 @@
         "maxLength": 16200
       },
       {
+        "name": "numeroUsager",
+        "type": "bigint"
+      },
+      {
+        "name": "alcot",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "lettreConventionnelle",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "sexe",
+        "type": "bigint"
+      },
+      {
+        "name": "depu",
+        "type": "bigint"
+      },
+      {
+        "name": "perm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateperm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "facu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "cSP",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "resp",
         "type": "string",
         "maxLength": 16200
       },
