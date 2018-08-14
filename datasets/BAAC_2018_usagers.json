@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259209228
+    "lastModifiedOn": 1534259998133
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,18 @@
   "schema": {
     "columns": [
       {
+        "name": "nationalite2",
+        "type": "string"
+      },
+      {
+        "name": "statutBaac",
+        "type": "string"
+      },
+      {
+        "name": "numeroUsager",
+        "type": "string"
+      },
+      {
         "name": "nationalite",
         "type": "string"
       },
@@ -93,23 +105,15 @@
         "type": "string"
       },
       {
-        "name": "trajet",
+        "name": "placeDansVehicule",
         "type": "string"
       },
       {
-        "name": "gravite",
+        "name": "presumeResponsable",
         "type": "string"
       },
       {
-        "name": "dateNaissance",
-        "type": "string"
-      },
-      {
-        "name": "verifAlcoolemie",
-        "type": "string"
-      },
-      {
-        "name": "stupsIdentifies",
+        "name": "numPV",
         "type": "string"
       },
       {
@@ -117,19 +121,27 @@
         "type": "string"
       },
       {
-        "name": "manoeuvrePietonEtat",
+        "name": "lettreConventionnelle",
         "type": "string"
       },
       {
-        "name": "manoeuvrePietonAction",
+        "name": "cSP",
         "type": "string"
       },
       {
-        "name": "placeDansVehicule",
+        "name": "dateNaissance",
         "type": "string"
       },
       {
-        "name": "nationalite2",
+        "name": "dptResidence",
+        "type": "string"
+      },
+      {
+        "name": "sexe",
+        "type": "string"
+      },
+      {
+        "name": "permisConduire",
         "type": "string"
       },
       {
@@ -137,7 +149,23 @@
         "type": "string"
       },
       {
-        "name": "categorie",
+        "name": "typeAccident",
+        "type": "string"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string"
+      },
+      {
+        "name": "organisme",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonEtat",
+        "type": "string"
+      },
+      {
+        "name": "dateHeureDernModFO",
         "type": "string"
       },
       {
@@ -149,27 +177,15 @@
         "type": "string"
       },
       {
-        "name": "numeroUsager",
-        "type": "string"
-      },
-      {
         "name": "tauxAlcoolemie",
         "type": "string"
       },
       {
-        "name": "lettreConventionnelle",
+        "name": "trajet",
         "type": "string"
       },
       {
-        "name": "sexe",
-        "type": "string"
-      },
-      {
-        "name": "dptResidence",
-        "type": "string"
-      },
-      {
-        "name": "permisConduire",
+        "name": "stupsIdentifies",
         "type": "string"
       },
       {
@@ -177,15 +193,23 @@
         "type": "string"
       },
       {
+        "name": "verifAlcoolemie",
+        "type": "string"
+      },
+      {
         "name": "facteursPresumesUsager",
         "type": "string"
       },
       {
-        "name": "cSP",
+        "name": "categorie",
         "type": "string"
       },
       {
-        "name": "presumeResponsable",
+        "name": "gravite",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonAction",
         "type": "string"
       }
     ],
