@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534260203065
+    "lastModifiedOn": 1534260975304
   },
   "creationTag": {
     "versionNumber": 0,
@@ -82,7 +82,7 @@
         "maxLength": 16200
       },
       {
-        "name": "placeDansVehicule",
+        "name": "place",
         "type": "bigint"
       },
       {
@@ -117,6 +117,10 @@
         "maxLength": 16200
       },
       {
+        "name": "an_nais",
+        "type": "bigint"
+      },
+      {
         "name": "depu",
         "type": "bigint"
       },
@@ -141,6 +145,11 @@
       },
       {
         "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
         "type": "string",
         "maxLength": 16200
       },
