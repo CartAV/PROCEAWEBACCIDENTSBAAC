@@ -16,6 +16,10 @@
             "BAAC_1_CRS_vehicule": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_2018_vehicules": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259255929
+    "lastModifiedOn": 1534259376916
   },
   "creationTag": {
     "versionNumber": 0,
