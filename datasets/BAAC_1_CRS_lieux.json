@@ -25,9 +25,9 @@
   "formatParams": {
     "hasNoTopLevelElement": false,
     "shortTextMode": true,
-    "retrievalMode": "explicit",
+    "retrievalMode": "simple",
     "ancestorCapture": "none",
-    "rootPath": "/baac/accidents/accident",
+    "rootPath": "/baac/accidents/accident/lieux/lieu",
     "charset": "utf-8",
     "overrideFileCharset": false,
     "cellContentMapping": [
@@ -166,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534240234608
+    "lastModifiedOn": 1534259132233
   },
   "creationTag": {
     "versionNumber": 0,
