@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259513675
+    "lastModifiedOn": 1534259528186
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,44 +58,7 @@
   "schema": {
     "columns": [
       {
-        "name": "dateAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "com",
-        "type": "bigint"
-      },
-      {
-        "name": "departement",
-        "type": "bigint"
-      },
-      {
         "name": "agg",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "int",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "identifiantBAAC",
-        "type": "bigint"
-      },
-      {
-        "name": "lum",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "atm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "col",
         "type": "string",
         "maxLength": 16200
       },
@@ -105,14 +68,51 @@
         "maxLength": 16200
       },
       {
-        "name": "adr",
+        "name": "lum",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "int",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "atm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "com",
+        "type": "bigint"
       },
       {
         "name": "coordonneesGeo",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "dateAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "col",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "identifiantBAAC",
+        "type": "bigint"
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "departement",
+        "type": "bigint"
       },
       {
         "name": "mapping_error",
