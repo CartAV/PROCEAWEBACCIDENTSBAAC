@@ -108,6 +108,10 @@
           {
             "from": "stupsIdentifies",
             "to": "drogp"
+          },
+          {
+            "from": "placeDansVehicule",
+            "to": "place"
           }
         ]
       },
@@ -127,13 +131,24 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnCopier",
       "params": {
         "outputColumn": "Num_Acc",
         "inputColumn": "IdTechniqueFO"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "substring(datenaiss, 0, 4)",
+        "column": "an_nais"
       },
       "alwaysShowComment": false
     }
