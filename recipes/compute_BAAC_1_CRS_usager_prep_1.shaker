@@ -1,0 +1,227 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[\\{\"equipement\":\\[(.+)\\]\\}\\]",
+            "to": "$1"
+          },
+          {
+            "from": "\\{\"xml_text\":\"([0-9]+)\"\\}",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "equipementsDeSecurite"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[\\{\"facteurPresumeUsager\":\\[(.+)\\]\\}\\]",
+            "to": "$1"
+          },
+          {
+            "from": "\\{\"xml_text\":\"([A-Z]+)\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": ",",
+            "to": ""
+          },
+          {
+            "from": "\\{\\}",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "facteursPresumesUsager"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "gravite",
+            "to": "grav"
+          },
+          {
+            "from": "categorie",
+            "to": "catu"
+          },
+          {
+            "from": "sexe",
+            "to": "sexe"
+          },
+          {
+            "from": "trajet",
+            "to": "trajet"
+          },
+          {
+            "from": "equipementsDeSecurite",
+            "to": "secu"
+          },
+          {
+            "from": "manoeuvrePietonAction",
+            "to": "actp"
+          },
+          {
+            "from": "manoeuvrePietonLocalisation",
+            "to": "locp"
+          },
+          {
+            "from": "manoeuvrePietonEtat",
+            "to": "etatp"
+          },
+          {
+            "from": "permisConduire",
+            "to": "perm"
+          },
+          {
+            "from": "verifAlcoolemie",
+            "to": "alco"
+          },
+          {
+            "from": "tauxAlcoolemie",
+            "to": "alcot"
+          },
+          {
+            "from": "facteursPresumesUsager",
+            "to": "facu"
+          },
+          {
+            "from": "dptResidence",
+            "to": "depu"
+          },
+          {
+            "from": "dateNaissance",
+            "to": "datenaiss"
+          },
+          {
+            "from": "dateObtentionPermisConduire",
+            "to": "dateperm"
+          },
+          {
+            "from": "presumeResponsable",
+            "to": "resp"
+          },
+          {
+            "from": "verifPresenceStups",
+            "to": "drogd"
+          },
+          {
+            "from": "stupsIdentifies",
+            "to": "drogp"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "stopOnError": true,
+        "pythonSourceCode": "def process(row):\n\n    dic \u003d {\n      \"grav\": {\n        1: \"indemne\",\n        2: \"tué\",\n        3: \"hospitalisé\",\n        4: \"blessé léger\"\n      },\n      \"catu\": {\n        1: \"conducteur\",\n        2: \"passager\",\n        3: \"piéton\",\n        4: \"trottinette\"\n      },\n      \"sexe\": {\n        1: \"homme\",\n        2: \"femme\"\n      },\n      \"trajet\": {\n        0: \"\",\n        1: \"domicile travail\",\n        2: \"domicile école\",\n        3: \"courses\",\n        4: \"professionnel\",\n        5: \"loisirs\",\n        9: \"autres\"\n      },\n      \"secu\": {\n        11: \"avec ceinture\",\n        12: \"sans ceinture\",\n        10: \"sans ceinture\",  \n        21: \"avec casque\",\n        22: \"sans casque\",\n        22: \"sans casque\",  \n        31: \"avec siège enfant\",\n        32: \"sans siège enfant\",\n        30: \"sans siège enfant\",\n        41: \"avec réflecteur\",\n        42: \"sans réflecteur\",\n        40: \"sans réflecteur\",  \n        0: \"\",\n        1: \"avec\",\n        1: \"sans\"  \n      },\n      \"actp\": {\n        0: \"\",\n        1: \"piéton sens véhicule\",\n        2: \"piéton sens inverse véhicule\",\n        3: \"piéton traversant\",\n        4: \"piéton masqué\",\n        5: \"piéton jouant\",\n        6: \"piéton avec animal\"\n      },\n      \"locp\": {\n        0: \"\",\n        1: \"plus de 50m un passage piéton\",\n        2: \"moins de 50m passage piéton\",\n        3: \"sans signalisation lumineuse\",\n        4: \"avec signalisation lumineuse\"\n      },\n      \"etatp\": {\n        0: \"\",\n        1: \"piéton seul\",\n        2: \"piéton accompagné\",\n        3: \"piéton en groupe\"\n      },\n      \"resp\": {\n          0: \"non\",\n          1: \"présumé\"\n      },\n        \"facu\": {\n            0: \"\",\n            1: \"malaise - fatigue\",\n            2: \"médicament - drogue\",\n            3: \"infirmité\",\n            4: \"attention perturbée\",\n            5: \"ivresse apparente\"\n        },\n        \"alco\": {\n            0: \"\",\n            1: \"impossible\",\n            2: \"refusé\",\n            3: \"prise de sang\",\n            4: \"éthylomètre\",\n            5: \"résultat non connu\",\n            6: \"dépistage négatif\"\n        },\n        \"perm\": {\n            0: \"\",\n            1: \"valide\",\n            2: \"périmé\",\n            3: \"suspendu\",\n            4: \"conduite en auto-école\",\n            5: \"catégorie non valable\",\n            6: \"défaut de permis\",\n            7: \"conduite accompagnée\"\n        },\n        \"drogp\": {\n            0: \"\",\n            1: \"non fait\",\n            2: \"impossible\",\n            3: \"refusé\",\n            4: \"positif\",\n            5: \"négatif\",\n            6: \"inconnu\"\n        },\n        \"drogd\": {\n            0: \"\",\n            1: \"non fait\",\n            2: \"impossible\",\n            3: \"refusé\",\n            4: \"positif\",\n            5: \"négatif\"\n        }\n    }\n    mapping_errors \u003d list()\n    for key, mapping in dic.items():\n\tv \u003d int(row[key]) if row[key] and row[key].isdigit() else None\n        if v in dic[key]:\n            row[key] \u003d mapping[v]\n\telif v:\n            # unmapped[key].add(row[key])\n            print \u0027Unmapped {}: {}\u0027.format(key, row[key])\n            mapping_errors.append(key + \u0027:\u0027 + row[key])\n    row[\u0027mapping_error\u0027] \u003d \u0027; \u0027.join(mapping_errors) if len(mapping_errors) \u003e 0 else None\n    return row",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
