@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259455979
+    "lastModifiedOn": 1534259482652
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,25 +58,20 @@
   "schema": {
     "columns": [
       {
+        "name": "pr1",
+        "type": "bigint"
+      },
+      {
         "name": "codeRoute",
         "type": "bigint"
       },
       {
+        "name": "surf",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "catr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voie",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "bigint"
-      },
-      {
-        "name": "voieIndiceAlpha",
         "type": "string",
         "maxLength": 16200
       },
@@ -86,29 +81,11 @@
         "maxLength": 16200
       },
       {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "regimePriorite",
-        "type": "bigint"
-      },
-      {
-        "name": "vosp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "prof",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "pr",
         "type": "bigint"
       },
       {
-        "name": "pr1",
+        "name": "voieIndiceNum",
         "type": "bigint"
       },
       {
@@ -117,16 +94,17 @@
         "maxLength": 16200
       },
       {
-        "name": "surf",
+        "name": "infra",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "infra",
-        "type": "bigint"
+        "name": "vosp",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "situ",
+        "name": "voieIndiceAlpha",
         "type": "string",
         "maxLength": 16200
       },
@@ -136,6 +114,29 @@
       },
       {
         "name": "facteursPresumesLieu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "nbv",
+        "type": "bigint"
+      },
+      {
+        "name": "prof",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "regimePriorite",
+        "type": "bigint"
+      },
+      {
+        "name": "voie",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "situ",
         "type": "string",
         "maxLength": 16200
       },
