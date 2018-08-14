@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259528186
+    "lastModifiedOn": 1534260234691
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,17 +58,17 @@
   "schema": {
     "columns": [
       {
+        "name": "lum",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "agg",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "heureAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lum",
+        "name": "col",
         "type": "string",
         "maxLength": 16200
       },
@@ -78,13 +78,26 @@
         "maxLength": 16200
       },
       {
-        "name": "atm",
+        "name": "identifiantBAAC",
+        "type": "bigint"
+      },
+      {
+        "name": "dateHeureDernModFO",
         "type": "string",
         "maxLength": 16200
       },
       {
         "name": "com",
         "type": "bigint"
+      },
+      {
+        "name": "departement",
+        "type": "bigint"
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "coordonneesGeo",
@@ -97,22 +110,39 @@
         "maxLength": 16200
       },
       {
-        "name": "col",
+        "name": "atm",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "identifiantBAAC",
-        "type": "bigint"
-      },
-      {
-        "name": "adr",
+        "name": "heureAccident",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "departement",
-        "type": "bigint"
+        "name": "statutBaac",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "numPV",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "organisme",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "mapping_error",
