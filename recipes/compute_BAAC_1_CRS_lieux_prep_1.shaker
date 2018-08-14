@@ -90,7 +90,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
@@ -99,6 +99,17 @@
         "stopOnError": true,
         "pythonSourceCode": "def process(row):\n\n    dic \u003d {\n          \"catr\": {\n            0: \"\",\n            1: \"autoroute\",\n            2: \"route nationale\",\n            3: \"route départementale\",\n            4: \"voie communale\",\n            5: \"hors réseau public\",\n            6: \"parking\",\n            9: \"autre route\"\n          },\n          \"circ\": {\n            0: \"\",\n            1: \"sens unique\",\n            2: \"bidirectionnel\",\n            3: \"chaussées séparées\",\n            4: \"affectation variable\"\n          },\n          \"vosp\": {\n            0: \"\",\n            1: \"piste cyclable\",\n            2: \"banque cyclable\",\n            3: \"voie réservée\"\n          },\n          \"prof\": {\n            0: \"\",\n            1: \"plat\",\n            2: \"pente\",\n            3: \"sommet de côte\",\n            4: \"bas de côte\"\n          },\n          \"plan\": {\n            0: \"\",\n            1: \"rectiligne\",\n            2: \"courbe à gauche\",\n            3: \"courbe à droite\",\n            4: \"en S\"\n          },\n          \"surf\": {\n            0: \"\",\n            1: \"surface normale\",\n            2: \"surface mouillée\",\n            3: \"flaques\",\n            4: \"surface innondée\",\n            5: \"surface enneigée\",\n            6: \"boue\",\n            7: \"surface verglacée\",\n            8: \"corps gras-huile\",\n            9: \"autre surface\"\n          },\n          \"infra\": {\n            0: \"\",\n            1: \"souterrain ou tunnel\",\n            2: \"pont\",\n            3: \"échangeur\",\n            4: \"rails\",\n            5: \"carrefour aménagé\",\n            6: \"zone piétonne\",\n            7: \"zone de péage\"\n          },\n          \"situ\": {\n            0: \"\",\n            1: \"chaussée\",\n            2: \"bande d\u0027arrêt d\u0027urgence\",\n            3: \"accotement\",\n            4: \"trottoir\",\n            5: \"piste cyclable\"\n          }\n        }\n    mapping_errors \u003d list()\n    for key, mapping in dic.items():\n\tv \u003d int(row[key]) if row[key] and row[key].isdigit() else None\n        if v in dic[key]:\n            row[key] \u003d mapping[v]\n\telif v:\n            # unmapped[key].add(row[key])\n            print \u0027Unmapped {}: {}\u0027.format(key, row[key])\n            mapping_errors.append(key + \u0027:\u0027 + row[key])\n    row[\u0027mapping_error\u0027] \u003d \u0027; \u0027.join(mapping_errors) if len(mapping_errors) \u003e 0 else None\n    return row",
         "usePythonUnicode": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "Num_Acc",
+        "inputColumn": "IdTechniqueFO"
       },
       "alwaysShowComment": false
     }
