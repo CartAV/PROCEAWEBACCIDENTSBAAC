@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259482652
+    "lastModifiedOn": 1534260219410
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,20 +58,26 @@
   "schema": {
     "columns": [
       {
-        "name": "pr1",
+        "name": "voieIndiceNum",
         "type": "bigint"
       },
       {
-        "name": "codeRoute",
-        "type": "bigint"
-      },
-      {
-        "name": "surf",
+        "name": "dateHeureDernModFO",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "catr",
+        "name": "organisme",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "situ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "surf",
         "type": "string",
         "maxLength": 16200
       },
@@ -81,20 +87,17 @@
         "maxLength": 16200
       },
       {
-        "name": "pr",
-        "type": "bigint"
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "bigint"
-      },
-      {
-        "name": "plan",
+        "name": "statutBaac",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "infra",
+        "name": "prof",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "facteursPresumesLieu",
         "type": "string",
         "maxLength": 16200
       },
@@ -104,7 +107,53 @@
         "maxLength": 16200
       },
       {
+        "name": "regimePriorite",
+        "type": "bigint"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "pr1",
+        "type": "bigint"
+      },
+      {
+        "name": "nbv",
+        "type": "bigint"
+      },
+      {
+        "name": "numPV",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "catr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "plan",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "voieIndiceAlpha",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "infra",
         "type": "string",
         "maxLength": 16200
       },
@@ -113,32 +162,13 @@
         "type": "bigint"
       },
       {
-        "name": "facteursPresumesLieu",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "prof",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "regimePriorite",
-        "type": "bigint"
-      },
-      {
         "name": "voie",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "situ",
-        "type": "string",
-        "maxLength": 16200
+        "name": "pr",
+        "type": "bigint"
       },
       {
         "name": "mapping_error",
