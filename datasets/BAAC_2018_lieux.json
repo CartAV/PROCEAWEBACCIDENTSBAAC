@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1534259178864
+    "lastModifiedOn": 1534260014564
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,11 +85,19 @@
   "schema": {
     "columns": [
       {
-        "name": "distanceAuPKPR",
+        "name": "voieIndiceNum",
         "type": "string"
       },
       {
-        "name": "codeRoute",
+        "name": "dateHeureDernModFO",
+        "type": "string"
+      },
+      {
+        "name": "organisme",
+        "type": "string"
+      },
+      {
+        "name": "situationAccident",
         "type": "string"
       },
       {
@@ -97,47 +105,11 @@
         "type": "string"
       },
       {
-        "name": "categorieRoute",
-        "type": "string"
-      },
-      {
         "name": "regimeCirculation",
         "type": "string"
       },
       {
-        "name": "pKPR",
-        "type": "string"
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "string"
-      },
-      {
-        "name": "traceEnPlan",
-        "type": "string"
-      },
-      {
-        "name": "amenagementInfra",
-        "type": "string"
-      },
-      {
-        "name": "voieSpeciale",
-        "type": "string"
-      },
-      {
-        "name": "voieIndiceAlpha",
-        "type": "string"
-      },
-      {
-        "name": "vMA",
-        "type": "string"
-      },
-      {
-        "name": "facteursPresumesLieu",
-        "type": "string"
-      },
-      {
-        "name": "nbTotalVoiesCirculation",
+        "name": "statutBaac",
         "type": "string"
       },
       {
@@ -145,7 +117,59 @@
         "type": "string"
       },
       {
+        "name": "facteursPresumesLieu",
+        "type": "string"
+      },
+      {
+        "name": "voieSpeciale",
+        "type": "string"
+      },
+      {
         "name": "regimePriorite",
+        "type": "string"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string"
+      },
+      {
+        "name": "distanceAuPKPR",
+        "type": "string"
+      },
+      {
+        "name": "nbTotalVoiesCirculation",
+        "type": "string"
+      },
+      {
+        "name": "numPV",
+        "type": "string"
+      },
+      {
+        "name": "typeAccident",
+        "type": "string"
+      },
+      {
+        "name": "codeRoute",
+        "type": "string"
+      },
+      {
+        "name": "categorieRoute",
+        "type": "string"
+      },
+      {
+        "name": "traceEnPlan",
+        "type": "string"
+      },
+      {
+        "name": "voieIndiceAlpha",
+        "type": "string"
+      },
+      {
+        "name": "amenagementInfra",
+        "type": "string"
+      },
+      {
+        "name": "vMA",
         "type": "string"
       },
       {
@@ -153,7 +177,7 @@
         "type": "string"
       },
       {
-        "name": "situationAccident",
+        "name": "pKPR",
         "type": "string"
       }
     ],
