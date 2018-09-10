@@ -44,11 +44,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1523554543680
+    "lastModifiedOn": 1536578093012
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,21 +70,17 @@
     }
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "data",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
