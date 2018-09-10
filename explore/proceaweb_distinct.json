@@ -31,7 +31,7 @@
             ]
           }
         },
-        "partitionSelectionMethod": "SELECTED",
+        "partitionSelectionMethod": "ALL",
         "selectedPartitions": [
           "2017-12"
         ],
@@ -47,7 +47,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 6
+      "_refreshTrigger": 7
     },
     "vizSampling": {
       "autoRefreshSample": false,
