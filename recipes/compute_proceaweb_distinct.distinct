@@ -1,30 +1,7 @@
 {
-  "outputColumnNameOverrides": {},
-  "engineParams": {
-    "hive": {
-      "skipPrerunValidate": false,
-      "hiveconf": [],
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
-    },
-    "impala": {
-      "forceStreamMode": true
-    },
-    "sparkSQL": {
-      "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
-      "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
-      "readParams": {
-        "map": {}
-      },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
   },
   "keys": [
     {
@@ -34,20 +11,43 @@
       "column": "data"
     }
   ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "useGlobalMetastore": false,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "globalCount": false,
+  "outputColumnNameOverrides": {},
   "postFilter": {
-    "enabled": false,
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "source",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "data",
             "type": "string"
           }
@@ -55,11 +55,7 @@
         "userModified": false
       }
     },
-    "distinct": false
-  },
-  "globalCount": false,
-  "preFilter": {
-    "enabled": false,
-    "distinct": false
+    "distinct": false,
+    "enabled": false
   }
 }
