@@ -63,7 +63,29 @@
   "charts": [
     {
       "copySelectionFromScript": true,
-      "engineType": "LINO",
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
@@ -76,7 +98,7 @@
             "numParams": {
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 20,
+            "maxValues": 30,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -198,6 +220,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkklEQVRoge3SoQ2AMBBA0QoECoEmYRVGwTAAinHwWPBdDdUQCAkplN5R/k8qzt271BjaqofFunc2J9cV+DgX/VS6J7n37XzBn/8RocHqDyQNjn4AaeDvwa8fRBoQ/QDSCz+dq2Hu3DONzZIH7+Z2zAED1rQwYMCAAQMGrGhhwIABAwYMWNHCgAED9gYTERERhWwFj2BUCYcKVboAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
