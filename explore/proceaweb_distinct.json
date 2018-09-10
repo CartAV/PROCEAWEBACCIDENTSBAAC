@@ -220,7 +220,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAb0lEQVRoge3PsQ2AIBQAUSpKCxdwKgexcidqe1ezIkoDsYHkuJdQ/MBPuBD02s7rzmf0X7owmM5gOoPpDKYzmM5gOoPpDKYzmM5gOoPpDKYzmG764O9c3O0p1t5Wdxtv/+4uR1rzmSK4NUuSJHXzAGm0T32qeoEdAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAARklEQVRoge3PQQkAQAgAQZsY02L3v2p28CPCLGyAidCsrPc3BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGliRdqwE7vN84mk8nOQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
