@@ -74,7 +74,7 @@
             "column": "source",
             "type": "NUMERICAL",
             "numParams": {
-              "mode": "FIXED_NB",
+              "mode": "TREAT_AS_ALPHANUM",
               "nbBins": 10,
               "binSize": 100,
               "emptyBinsMode": "ZEROS"
@@ -201,6 +201,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAcElEQVRoge3QoQ2AMBCG0U6AYAFmRLETGs9qeJImINprL+9LzlX8r6VorLbjumsXva1JwMDJAgZOVgrwsp9r7d5vU4D/IICBJwh4VvDXcS3AIR8DDDwBOHocMDAwMDDwQOOAgYGBgYEHGtcdLEkK7AFShCgKCzVoWQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
