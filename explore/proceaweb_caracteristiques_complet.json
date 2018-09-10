@@ -50,19 +50,16 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by an",
+        "name": "Count by mois",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "an",
-            "type": "NUMERICAL",
+            "column": "mois",
+            "type": "ALPHANUM",
             "numParams": {
-              "mode": "FIXED_NB",
-              "nbBins": 10,
-              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 100,
+            "maxValues": 20,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -86,9 +83,9 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
             }
           }
         ],
@@ -124,7 +121,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "an",
+            "columnType": "NUMERICAL",
+            "minValue": 18.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -184,7 +191,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAATUlEQVRoge3PMQ0AIAwAwVrAAJXIiDDYsVYNTITkPnkBF6G7cu7z6jZWBwYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgaW9FsFojjOsah66JQAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAASklEQVRoge3PMQ0AIAwAwSopMmusQzesoYGJkNwnL+AidF9Wz6reLwYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBpYk/dYBD1EhaGX73VAAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
