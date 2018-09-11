@@ -160,18 +160,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "ALPHANUM_FACET",
-            "column": "an",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {
-              "17": true
-            },
-            "explicitExclude": false
-          }
-        ],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -231,7 +220,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAARklEQVRoge3PQQkAQAgAQZsY02L3v2p28CPCLGyAidCsrPc3BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGliRdqwE7vN84mk8nOQAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhklEQVRoge3QQQqAIBBGYU+St8xtd8q9V2sViJD4y5Ri721lcL5xjmzb9vPwISYfYlLm7hl1bnhW4KkPkC+ngPO56cBPC5VvJbi2eCt4CH5JcOtygD8Gmx3gbXAvSgFLx/g9uPYJ4EFg5RiAAQMGDBgwYMCAAQMGDBgwYMCA1wMTERERWXYBTEjeFIBK+TgAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
