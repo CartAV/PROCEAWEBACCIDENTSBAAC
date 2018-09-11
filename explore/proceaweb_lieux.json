@@ -60,21 +60,43 @@
   "charts": [
     {
       "copySelectionFromScript": true,
-      "engineType": "LINO",
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by Num_Acc",
+        "name": "Count by date",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Num_Acc",
+            "column": "date",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
             },
             "maxValues": 20,
-            "generateOthersCategory": false,
+            "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -97,9 +119,9 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -195,7 +217,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAWUlEQVRoge3PMRHAIBAAQYTAxA9WqBMM4Aj6WENDCvLN3swJ2JT0vauvN+LyrAEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDHys0meLON+zhoAl6a82XztO3PNYIxsAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhklEQVRoge3QQQqAIBBGYU+St8xtd8q9V2sViJD4y5Ri721lcL5xjmzb9vPwISYfYlLm7hl1bnhW4KkPkC+ngPO56cBPC5VvJbi2eCt4CH5JcOtygD8Gmx3gbXAvSgFLx/g9uPYJ4EFg5RiAAQMGDBgwYMCAAQMGDBgwYMCA1wMTERERWXYBTEjeFIBK+TgAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
