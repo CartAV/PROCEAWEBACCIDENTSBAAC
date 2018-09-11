@@ -36,11 +36,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536656731542
+    "lastModifiedOn": 1536659086366
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,6 +55,7 @@
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
+    "explicitPartitionsList": "2017-01/2018-03",
     "normalizeDoubles": true,
     "table": "proceaweb_distinct_unpartitioned",
     "tableCreationMode": "auto",
