@@ -30,17 +30,17 @@
       "items": [
         {
           "ref": "proceaweb_distinct_unpartitioned",
-          "appendMode": true
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536657222044
+    "lastModifiedOn": 1536658992804
   },
   "creationTag": {
     "versionNumber": 0,
