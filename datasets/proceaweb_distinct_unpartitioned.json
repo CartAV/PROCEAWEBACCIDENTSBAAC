@@ -36,11 +36,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536656691657
+    "lastModifiedOn": 1536656731542
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,6 +72,11 @@
       },
       {
         "name": "data",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
         "type": "string",
         "maxLength": 16200
       }
