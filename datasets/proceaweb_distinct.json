@@ -37,11 +37,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1521641213975
+    "lastModifiedOn": 1536659233569
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,9 +55,8 @@
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,
     "mode": "table",
-    "partitioned": true,
-    "partitioningColumn": "date",
     "partitioningType": "custom",
+    "explicitPartitionsList": "2017-01/2018-03",
     "normalizeDoubles": true,
     "table": "proceaweb_distinct",
     "tableCreationMode": "auto",
@@ -67,27 +66,24 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "source",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "data",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "date",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
