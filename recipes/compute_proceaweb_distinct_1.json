@@ -16,12 +16,9 @@
             {
               "out": "proceaweb_distinct_unpartitioned",
               "idim": "date",
-              "func": "values",
-              "params": {},
-              "values": [
-                "2018-01",
-                "2018-02"
-              ]
+              "odim": "date",
+              "func": "equals",
+              "params": {}
             }
           ]
         }
@@ -33,17 +30,17 @@
       "items": [
         {
           "ref": "proceaweb_distinct_unpartitioned",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536657176246
+    "lastModifiedOn": 1536657218506
   },
   "creationTag": {
     "versionNumber": 0,
