@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839713445
+    "lastModifiedOn": 1536843141184
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,11 +91,13 @@
       },
       {
         "name": "spev",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "assu",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "manv",
@@ -104,11 +106,13 @@
       },
       {
         "name": "senc",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "catv",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "code CNIT",
@@ -121,11 +125,13 @@
       },
       {
         "name": "choc",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "obsm",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "occutc",
@@ -133,7 +139,8 @@
       },
       {
         "name": "prop",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "facv",
