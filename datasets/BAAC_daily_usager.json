@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839591362
+    "lastModifiedOn": 1536839595353
   },
   "creationTag": {
     "versionNumber": 0,
@@ -167,7 +167,8 @@
       },
       {
         "name": "nationalite2",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "facteursPresumesUsager",
