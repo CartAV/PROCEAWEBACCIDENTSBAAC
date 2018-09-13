@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839023635
+    "lastModifiedOn": 1536839544913
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,39 +68,7 @@
   "schema": {
     "columns": [
       {
-        "name": "nationalite",
-        "type": "string"
-      },
-      {
         "name": "stupsIdentifies",
-        "type": "string"
-      },
-      {
-        "name": "cSP",
-        "type": "string"
-      },
-      {
-        "name": "permisConduire",
-        "type": "string"
-      },
-      {
-        "name": "gravite",
-        "type": "string"
-      },
-      {
-        "name": "categorie",
-        "type": "string"
-      },
-      {
-        "name": "lettreConventionnelle",
-        "type": "string"
-      },
-      {
-        "name": "placeDansVehicule",
-        "type": "string"
-      },
-      {
-        "name": "dateNaissance",
         "type": "string"
       },
       {
@@ -108,23 +76,31 @@
         "type": "string"
       },
       {
-        "name": "numeroUsager",
+        "name": "dptResidence",
         "type": "string"
       },
       {
-        "name": "sexe",
+        "name": "dateNaissance",
         "type": "string"
       },
       {
-        "name": "infractions",
+        "name": "placeDansVehicule",
         "type": "string"
       },
       {
-        "name": "dateObtentionPermisConduire",
+        "name": "nationalite",
         "type": "string"
       },
       {
-        "name": "trajet",
+        "name": "cSP",
+        "type": "string"
+      },
+      {
+        "name": "gravite",
+        "type": "string"
+      },
+      {
+        "name": "lettreConventionnelle",
         "type": "string"
       },
       {
@@ -132,11 +108,11 @@
         "type": "string"
       },
       {
-        "name": "dptResidence",
+        "name": "trajet",
         "type": "string"
       },
       {
-        "name": "verifPresenceStups",
+        "name": "dateObtentionPermisConduire",
         "type": "string"
       },
       {
@@ -144,11 +120,28 @@
         "type": "string"
       },
       {
-        "name": "manoeuvrePietonLocalisation",
+        "name": "categorie",
         "type": "string"
       },
       {
-        "name": "manoeuvrePietonEtat",
+        "name": "permisConduire",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
+        "name": "sexe",
+        "type": "string"
+      },
+      {
+        "name": "numeroUsager",
+        "type": "string"
+      },
+      {
+        "name": "infractions",
+        "type": "string"
+      },
+      {
+        "name": "verifPresenceStups",
         "type": "string"
       },
       {
@@ -160,15 +153,23 @@
         "type": "string"
       },
       {
+        "name": "manoeuvrePietonLocalisation",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonEtat",
+        "type": "string"
+      },
+      {
         "name": "nationalite2",
         "type": "string"
       },
       {
-        "name": "tauxAlcoolemie",
+        "name": "facteursPresumesUsager",
         "type": "string"
       },
       {
-        "name": "facteursPresumesUsager",
+        "name": "tauxAlcoolemie",
         "type": "string"
       }
     ],
