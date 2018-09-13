@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839660831
+    "lastModifiedOn": 1536839667345
   },
   "creationTag": {
     "versionNumber": 0,
@@ -144,7 +144,8 @@
       },
       {
         "name": "vehiculeSpecial",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "facteursPresumesVehicule",
