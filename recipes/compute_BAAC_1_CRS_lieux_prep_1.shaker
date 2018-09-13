@@ -60,7 +60,7 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\{\"facteurPresumeLieu\":\\[(.+)\\]\\}",
+            "from": "\\[\\{\"facteurPresumeLieu\":\\[?([^\\]]+)\\]?\\}\\]",
             "to": "$1"
           }
         ],
@@ -92,6 +92,29 @@
           "facteursPresumesLieu"
         ],
         "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[(.*)\\]",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "voieIndiceAlpha"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "PATTERN"
       },
@@ -157,7 +180,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
