@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536843043204
+    "lastModifiedOn": 1536843255528
   },
   "creationTag": {
     "versionNumber": 0,
@@ -179,8 +179,8 @@
       },
       {
         "name": "alcot",
-        "type": "float",
-        "meaning": "DoubleMeaning",
+        "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
