@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839778665
+    "lastModifiedOn": 1536843043204
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,11 +63,6 @@
         "maxLength": 16200
       },
       {
-        "name": "locp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "drogp",
         "type": "string",
         "maxLength": 16200
@@ -75,6 +70,7 @@
       {
         "name": "cSP",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
@@ -89,16 +85,6 @@
       },
       {
         "name": "catu",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "actp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nationalite2",
         "type": "string",
         "maxLength": 16200
       },
@@ -122,17 +108,13 @@
         "maxLength": 16200
       },
       {
-        "name": "alcot",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "numeroUsager",
         "type": "bigint"
       },
       {
         "name": "sexe",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "infractions",
@@ -146,10 +128,6 @@
       },
       {
         "name": "trajet",
-        "type": "bigint"
-      },
-      {
-        "name": "etatp",
         "type": "string",
         "maxLength": 16200
       },
@@ -160,7 +138,8 @@
       },
       {
         "name": "depu",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "drogd",
@@ -173,8 +152,35 @@
         "maxLength": 16200
       },
       {
+        "name": "locp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "etatp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "secu",
         "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "actp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "nationalite2",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "alcot",
+        "type": "float",
+        "meaning": "DoubleMeaning",
         "maxLength": 16200
       },
       {
