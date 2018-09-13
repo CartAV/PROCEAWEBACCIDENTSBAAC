@@ -1,0 +1,253 @@
+{
+  "type": "Filesystem",
+  "managed": false,
+  "formatType": "xml",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "hasNoTopLevelElement": false,
+    "shortTextMode": true,
+    "retrievalMode": "simple",
+    "ancestorCapture": "none",
+    "rootPath": "/baac/accidents/accident/usagers/usager",
+    "charset": "utf-8",
+    "overrideFileCharset": false,
+    "cellContentMapping": [],
+    "ancestorMapping": [],
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536839093597
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536839093597
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_root",
+    "path": "/data/sources/ines/sftp_cartav",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "nationalite",
+        "type": "string"
+      },
+      {
+        "name": "stupsIdentifies",
+        "type": "string"
+      },
+      {
+        "name": "cSP",
+        "type": "string"
+      },
+      {
+        "name": "permisConduire",
+        "type": "string"
+      },
+      {
+        "name": "gravite",
+        "type": "string"
+      },
+      {
+        "name": "categorie",
+        "type": "string"
+      },
+      {
+        "name": "lettreConventionnelle",
+        "type": "string"
+      },
+      {
+        "name": "placeDansVehicule",
+        "type": "string"
+      },
+      {
+        "name": "dateNaissance",
+        "type": "string"
+      },
+      {
+        "name": "verifAlcoolemie",
+        "type": "string"
+      },
+      {
+        "name": "numeroUsager",
+        "type": "string"
+      },
+      {
+        "name": "sexe",
+        "type": "string"
+      },
+      {
+        "name": "infractions",
+        "type": "string"
+      },
+      {
+        "name": "dateObtentionPermisConduire",
+        "type": "string"
+      },
+      {
+        "name": "trajet",
+        "type": "string"
+      },
+      {
+        "name": "presumeResponsable",
+        "type": "string"
+      },
+      {
+        "name": "dptResidence",
+        "type": "string"
+      },
+      {
+        "name": "verifPresenceStups",
+        "type": "string"
+      },
+      {
+        "name": "paysResidence",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonLocalisation",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonEtat",
+        "type": "string"
+      },
+      {
+        "name": "equipementsDeSecurite",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePietonAction",
+        "type": "string"
+      },
+      {
+        "name": "nationalite2",
+        "type": "string"
+      },
+      {
+        "name": "tauxAlcoolemie",
+        "type": "string"
+      },
+      {
+        "name": "facteursPresumesUsager",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  }
+}
