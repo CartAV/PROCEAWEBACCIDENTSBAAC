@@ -16,6 +16,10 @@
             "BAAC_1_CRS_caracteristiques": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_daily_caracteristique": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536844189230
+    "lastModifiedOn": 1536844281347
   },
   "creationTag": {
     "versionNumber": 0,
