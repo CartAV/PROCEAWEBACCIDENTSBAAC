@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839544913
+    "lastModifiedOn": 1536839552492
   },
   "creationTag": {
     "versionNumber": 0,
@@ -93,7 +93,8 @@
       },
       {
         "name": "cSP",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "gravite",
