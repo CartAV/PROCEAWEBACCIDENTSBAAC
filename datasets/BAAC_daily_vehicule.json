@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839667345
+    "lastModifiedOn": 1536839672449
   },
   "creationTag": {
     "versionNumber": 0,
@@ -149,7 +149,8 @@
       },
       {
         "name": "facteursPresumesVehicule",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "immatriculationParticuliere",
