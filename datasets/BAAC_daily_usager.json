@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839578253
+    "lastModifiedOn": 1536839580766
   },
   "creationTag": {
     "versionNumber": 0,
@@ -148,7 +148,8 @@
       },
       {
         "name": "equipementsDeSecurite",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "manoeuvrePietonAction",
