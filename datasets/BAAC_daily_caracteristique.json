@@ -27,7 +27,7 @@
     "shortTextMode": true,
     "retrievalMode": "simple",
     "ancestorCapture": "none",
-    "rootPath": "/baac/accidents/accident/usagers/usager",
+    "rootPath": "/baac/accidents/accident/caracteristiques",
     "charset": "utf-8",
     "overrideFileCharset": false,
     "cellContentMapping": [],
@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839069355
+    "lastModifiedOn": 1536839652877
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,108 +68,53 @@
   "schema": {
     "columns": [
       {
-        "name": "nationalite",
+        "name": "heureAccident",
         "type": "string"
       },
       {
-        "name": "stupsIdentifies",
+        "name": "intersection",
         "type": "string"
       },
       {
-        "name": "cSP",
+        "name": "identifiantBAAC",
         "type": "string"
       },
       {
-        "name": "permisConduire",
+        "name": "typeCollision",
         "type": "string"
       },
       {
-        "name": "gravite",
+        "name": "lumiere",
         "type": "string"
       },
       {
-        "name": "categorie",
+        "name": "adressePostale",
         "type": "string"
       },
       {
-        "name": "lettreConventionnelle",
+        "name": "conditionAtmospherique",
         "type": "string"
       },
       {
-        "name": "placeDansVehicule",
+        "name": "codeCommuneInsee",
         "type": "string"
       },
       {
-        "name": "dateNaissance",
+        "name": "dateAccident",
         "type": "string"
       },
       {
-        "name": "verifAlcoolemie",
+        "name": "departement",
         "type": "string"
       },
       {
-        "name": "numeroUsager",
+        "name": "localisation",
         "type": "string"
       },
       {
-        "name": "sexe",
-        "type": "string"
-      },
-      {
-        "name": "infractions",
-        "type": "string"
-      },
-      {
-        "name": "dateObtentionPermisConduire",
-        "type": "string"
-      },
-      {
-        "name": "trajet",
-        "type": "string"
-      },
-      {
-        "name": "presumeResponsable",
-        "type": "string"
-      },
-      {
-        "name": "dptResidence",
-        "type": "string"
-      },
-      {
-        "name": "verifPresenceStups",
-        "type": "string"
-      },
-      {
-        "name": "paysResidence",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonLocalisation",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonEtat",
-        "type": "string"
-      },
-      {
-        "name": "equipementsDeSecurite",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonAction",
-        "type": "string"
-      },
-      {
-        "name": "nationalite2",
-        "type": "string"
-      },
-      {
-        "name": "tauxAlcoolemie",
-        "type": "string"
-      },
-      {
-        "name": "facteursPresumesUsager",
-        "type": "string"
+        "name": "coordonneesGeo",
+        "type": "string",
+        "meaning": "Text"
       }
     ],
     "userModified": true
