@@ -41,6 +41,10 @@
           {
             "from": "[{\"xsi:nil\":\"true\"}]",
             "to": ""
+          },
+          {
+            "from": "{\"xsi:nil\":\"true\"}",
+            "to": ""
           }
         ],
         "normalization": "EXACT",
@@ -60,7 +64,7 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\[\\{\"equipement\":\\[(.+)\\]\\}\\]",
+            "from": "\\[\\{\"equipement\":\\[?([^\\]]*)\\]?\\}\\]",
             "to": "$1"
           },
           {
@@ -87,19 +91,50 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\[\\{\"facteurPresumeUsager\":\\[(.+)\\]\\}\\]",
+            "from": "\\[\\{\"infraction\":\\[?([^\\]]*)\\]?\\}\\]",
             "to": "$1"
           },
           {
-            "from": "\\{\"xml_text\":\"([A-Z]+)\"\\}",
+            "from": "\\{\"xml_text\":\"([0-9]+)\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": "[^0-9,]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "infractions"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\[\\{\"facteurPresumeUsager\":\\[?([^\\]]*)\\]?\\}\\]",
+            "to": "$1"
+          },
+          {
+            "from": "\\{\"xml_text\":\"([A-Z])\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": "\"([A-Z])\"",
             "to": "$1"
           },
           {
             "from": ",",
-            "to": ""
-          },
-          {
-            "from": "\\{\\}",
             "to": ""
           }
         ],
@@ -197,7 +232,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",

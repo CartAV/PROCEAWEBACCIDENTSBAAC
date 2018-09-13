@@ -16,6 +16,10 @@
             "BAAC_1_CRS_usager": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_daily_usager": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839778668
+    "lastModifiedOn": 1536843043416
   },
   "creationTag": {
     "versionNumber": 0,
