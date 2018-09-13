@@ -27,7 +27,7 @@
     "shortTextMode": true,
     "retrievalMode": "simple",
     "ancestorCapture": "none",
-    "rootPath": "/baac/accidents/accident/usagers/usager",
+    "rootPath": "/baac/accidents/accident/vehicules/vehicule",
     "charset": "utf-8",
     "overrideFileCharset": false,
     "cellContentMapping": [],
@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536831997380
+    "lastModifiedOn": 1536839660831
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,27 +74,43 @@
   "schema": {
     "columns": [
       {
-        "name": "nationalite",
+        "name": "manoeuvrePrincipaleAvantAccident",
         "type": "string"
       },
       {
-        "name": "stupsIdentifies",
+        "name": "assurance",
         "type": "string"
       },
       {
-        "name": "cSP",
+        "name": "enFuite",
         "type": "string"
       },
       {
-        "name": "permisConduire",
+        "name": "categorieAdmin",
         "type": "string"
       },
       {
-        "name": "gravite",
+        "name": "obstacleFixeHeurte",
         "type": "string"
       },
       {
-        "name": "categorie",
+        "name": "sensCirculation",
+        "type": "string"
+      },
+      {
+        "name": "appartenantA",
+        "type": "string"
+      },
+      {
+        "name": "typeMotorisation",
+        "type": "string"
+      },
+      {
+        "name": "cNIT",
+        "type": "string"
+      },
+      {
+        "name": "immatriculationPays",
         "type": "string"
       },
       {
@@ -102,79 +118,40 @@
         "type": "string"
       },
       {
-        "name": "placeDansVehicule",
+        "name": "nbOccupantsTC",
         "type": "string"
       },
       {
-        "name": "dateNaissance",
+        "name": "immatriculationDpt",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
+        "name": "pointChocInitial",
         "type": "string"
       },
       {
-        "name": "verifAlcoolemie",
+        "name": "premiereMC",
         "type": "string"
       },
       {
-        "name": "numeroUsager",
+        "name": "codeRoute",
         "type": "string"
       },
       {
-        "name": "sexe",
+        "name": "obstacleMobileHeurte",
         "type": "string"
       },
       {
-        "name": "infractions",
+        "name": "vehiculeSpecial",
         "type": "string"
       },
       {
-        "name": "dateObtentionPermisConduire",
+        "name": "facteursPresumesVehicule",
         "type": "string"
       },
       {
-        "name": "trajet",
-        "type": "string"
-      },
-      {
-        "name": "presumeResponsable",
-        "type": "string"
-      },
-      {
-        "name": "dptResidence",
-        "type": "string"
-      },
-      {
-        "name": "verifPresenceStups",
-        "type": "string"
-      },
-      {
-        "name": "paysResidence",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonLocalisation",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonEtat",
-        "type": "string"
-      },
-      {
-        "name": "equipementsDeSecurite",
-        "type": "string"
-      },
-      {
-        "name": "manoeuvrePietonAction",
-        "type": "string"
-      },
-      {
-        "name": "nationalite2",
-        "type": "string"
-      },
-      {
-        "name": "tauxAlcoolemie",
-        "type": "string"
-      },
-      {
-        "name": "facteursPresumesUsager",
+        "name": "immatriculationParticuliere",
         "type": "string"
       }
     ],
