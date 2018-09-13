@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536843299328
+    "lastModifiedOn": 1536843617275
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,36 +62,9 @@
         "type": "bigint"
       },
       {
-        "name": "catr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "voie",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "bigint"
-      },
-      {
-        "name": "voieIndiceAlpha",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "circ",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "regimePriorite",
-        "type": "bigint"
       },
       {
         "name": "vosp",
@@ -99,7 +72,7 @@
         "maxLength": 16200
       },
       {
-        "name": "prof",
+        "name": "plan",
         "type": "string",
         "maxLength": 16200
       },
@@ -108,11 +81,24 @@
         "type": "bigint"
       },
       {
-        "name": "pr1",
+        "name": "vMA",
         "type": "bigint"
       },
       {
-        "name": "plan",
+        "name": "nbv",
+        "type": "bigint"
+      },
+      {
+        "name": "catr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voieIndiceNum",
+        "type": "bigint"
+      },
+      {
+        "name": "circ",
         "type": "string",
         "maxLength": 16200
       },
@@ -122,7 +108,7 @@
         "maxLength": 16200
       },
       {
-        "name": "infra",
+        "name": "pr1",
         "type": "bigint"
       },
       {
@@ -131,11 +117,33 @@
         "maxLength": 16200
       },
       {
-        "name": "vMA",
-        "type": "bigint"
+        "name": "infra",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "prof",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "regimePriorite",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "facteursPresumesLieu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voieIndiceAlpha",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "xsi:nil",
         "type": "string",
         "maxLength": 16200
       },
