@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839582853
+    "lastModifiedOn": 1536839588847
   },
   "creationTag": {
     "versionNumber": 0,
@@ -175,7 +175,8 @@
       },
       {
         "name": "tauxAlcoolemie",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       }
     ],
     "userModified": true
