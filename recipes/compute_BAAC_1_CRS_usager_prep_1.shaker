@@ -24,7 +24,42 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "alcot",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "DoubleMeaning",
+          "ok": false,
+          "empty": false
+        }
+      },
+      "column": "alcot",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "alcot",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:120487",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "alcot",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
