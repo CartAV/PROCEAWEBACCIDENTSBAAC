@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536843617275
+    "lastModifiedOn": 1536844160682
   },
   "creationTag": {
     "versionNumber": 0,
@@ -140,11 +140,6 @@
         "name": "voieIndiceAlpha",
         "type": "string",
         "meaning": "Text",
-        "maxLength": 16200
-      },
-      {
-        "name": "xsi:nil",
-        "type": "string",
         "maxLength": 16200
       },
       {
