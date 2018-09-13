@@ -166,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839636084
+    "lastModifiedOn": 1536839637925
   },
   "creationTag": {
     "versionNumber": 0,
@@ -211,7 +211,8 @@
       },
       {
         "name": "voieIndiceAlpha",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "regimeCirculation",
