@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942538765
+    "lastModifiedOn": 1536942710500
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,9 +67,8 @@
         "maxLength": 16200
       },
       {
-        "name": "immatriculationDpt",
+        "name": "département ou pays",
         "type": "string",
-        "meaning": "Text",
         "maxLength": 16200
       },
       {
@@ -88,6 +87,16 @@
       },
       {
         "name": "première immat",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat année",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat mois",
         "type": "string",
         "maxLength": 16200
       },
@@ -177,12 +186,12 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
+        "name": "Code Unité",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "numPV",
+        "name": "Numéro P.V.",
         "type": "string",
         "maxLength": 16200
       },
@@ -192,7 +201,7 @@
         "maxLength": 16200
       },
       {
-        "name": "organisme",
+        "name": "Organisme",
         "type": "string",
         "maxLength": 16200
       },
