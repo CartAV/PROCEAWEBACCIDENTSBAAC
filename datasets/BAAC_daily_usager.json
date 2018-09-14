@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926144611
+    "lastModifiedOn": 1536926170341
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,8 @@
       },
       {
         "name": "placeDansVehicule",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "nationalite",
