@@ -2,20 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {
-    "cSP": {
-      "meaning": "Text"
-    },
-    "secu": {
-      "meaning": "Text"
-    },
-    "alcot": {
-      "meaning": "Text"
-    },
-    "numeroUsager": {
-      "meaning": "LongMeaning"
-    }
-  },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -39,19 +25,118 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "codeUnite",
+            "to": "Code Unité"
+          },
+          {
+            "from": "numPV",
+            "to": "Numéro P.V."
+          },
+          {
+            "from": "organisme",
+            "to": " Organisme"
+          },
+          {
+            "from": "placeDansVehicule",
+            "to": "place"
+          },
+          {
+            "from": "numeroUsager",
+            "to": " num_veh"
+          },
+          {
+            "from": "datenaiss",
+            "to": "datn"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "mo_naiss",
+        "mapping": [
+          {
+            "from": "([0-9]{4})-([0-9]{2})",
+            "to": "$2"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "datn"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "an_naiss",
+        "mapping": [
+          {
+            "from": "([0-9]{4})-([0-9]{2})",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "datn"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "cSP": {
+      "meaning": "Text"
+    },
+    "secu": {
+      "meaning": "Text"
+    },
+    "alcot": {
+      "meaning": "Text"
+    },
+    "numeroUsager": {
+      "meaning": "LongMeaning"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
