@@ -179,6 +179,21 @@
         "matching": "PATTERN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "hrmn",
+        "columns": [
+          "Heure",
+          "Minute"
+        ],
+        "join": ""
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
