@@ -1,0 +1,153 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "dateAccident",
+      "table": 0
+    },
+    {
+      "name": "com",
+      "table": 0
+    },
+    {
+      "name": "departement",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "table": 0
+    },
+    {
+      "name": "identifiantBAAC",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "table": 0
+    },
+    {
+      "name": "heureAccident",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "table": 0
+    },
+    {
+      "name": "coordonneesGeo",
+      "table": 0
+    },
+    {
+      "name": "mapping_error",
+      "table": 0
+    },
+    {
+      "name": "filename",
+      "table": 1
+    },
+    {
+      "name": "dateHeureDernModFO",
+      "table": 1
+    },
+    {
+      "name": "date",
+      "table": 1
+    },
+    {
+      "name": "codeUnite",
+      "table": 1
+    },
+    {
+      "name": "numPV",
+      "table": 1
+    },
+    {
+      "name": "Num_Acc",
+      "table": 1
+    },
+    {
+      "name": "organisme",
+      "table": 1
+    },
+    {
+      "name": "statutBaac",
+      "table": 1
+    },
+    {
+      "name": "typeAccident",
+      "table": 1
+    },
+    {
+      "name": "IdTechniqueFO",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

@@ -1,0 +1,52 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "BAAC_daily_caracteristique_prep",
+          "deps": []
+        },
+        {
+          "ref": "BAAC_daily_identifiant_prep",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "BAAC_daily_caracteristique_id",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536927401911
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536927401911
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
