@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942113918
+    "lastModifiedOn": 1536942468131
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,197 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Code Unité",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro P.V.",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro de feuillet",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint"
+      },
+      {
+        "name": "num_veh",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Code route",
+        "type": "bigint"
+      },
+      {
+        "name": "Véhicule en fuite",
+        "type": "bigint"
+      },
+      {
+        "name": "senc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "catv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "département ou pays",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat mois",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "datv",
+        "type": "date"
+      },
+      {
+        "name": "première immat année",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "prop",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "spev",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "facv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "assu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "obs",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "obsm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "choc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "manv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "occutc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "code CNIT",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeMotorisation",
+        "type": "bigint"
+      },
+      {
+        "name": "immatriculationDpt",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "immatriculationPays",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "filename",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "immatriculationParticuliere",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeUnite",
+        "type": "bigint"
+      },
+      {
+        "name": "numPV",
+        "type": "bigint"
+      },
+      {
+        "name": "organisme",
+        "type": "bigint"
+      },
+      {
+        "name": "statutBaac",
+        "type": "bigint"
+      },
+      {
+        "name": "typeAccident",
+        "type": "bigint"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
