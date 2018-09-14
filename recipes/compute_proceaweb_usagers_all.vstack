@@ -1,0 +1,107 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "Code Unité",
+    "Numéro P.V.",
+    "Numéro de feuillet",
+    "Num_Acc",
+    "Organisme",
+    "num_veh",
+    "place",
+    "resp",
+    "catu",
+    "grav",
+    "catso",
+    "sexe",
+    "depu",
+    "mo_nais",
+    "datn",
+    "an_nais",
+    "facu",
+    "alco",
+    "alcot",
+    "perm",
+    "mo_perm",
+    "datp",
+    "an_perm",
+    "trajet",
+    "natinf1",
+    "natinf2",
+    "secu",
+    "locp",
+    "actp",
+    "etatp",
+    "drogd",
+    "drogp",
+    "date",
+    "nationalite",
+    "cSP",
+    "lettreConventionnelle",
+    "placeDansVehicule",
+    "datenaiss",
+    "numeroUsager",
+    "infractions",
+    "filename",
+    "paysResidence",
+    "nationalite2",
+    "dateperm",
+    "mapping_error",
+    "dateHeureDernModFO",
+    "codeUnite",
+    "numPV",
+    "organisme",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "proceaweb_usagers",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "BAAC_daily_usager_id",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}
