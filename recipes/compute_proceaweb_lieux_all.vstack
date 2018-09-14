@@ -1,0 +1,94 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "Code Unité",
+    "Numéro P.V.",
+    "Numéro de feuillet",
+    "Num_Acc",
+    "Organisme",
+    "Code route",
+    "catr",
+    "voie",
+    "v1",
+    "v2",
+    "circ",
+    "nbv",
+    "vosp",
+    "prof",
+    "pr",
+    "pr1",
+    "plan",
+    "lartpc",
+    "larrout",
+    "surf",
+    "infra",
+    "situ",
+    "env1",
+    "date",
+    "codeRoute",
+    "vMA",
+    "voieIndiceNum",
+    "filename",
+    "regimePriorite",
+    "facteursPresumesLieu",
+    "voieIndiceAlpha",
+    "mapping_error",
+    "dateHeureDernModFO",
+    "codeUnite",
+    "numPV",
+    "organisme",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "proceaweb_lieux",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "BAAC_daily_lieu_id",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}
