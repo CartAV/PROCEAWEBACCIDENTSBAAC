@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536843141184
+    "lastModifiedOn": 1536925783869
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,7 +68,9 @@
       },
       {
         "name": "immatriculationDpt",
-        "type": "bigint"
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
         "name": "num_veh",
@@ -96,6 +98,11 @@
       },
       {
         "name": "assu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
@@ -135,7 +142,8 @@
       },
       {
         "name": "occutc",
-        "type": "bigint"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "prop",
@@ -145,6 +153,7 @@
       {
         "name": "facv",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
