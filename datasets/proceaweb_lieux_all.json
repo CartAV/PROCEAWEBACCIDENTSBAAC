@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942213028
+    "lastModifiedOn": 1536942351242
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,125 +57,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "Code Unité",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Numéro P.V.",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Numéro de feuillet",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Num_Acc",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Organisme",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Code route",
-        "type": "bigint"
-      },
-      {
-        "name": "catr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voie",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "v1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "v2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "circ",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nbv",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "vosp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "prof",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "pr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "pr1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "plan",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lartpc",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "larrout",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "surf",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "infra",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "situ",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "env1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "date",
-        "type": "string",
-        "maxLength": 16200
-      },
       {
         "name": "dateAccident",
         "type": "string",
@@ -274,6 +155,31 @@
         "maxLength": 16200
       },
       {
+        "name": "date",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Code Unité",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro P.V.",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "statutBaac",
         "type": "string",
         "maxLength": 16200
@@ -300,6 +206,106 @@
         "name": "gps",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "voie",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "vosp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "plan",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "pr",
+        "type": "int",
+        "maxLength": 16200
+      },
+      {
+        "name": "vMA",
+        "type": "bigint"
+      },
+      {
+        "name": "nbv",
+        "type": "bigint",
+        "maxLength": 16200
+      },
+      {
+        "name": "catr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voieIndiceNum",
+        "type": "int"
+      },
+      {
+        "name": "circ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "surf",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "pr1",
+        "type": "int",
+        "maxLength": 16200
+      },
+      {
+        "name": "situ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "infra",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "prof",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "regimePriorite",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "facteursPresumesLieu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voieIndiceAlpha",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeUnite",
+        "type": "bigint"
+      },
+      {
+        "name": "numPV",
+        "type": "bigint"
+      },
+      {
+        "name": "organisme",
+        "type": "bigint"
       }
     ],
     "userModified": true
