@@ -166,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926402204
+    "lastModifiedOn": 1536926412939
   },
   "creationTag": {
     "versionNumber": 0,
@@ -236,7 +236,8 @@
       },
       {
         "name": "pKPR",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "distanceAuPKPR",
