@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942403362
+    "lastModifiedOn": 1536942861062
   },
   "creationTag": {
     "versionNumber": 0,
@@ -79,7 +79,7 @@
       },
       {
         "name": "Organisme",
-        "type": "bigint",
+        "type": "string",
         "maxLength": 16200
       },
       {
@@ -186,7 +186,7 @@
       },
       {
         "name": "voieIndiceNum",
-        "type": "int"
+        "type": "bigint"
       },
       {
         "name": "filename",
@@ -220,30 +220,23 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
-        "type": "bigint"
-      },
-      {
-        "name": "numPV",
-        "type": "bigint"
-      },
-      {
-        "name": "organisme",
-        "type": "bigint"
+        "name": " Code Unité",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "statutBaac",
-        "type": "bigint",
+        "type": "string",
         "maxLength": 16200
       },
       {
         "name": "typeAccident",
-        "type": "bigint",
+        "type": "string",
         "maxLength": 16200
       },
       {
         "name": "IdTechniqueFO",
-        "type": "bigint",
+        "type": "string",
         "maxLength": 16200
       }
     ],
