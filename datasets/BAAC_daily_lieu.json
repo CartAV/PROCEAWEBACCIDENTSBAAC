@@ -166,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926414982
+    "lastModifiedOn": 1536926418976
   },
   "creationTag": {
     "versionNumber": 0,
@@ -242,7 +242,8 @@
       },
       {
         "name": "distanceAuPKPR",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "traceEnPlan",
