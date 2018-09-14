@@ -16,6 +16,10 @@
             "BAAC_daily_caracteristique_id": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_daily_identifiant_prep": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536941886204
+    "lastModifiedOn": 1536941908295
   },
   "creationTag": {
     "versionNumber": 0,
