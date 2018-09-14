@@ -112,9 +112,12 @@
         ],
         "normalization": "EXACT",
         "columns": [
-          "voieIndiceAlpha"
+          "voieIndiceAlpha",
+          "pKPR",
+          "voieIndiceNum",
+          "distanceAuPKPR"
         ],
-        "appliesTo": "SINGLE_COLUMN",
+        "appliesTo": "COLUMNS",
         "stopAfterFirstMatch": false,
         "matching": "PATTERN"
       },
@@ -193,7 +196,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
