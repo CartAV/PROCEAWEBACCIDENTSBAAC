@@ -24,42 +24,7 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [
-    {
-      "validityFilter": {
-        "column": "alcot",
-        "type": "validity",
-        "params": {
-          "nok": true,
-          "type": "DoubleMeaning",
-          "ok": false,
-          "empty": false
-        }
-      },
-      "column": "alcot",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "alcot",
-        "type": "alphanum",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "type": "columnFilter",
-      "$$hashKey": "object:120487",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {},
-        "column": "alcot",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "ALPHANUM"
-      },
-      "currentMode": "FACET"
-    }
-  ],
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -176,6 +141,29 @@
         "normalization": "EXACT",
         "columns": [
           "facteursPresumesUsager"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "00([0-9])",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "numeroUsager"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
