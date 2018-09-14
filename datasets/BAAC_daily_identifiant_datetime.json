@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536941886193
+    "lastModifiedOn": 1536941907678
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,93 +57,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "dateAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mois",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "an",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "com",
-        "type": "bigint"
-      },
-      {
-        "name": "dep",
-        "type": "bigint"
-      },
-      {
-        "name": "agg",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "int",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Id BAAC 2002",
-        "type": "bigint"
-      },
-      {
-        "name": "lum",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "atm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "col",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "heureAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Minute",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "hrmn",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Heure",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "adr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Coordonnées GPS",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
       {
         "name": "filename",
         "type": "string",
@@ -195,15 +108,50 @@
         "maxLength": 16200
       },
       {
-        "name": "lon",
+        "name": "dep",
         "type": "bigint"
       },
       {
-        "name": "lat",
+        "name": "Coordonnées GPS",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Id BAAC 2002",
         "type": "bigint"
       },
       {
-        "name": "gps",
+        "name": "dateAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mois",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "an",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "heureAccident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Minute",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "hrmn",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Heure",
         "type": "string",
         "maxLength": 16200
       }
