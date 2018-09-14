@@ -1,0 +1,177 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "codeRoute",
+      "table": 0
+    },
+    {
+      "name": "voie",
+      "table": 0
+    },
+    {
+      "name": "vosp",
+      "table": 0
+    },
+    {
+      "name": "plan",
+      "table": 0
+    },
+    {
+      "name": "pr",
+      "table": 0
+    },
+    {
+      "name": "vMA",
+      "table": 0
+    },
+    {
+      "name": "nbv",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "table": 0
+    },
+    {
+      "name": "voieIndiceNum",
+      "table": 0
+    },
+    {
+      "name": "circ",
+      "table": 0
+    },
+    {
+      "name": "surf",
+      "table": 0
+    },
+    {
+      "name": "filename",
+      "table": 0
+    },
+    {
+      "name": "pr1",
+      "table": 0
+    },
+    {
+      "name": "situ",
+      "table": 0
+    },
+    {
+      "name": "infra",
+      "table": 0
+    },
+    {
+      "name": "prof",
+      "table": 0
+    },
+    {
+      "name": "regimePriorite",
+      "table": 0
+    },
+    {
+      "name": "facteursPresumesLieu",
+      "table": 0
+    },
+    {
+      "name": "voieIndiceAlpha",
+      "table": 0
+    },
+    {
+      "name": "mapping_error",
+      "table": 0
+    },
+    {
+      "name": "dateHeureDernModFO",
+      "table": 1
+    },
+    {
+      "name": "date",
+      "table": 1
+    },
+    {
+      "name": "codeUnite",
+      "table": 1
+    },
+    {
+      "name": "numPV",
+      "table": 1
+    },
+    {
+      "name": "Num_Acc",
+      "table": 1
+    },
+    {
+      "name": "organisme",
+      "table": 1
+    },
+    {
+      "name": "statutBaac",
+      "table": 1
+    },
+    {
+      "name": "typeAccident",
+      "table": 1
+    },
+    {
+      "name": "IdTechniqueFO",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
