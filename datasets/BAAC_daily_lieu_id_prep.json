@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942780842
+    "lastModifiedOn": 1536942841079
   },
   "creationTag": {
     "versionNumber": 0,
@@ -166,12 +166,12 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
+        "name": " Code Unité",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "numPV",
+        "name": "Numéro P.V.",
         "type": "string",
         "maxLength": 16200
       },
@@ -181,7 +181,7 @@
         "maxLength": 16200
       },
       {
-        "name": "organisme",
+        "name": "Organisme",
         "type": "string",
         "maxLength": 16200
       },
