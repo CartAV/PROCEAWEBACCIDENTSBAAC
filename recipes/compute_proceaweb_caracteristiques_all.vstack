@@ -1,5 +1,5 @@
 {
-  "mode": "UNION",
+  "mode": "CUSTOM",
   "selectedColumns": [
     "Code Unité",
     "Numéro P.V.",
@@ -27,9 +27,12 @@
     "Id BAAC 2002",
     "date",
     "Code route",
-    "inconnu2",
-    "inconnu3",
-    "inconnu4"
+    "dateAccident",
+    "heureAccident",
+    "dateHeureDernModFO",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
@@ -76,23 +79,19 @@
         "columns": [
           {
             "name": "Code Unité",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro P.V.",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro de feuillet",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Num_Acc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Organisme",
@@ -100,98 +99,79 @@
           },
           {
             "name": "jour",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "mois",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "an",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Heure",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Minute",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "hrmn",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "lum",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "dep",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "com",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "agg",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "int",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "atm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "col",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "adr",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Coordonnées GPS",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "gps",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "lat",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "long",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Id BAAC 2002",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "date",
@@ -202,64 +182,28 @@
             "type": "bigint"
           },
           {
-            "name": "inconnu2",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "inconnu3",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "inconnu4",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
             "name": "dateAccident",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "heureAccident",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "mapping_error",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "filename",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "dateHeureDernModFO",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": " Numéro P.V.",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "statutBaac",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "typeAccident",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "IdTechniqueFO",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           }
         ],
         "userModified": false
