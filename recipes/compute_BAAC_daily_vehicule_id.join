@@ -6,132 +6,181 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "filename",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "filename",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "typeMotorisation",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "obs",
+      "type": "string",
       "table": 0
     },
     {
       "name": "immatriculationDpt",
+      "type": "string",
       "table": 0
     },
     {
       "name": "num_veh",
+      "type": "string",
       "table": 0
     },
     {
       "name": "codeRoute",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "immatriculationPays",
+      "type": "string",
       "table": 0
     },
     {
       "name": "première immat",
+      "type": "string",
       "table": 0
     },
     {
       "name": "spev",
+      "type": "string",
       "table": 0
     },
     {
       "name": "assu",
+      "type": "string",
       "table": 0
     },
     {
       "name": "filename",
+      "type": "string",
       "table": 0
     },
     {
       "name": "manv",
+      "type": "string",
       "table": 0
     },
     {
       "name": "senc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "catv",
+      "type": "string",
       "table": 0
     },
     {
       "name": "code CNIT",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Véhicule en fuite",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "choc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "obsm",
+      "type": "string",
       "table": 0
     },
     {
       "name": "occutc",
+      "type": "int",
       "table": 0
     },
     {
       "name": "prop",
+      "type": "string",
       "table": 0
     },
     {
       "name": "facv",
+      "type": "string",
       "table": 0
     },
     {
       "name": "immatriculationParticuliere",
+      "type": "string",
       "table": 0
     },
     {
       "name": "mapping_error",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dateHeureDernModFO",
+      "type": "string",
       "table": 1
     },
     {
       "name": "date",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "codeUnite",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "numPV",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "Num_Acc",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "organisme",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "statutBaac",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "typeAccident",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "IdTechniqueFO",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -181,5 +230,161 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "typeMotorisation",
+            "type": "bigint"
+          },
+          {
+            "name": "obs",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "immatriculationDpt",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "num_veh",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "codeRoute",
+            "type": "bigint"
+          },
+          {
+            "name": "immatriculationPays",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "première immat",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "spev",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "assu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "filename",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "manv",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "senc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "catv",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "code CNIT",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Véhicule en fuite",
+            "type": "bigint"
+          },
+          {
+            "name": "choc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "obsm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "occutc",
+            "type": "int"
+          },
+          {
+            "name": "prop",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "facv",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "immatriculationParticuliere",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "mapping_error",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "dateHeureDernModFO",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "date",
+            "type": "bigint"
+          },
+          {
+            "name": "codeUnite",
+            "type": "bigint"
+          },
+          {
+            "name": "numPV",
+            "type": "bigint"
+          },
+          {
+            "name": "Num_Acc",
+            "type": "bigint"
+          },
+          {
+            "name": "organisme",
+            "type": "bigint"
+          },
+          {
+            "name": "statutBaac",
+            "type": "bigint"
+          },
+          {
+            "name": "typeAccident",
+            "type": "bigint"
+          },
+          {
+            "name": "IdTechniqueFO",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
