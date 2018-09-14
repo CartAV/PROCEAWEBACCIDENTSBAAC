@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942242108
+    "lastModifiedOn": 1536943291869
   },
   "creationTag": {
     "versionNumber": 0,
@@ -127,7 +127,8 @@
       },
       {
         "name": "datn",
-        "type": "date"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "an_nais",
@@ -235,18 +236,17 @@
         "maxLength": 16200
       },
       {
-        "name": "placeDansVehicule",
+        "name": "an_naiss",
         "type": "bigint"
       },
       {
-        "name": "datenaiss",
+        "name": "mo_naiss",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "numeroUsager",
-        "type": "int",
-        "meaning": "LongMeaning"
+        "name": " num_veh",
+        "type": "bigint"
       },
       {
         "name": "infractions",
@@ -284,28 +284,24 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
-        "type": "bigint"
-      },
-      {
-        "name": "numPV",
-        "type": "bigint"
-      },
-      {
-        "name": "organisme",
-        "type": "bigint"
+        "name": " Organisme",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "statutBaac",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "typeAccident",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "IdTechniqueFO",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       }
     ],
     "userModified": true
