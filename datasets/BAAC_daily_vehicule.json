@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839674485
+    "lastModifiedOn": 1536920678469
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_root",
-    "path": "/data/sources/ines/sftp_cartav",
+    "path": "/data/sources/ines/sftp_cartav/full",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "RULES_INCLUDED_ONLY",
@@ -74,19 +74,7 @@
   "schema": {
     "columns": [
       {
-        "name": "manoeuvrePrincipaleAvantAccident",
-        "type": "string"
-      },
-      {
-        "name": "assurance",
-        "type": "string"
-      },
-      {
-        "name": "enFuite",
-        "type": "string"
-      },
-      {
-        "name": "categorieAdmin",
+        "name": "typeMotorisation",
         "type": "string"
       },
       {
@@ -94,23 +82,7 @@
         "type": "string"
       },
       {
-        "name": "sensCirculation",
-        "type": "string"
-      },
-      {
-        "name": "appartenantA",
-        "type": "string"
-      },
-      {
-        "name": "typeMotorisation",
-        "type": "string"
-      },
-      {
-        "name": "cNIT",
-        "type": "string"
-      },
-      {
-        "name": "immatriculationPays",
+        "name": "immatriculationDpt",
         "type": "string"
       },
       {
@@ -118,16 +90,11 @@
         "type": "string"
       },
       {
-        "name": "nbOccupantsTC",
+        "name": "codeRoute",
         "type": "string"
       },
       {
-        "name": "immatriculationDpt",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "pointChocInitial",
+        "name": "immatriculationPays",
         "type": "string"
       },
       {
@@ -135,7 +102,39 @@
         "type": "string"
       },
       {
-        "name": "codeRoute",
+        "name": "vehiculeSpecial",
+        "type": "string"
+      },
+      {
+        "name": "assurance",
+        "type": "string"
+      },
+      {
+        "name": "filename",
+        "type": "string"
+      },
+      {
+        "name": "manoeuvrePrincipaleAvantAccident",
+        "type": "string"
+      },
+      {
+        "name": "sensCirculation",
+        "type": "string"
+      },
+      {
+        "name": "categorieAdmin",
+        "type": "string"
+      },
+      {
+        "name": "cNIT",
+        "type": "string"
+      },
+      {
+        "name": "enFuite",
+        "type": "string"
+      },
+      {
+        "name": "pointChocInitial",
         "type": "string"
       },
       {
@@ -143,19 +142,20 @@
         "type": "string"
       },
       {
-        "name": "vehiculeSpecial",
-        "type": "string",
-        "meaning": "Text"
+        "name": "nbOccupantsTC",
+        "type": "string"
+      },
+      {
+        "name": "appartenantA",
+        "type": "string"
       },
       {
         "name": "facteursPresumesVehicule",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "immatriculationParticuliere",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       }
     ],
     "userModified": true
