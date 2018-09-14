@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536844160682
+    "lastModifiedOn": 1536926530976
   },
   "creationTag": {
     "versionNumber": 0,
@@ -78,7 +78,8 @@
       },
       {
         "name": "pr",
-        "type": "bigint"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "vMA",
@@ -95,7 +96,7 @@
       },
       {
         "name": "voieIndiceNum",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "circ",
@@ -108,8 +109,15 @@
         "maxLength": 16200
       },
       {
+        "name": "filename",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
         "name": "pr1",
-        "type": "bigint"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "situ",
