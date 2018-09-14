@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536920678469
+    "lastModifiedOn": 1536925405838
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_root",
-    "path": "/data/sources/ines/sftp_cartav/full",
+    "path": "/data/sources/ines/input_cartav",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "RULES_INCLUDED_ONLY",
