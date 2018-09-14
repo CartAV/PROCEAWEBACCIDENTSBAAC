@@ -27,8 +27,6 @@
     "Id BAAC 2002",
     "date",
     "Code route",
-    "dateAccident",
-    "heureAccident",
     "dateHeureDernModFO",
     "statutBaac",
     "typeAccident",
@@ -180,14 +178,6 @@
           {
             "name": "Code route",
             "type": "bigint"
-          },
-          {
-            "name": "dateAccident",
-            "type": "string"
-          },
-          {
-            "name": "heureAccident",
-            "type": "string"
           },
           {
             "name": "dateHeureDernModFO",
