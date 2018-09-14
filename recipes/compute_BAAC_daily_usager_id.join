@@ -1,0 +1,209 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "nationalite",
+      "table": 0
+    },
+    {
+      "name": "drogp",
+      "table": 0
+    },
+    {
+      "name": "cSP",
+      "table": 0
+    },
+    {
+      "name": "perm",
+      "table": 0
+    },
+    {
+      "name": "grav",
+      "table": 0
+    },
+    {
+      "name": "catu",
+      "table": 0
+    },
+    {
+      "name": "lettreConventionnelle",
+      "table": 0
+    },
+    {
+      "name": "placeDansVehicule",
+      "table": 0
+    },
+    {
+      "name": "datenaiss",
+      "table": 0
+    },
+    {
+      "name": "alco",
+      "table": 0
+    },
+    {
+      "name": "numeroUsager",
+      "table": 0
+    },
+    {
+      "name": "sexe",
+      "table": 0
+    },
+    {
+      "name": "infractions",
+      "table": 0
+    },
+    {
+      "name": "trajet",
+      "table": 0
+    },
+    {
+      "name": "filename",
+      "table": 0
+    },
+    {
+      "name": "resp",
+      "table": 0
+    },
+    {
+      "name": "depu",
+      "table": 0
+    },
+    {
+      "name": "drogd",
+      "table": 0
+    },
+    {
+      "name": "paysResidence",
+      "table": 0
+    },
+    {
+      "name": "locp",
+      "table": 0
+    },
+    {
+      "name": "etatp",
+      "table": 0
+    },
+    {
+      "name": "secu",
+      "table": 0
+    },
+    {
+      "name": "actp",
+      "table": 0
+    },
+    {
+      "name": "nationalite2",
+      "table": 0
+    },
+    {
+      "name": "alcot",
+      "table": 0
+    },
+    {
+      "name": "facu",
+      "table": 0
+    },
+    {
+      "name": "dateperm",
+      "table": 0
+    },
+    {
+      "name": "mapping_error",
+      "table": 0
+    },
+    {
+      "name": "dateHeureDernModFO",
+      "table": 1
+    },
+    {
+      "name": "date",
+      "table": 1
+    },
+    {
+      "name": "codeUnite",
+      "table": 1
+    },
+    {
+      "name": "numPV",
+      "table": 1
+    },
+    {
+      "name": "Num_Acc",
+      "table": 1
+    },
+    {
+      "name": "organisme",
+      "table": 1
+    },
+    {
+      "name": "statutBaac",
+      "table": 1
+    },
+    {
+      "name": "typeAccident",
+      "table": 1
+    },
+    {
+      "name": "IdTechniqueFO",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
