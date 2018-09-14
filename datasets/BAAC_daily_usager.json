@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926170341
+    "lastModifiedOn": 1536926173282
   },
   "creationTag": {
     "versionNumber": 0,
@@ -141,7 +141,8 @@
       },
       {
         "name": "infractions",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "verifPresenceStups",
