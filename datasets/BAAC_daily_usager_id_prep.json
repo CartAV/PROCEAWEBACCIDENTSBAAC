@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536943051020
+    "lastModifiedOn": 1536943268689
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,11 +94,20 @@
         "maxLength": 16200
       },
       {
-        "name": "placeDansVehicule",
+        "name": "place",
         "type": "bigint"
       },
       {
-        "name": "datenaiss",
+        "name": "datn",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "an_naiss",
+        "type": "bigint"
+      },
+      {
+        "name": "mo_naiss",
         "type": "string",
         "maxLength": 16200
       },
@@ -108,9 +117,8 @@
         "maxLength": 16200
       },
       {
-        "name": "numeroUsager",
-        "type": "bigint",
-        "meaning": "LongMeaning"
+        "name": " num_veh",
+        "type": "bigint"
       },
       {
         "name": "sexe",
@@ -210,12 +218,12 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
+        "name": "Code Unité",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "numPV",
+        "name": "Numéro P.V.",
         "type": "string",
         "maxLength": 16200
       },
@@ -225,7 +233,7 @@
         "maxLength": 16200
       },
       {
-        "name": "organisme",
+        "name": " Organisme",
         "type": "string",
         "maxLength": 16200
       },
