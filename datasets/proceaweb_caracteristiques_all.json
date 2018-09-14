@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536940591840
+    "lastModifiedOn": 1536940712798
   },
   "creationTag": {
     "versionNumber": 0,
@@ -185,16 +185,6 @@
       {
         "name": "Code route",
         "type": "bigint"
-      },
-      {
-        "name": "dateAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "heureAccident",
-        "type": "string",
-        "maxLength": 16200
       },
       {
         "name": "dateHeureDernModFO",
