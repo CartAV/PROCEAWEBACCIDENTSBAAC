@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536843255528
+    "lastModifiedOn": 1536926263329
   },
   "creationTag": {
     "versionNumber": 0,
@@ -109,7 +109,8 @@
       },
       {
         "name": "numeroUsager",
-        "type": "bigint"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "sexe",
@@ -122,12 +123,12 @@
         "maxLength": 16200
       },
       {
-        "name": "dateperm",
+        "name": "trajet",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "trajet",
+        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
@@ -185,6 +186,11 @@
       },
       {
         "name": "facu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateperm",
         "type": "string",
         "maxLength": 16200
       },
