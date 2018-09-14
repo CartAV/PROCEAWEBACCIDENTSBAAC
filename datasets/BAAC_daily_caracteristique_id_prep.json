@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536928798604
+    "lastModifiedOn": 1536941565879
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,17 +120,22 @@
         "maxLength": 16200
       },
       {
+        "name": "hrmn",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "Heure",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "adr",
+        "name": "Coordonnées GPS",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "Coordonnées GPS",
+        "name": "adr",
         "type": "string",
         "maxLength": 16200
       },
@@ -188,6 +193,14 @@
         "name": "IdTechniqueFO",
         "type": "string",
         "maxLength": 16200
+      },
+      {
+        "name": "static_value",
+        "type": "bigint"
+      },
+      {
+        "name": "rowLength",
+        "type": "bigint"
       }
     ],
     "userModified": true
