@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839652877
+    "lastModifiedOn": 1536926568760
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_root",
-    "path": "/data/sources/ines/sftp_cartav",
+    "path": "/data/sources/ines/input_cartav",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -115,6 +115,12 @@
         "name": "coordonneesGeo",
         "type": "string",
         "meaning": "Text"
+      },
+      {
+        "name": "filename",
+        "type": "string",
+        "comment": "",
+        "maxLength": 1000
       }
     ],
     "userModified": true
