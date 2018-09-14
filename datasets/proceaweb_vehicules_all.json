@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942468131
+    "lastModifiedOn": 1536942733135
   },
   "creationTag": {
     "versionNumber": 0,
@@ -79,7 +79,8 @@
       },
       {
         "name": "Organisme",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "num_veh",
@@ -183,12 +184,6 @@
         "type": "bigint"
       },
       {
-        "name": "immatriculationDpt",
-        "type": "string",
-        "meaning": "Text",
-        "maxLength": 16200
-      },
-      {
         "name": "codeRoute",
         "type": "bigint"
       },
@@ -223,28 +218,19 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
-        "type": "bigint"
-      },
-      {
-        "name": "numPV",
-        "type": "bigint"
-      },
-      {
-        "name": "organisme",
-        "type": "bigint"
-      },
-      {
         "name": "statutBaac",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "typeAccident",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "IdTechniqueFO",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       }
     ],
     "userModified": true
