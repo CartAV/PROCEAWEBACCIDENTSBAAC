@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536928796152
+    "lastModifiedOn": 1536940591840
   },
   "creationTag": {
     "versionNumber": 0,
@@ -119,12 +119,12 @@
       },
       {
         "name": "dep",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
         "name": "com",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -174,7 +174,7 @@
       },
       {
         "name": "Id BAAC 2002",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -187,21 +187,6 @@
         "type": "bigint"
       },
       {
-        "name": "inconnu2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "inconnu3",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "inconnu4",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "dateAccident",
         "type": "string",
         "maxLength": 16200
@@ -212,22 +197,7 @@
         "maxLength": 16200
       },
       {
-        "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "dateHeureDernModFO",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": " Numéro P.V.",
         "type": "string",
         "maxLength": 16200
       },
