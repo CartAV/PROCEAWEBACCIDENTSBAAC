@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536927729606
+    "lastModifiedOn": 1536928095803
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,11 +63,21 @@
         "maxLength": 16200
       },
       {
+        "name": "mois",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "an",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "com",
         "type": "bigint"
       },
       {
-        "name": "departement",
+        "name": "dep",
         "type": "bigint"
       },
       {
@@ -81,7 +91,7 @@
         "maxLength": 16200
       },
       {
-        "name": "identifiantBAAC",
+        "name": "Id BAAC 2002",
         "type": "bigint"
       },
       {
@@ -110,7 +120,7 @@
         "maxLength": 16200
       },
       {
-        "name": "coordonneesGeo",
+        "name": "Coordonnées GPS",
         "type": "string",
         "maxLength": 16200
       },
@@ -135,12 +145,12 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
+        "name": "Code Unité",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "numPV",
+        "name": " Numéro P.V.",
         "type": "string",
         "maxLength": 16200
       },
@@ -150,7 +160,7 @@
         "maxLength": 16200
       },
       {
-        "name": "organisme",
+        "name": "Organisme",
         "type": "string",
         "maxLength": 16200
       },
