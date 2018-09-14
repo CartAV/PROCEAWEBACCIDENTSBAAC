@@ -27,7 +27,10 @@
     "Id BAAC 2002",
     "date",
     "Code route",
-    "dateHeureDernModFO",
+    "inconnu2",
+    "inconnu3",
+    "inconnu4",
+    "filename",
     "statutBaac",
     "typeAccident",
     "IdTechniqueFO"
@@ -180,7 +183,19 @@
             "type": "bigint"
           },
           {
-            "name": "dateHeureDernModFO",
+            "name": "inconnu2",
+            "type": "string"
+          },
+          {
+            "name": "inconnu3",
+            "type": "string"
+          },
+          {
+            "name": "inconnu4",
+            "type": "string"
+          },
+          {
+            "name": "filename",
             "type": "string"
           },
           {
