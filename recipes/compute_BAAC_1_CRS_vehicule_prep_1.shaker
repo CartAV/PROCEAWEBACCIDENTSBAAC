@@ -24,7 +24,42 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "immatriculationDpt",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "LongMeaning",
+          "ok": false,
+          "empty": false
+        }
+      },
+      "column": "immatriculationDpt",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "immatriculationDpt",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:9403",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "immatriculationDpt",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "NUMERICAL"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -56,14 +91,26 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FindReplace",
       "params": {
         "output": "",
         "mapping": [
           {
-            "from": "\\[\\{\"facteurPresumeVehicule\":\\[(.+)\\]\\}\\]",
+            "from": "\\[\\{\"facteurPresumeVehicule\":(\\[?.+\\]?)\\}\\]",
             "to": "$1"
+          },
+          {
+            "from": "\\{\"xml_text\":\"([0-9]+)\"\\}",
+            "to": "$1"
+          },
+          {
+            "from": "\"([0-9]*)\"",
+            "to": "$1"
+          },
+          {
+            "from": ",",
+            "to": ""
           }
         ],
         "normalization": "EXACT",
@@ -85,21 +132,17 @@
         "output": "",
         "mapping": [
           {
-            "from": "\\{\"xml_text\":\"([0-9]+)\"\\}",
-            "to": "$1"
-          },
-          {
-            "from": ",",
-            "to": ""
+            "from": "000",
+            "to": "0"
           }
         ],
         "normalization": "EXACT",
         "columns": [
-          "facteursPresumesVehicule"
+          "nbOccupantsTC"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
-        "matching": "PATTERN"
+        "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
     },
@@ -175,7 +218,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
