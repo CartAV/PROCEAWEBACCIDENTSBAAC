@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536927598537
+    "lastModifiedOn": 1536928796152
   },
   "creationTag": {
     "versionNumber": 0,
@@ -79,7 +79,8 @@
       },
       {
         "name": "Organisme",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "jour",
@@ -206,20 +207,7 @@
         "maxLength": 16200
       },
       {
-        "name": "departement",
-        "type": "bigint"
-      },
-      {
-        "name": "identifiantBAAC",
-        "type": "bigint"
-      },
-      {
         "name": "heureAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "coordonneesGeo",
         "type": "string",
         "maxLength": 16200
       },
@@ -239,28 +227,24 @@
         "maxLength": 16200
       },
       {
-        "name": "codeUnite",
-        "type": "bigint"
-      },
-      {
-        "name": "numPV",
-        "type": "bigint"
-      },
-      {
-        "name": "organisme",
-        "type": "bigint"
+        "name": " Numéro P.V.",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "statutBaac",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "typeAccident",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "IdTechniqueFO",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       }
     ],
     "userModified": true
