@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926749497
+    "lastModifiedOn": 1536927208862
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,11 +68,19 @@
         "maxLength": 16200
       },
       {
+        "name": "date",
+        "type": "bigint"
+      },
+      {
         "name": "codeUnite",
         "type": "bigint"
       },
       {
         "name": "numPV",
+        "type": "bigint"
+      },
+      {
+        "name": "Num_Acc",
         "type": "bigint"
       },
       {
