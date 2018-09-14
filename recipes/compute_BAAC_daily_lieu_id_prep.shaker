@@ -2,20 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {
-    "pr": {
-      "meaning": "LongMeaning"
-    },
-    "filename": {
-      "meaning": "Text"
-    },
-    "voieIndiceAlpha": {
-      "meaning": "Text"
-    },
-    "pr1": {
-      "meaning": "LongMeaning"
-    }
-  },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -39,19 +25,60 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "codeUnite",
+            "to": " Code Unité"
+          },
+          {
+            "from": "numPV",
+            "to": "Numéro P.V."
+          },
+          {
+            "from": "organisme",
+            "to": "Organisme"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "pr": {
+      "meaning": "LongMeaning"
+    },
+    "filename": {
+      "meaning": "Text"
+    },
+    "voieIndiceAlpha": {
+      "meaning": "Text"
+    },
+    "pr1": {
+      "meaning": "LongMeaning"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
