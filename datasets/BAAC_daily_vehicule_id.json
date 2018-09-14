@@ -1,0 +1,283 @@
+{
+  "type": "Vertica",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536927264616
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1536927264420
+  },
+  "tags": [],
+  "params": {
+    "connection": "datalabmaster",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "baac_daily_vehicule_id",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "typeMotorisation",
+        "type": "bigint"
+      },
+      {
+        "name": "obs",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "immatriculationDpt",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "num_veh",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "immatriculationPays",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "spev",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "assu",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "filename",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "manv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "senc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "catv",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "code CNIT",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "Véhicule en fuite",
+        "type": "bigint"
+      },
+      {
+        "name": "choc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "obsm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "occutc",
+        "type": "int",
+        "meaning": "LongMeaning"
+      },
+      {
+        "name": "prop",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "facv",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "immatriculationParticuliere",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
+        "type": "bigint"
+      },
+      {
+        "name": "codeUnite",
+        "type": "bigint"
+      },
+      {
+        "name": "numPV",
+        "type": "bigint"
+      },
+      {
+        "name": "Num_Acc",
+        "type": "bigint"
+      },
+      {
+        "name": "organisme",
+        "type": "bigint"
+      },
+      {
+        "name": "statutBaac",
+        "type": "bigint"
+      },
+      {
+        "name": "typeAccident",
+        "type": "bigint"
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  }
+}
