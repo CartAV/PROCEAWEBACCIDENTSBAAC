@@ -166,11 +166,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536839637925
+    "lastModifiedOn": 1536926402204
   },
   "creationTag": {
     "versionNumber": 0,
@@ -182,7 +182,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_root",
-    "path": "/data/sources/ines/sftp_cartav",
+    "path": "/data/sources/ines/input_cartav",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -268,12 +268,10 @@
         "meaning": "Text"
       },
       {
-        "name": "lettreConventionnelle",
-        "type": "string"
-      },
-      {
-        "name": "enFuite",
-        "type": "string"
+        "name": "filename",
+        "type": "string",
+        "comment": "",
+        "maxLength": 1000
       }
     ],
     "userModified": true
