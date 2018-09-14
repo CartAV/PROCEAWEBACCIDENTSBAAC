@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "BAAC_daily_vehicule_id": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         },
         "useGlobalMetastore": false
       },
@@ -46,11 +51,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942538768
+    "lastModifiedOn": 1536942711076
   },
   "creationTag": {
     "versionNumber": 0,

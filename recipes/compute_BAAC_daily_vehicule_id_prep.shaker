@@ -2,17 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {
-    "facv": {
-      "meaning": "Text"
-    },
-    "immatriculationDpt": {
-      "meaning": "Text"
-    },
-    "occutc": {
-      "meaning": "LongMeaning"
-    }
-  },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -36,19 +25,107 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "immatriculationDpt",
+            "to": "département ou pays"
+          },
+          {
+            "from": "organisme",
+            "to": "Organisme"
+          },
+          {
+            "from": "codeUnite",
+            "to": "Code Unité"
+          },
+          {
+            "from": "numPV",
+            "to": "Numéro P.V."
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "première immat mois",
+        "mapping": [
+          {
+            "from": "[0-9]{4}-([0-9]{2})",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "première immat"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "première immat année",
+        "mapping": [
+          {
+            "from": "([0-9]{4})-[0-9]{2}",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "première immat"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "facv": {
+      "meaning": "Text"
+    },
+    "immatriculationDpt": {
+      "meaning": "Text"
+    },
+    "occutc": {
+      "meaning": "LongMeaning"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
