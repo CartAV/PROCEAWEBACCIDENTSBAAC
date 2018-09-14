@@ -6,156 +6,211 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "filename",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "filename",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "nationalite",
+      "type": "string",
       "table": 0
     },
     {
       "name": "drogp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "cSP",
+      "type": "string",
       "table": 0
     },
     {
       "name": "perm",
+      "type": "string",
       "table": 0
     },
     {
       "name": "grav",
+      "type": "string",
       "table": 0
     },
     {
       "name": "catu",
+      "type": "string",
       "table": 0
     },
     {
       "name": "lettreConventionnelle",
+      "type": "string",
       "table": 0
     },
     {
       "name": "placeDansVehicule",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "datenaiss",
+      "type": "string",
       "table": 0
     },
     {
       "name": "alco",
+      "type": "string",
       "table": 0
     },
     {
       "name": "numeroUsager",
+      "type": "int",
       "table": 0
     },
     {
       "name": "sexe",
+      "type": "string",
       "table": 0
     },
     {
       "name": "infractions",
+      "type": "string",
       "table": 0
     },
     {
       "name": "trajet",
+      "type": "string",
       "table": 0
     },
     {
       "name": "filename",
+      "type": "string",
       "table": 0
     },
     {
       "name": "resp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "depu",
+      "type": "string",
       "table": 0
     },
     {
       "name": "drogd",
+      "type": "string",
       "table": 0
     },
     {
       "name": "paysResidence",
+      "type": "string",
       "table": 0
     },
     {
       "name": "locp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "etatp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "secu",
+      "type": "string",
       "table": 0
     },
     {
       "name": "actp",
+      "type": "string",
       "table": 0
     },
     {
       "name": "nationalite2",
+      "type": "string",
       "table": 0
     },
     {
       "name": "alcot",
+      "type": "string",
       "table": 0
     },
     {
       "name": "facu",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dateperm",
+      "type": "string",
       "table": 0
     },
     {
       "name": "mapping_error",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dateHeureDernModFO",
+      "type": "string",
       "table": 1
     },
     {
       "name": "date",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "codeUnite",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "numPV",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "Num_Acc",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "organisme",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "statutBaac",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "typeAccident",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "IdTechniqueFO",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -205,5 +260,194 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "nationalite",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "drogp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "cSP",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "perm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "grav",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "catu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "lettreConventionnelle",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "placeDansVehicule",
+            "type": "bigint"
+          },
+          {
+            "name": "datenaiss",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "alco",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "numeroUsager",
+            "type": "int"
+          },
+          {
+            "name": "sexe",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "infractions",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "trajet",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "filename",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "resp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "depu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "drogd",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "paysResidence",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "locp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "etatp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "secu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "actp",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "nationalite2",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "alcot",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "facu",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "dateperm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "mapping_error",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "dateHeureDernModFO",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "date",
+            "type": "bigint"
+          },
+          {
+            "name": "codeUnite",
+            "type": "bigint"
+          },
+          {
+            "name": "numPV",
+            "type": "bigint"
+          },
+          {
+            "name": "Num_Acc",
+            "type": "bigint"
+          },
+          {
+            "name": "organisme",
+            "type": "bigint"
+          },
+          {
+            "name": "statutBaac",
+            "type": "bigint"
+          },
+          {
+            "name": "typeAccident",
+            "type": "bigint"
+          },
+          {
+            "name": "IdTechniqueFO",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
