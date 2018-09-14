@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942351242
+    "lastModifiedOn": 1536942403362
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,108 +58,6 @@
   "schema": {
     "columns": [
       {
-        "name": "dateAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mois",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "an",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "com",
-        "type": "bigint"
-      },
-      {
-        "name": "dep",
-        "type": "bigint"
-      },
-      {
-        "name": "agg",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "int",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Id BAAC 2002",
-        "type": "bigint"
-      },
-      {
-        "name": "lum",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "atm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "col",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "heureAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Minute",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "hrmn",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Heure",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "adr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Coordonnées GPS",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "dateHeureDernModFO",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "date",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": "Code Unité",
         "type": "string",
         "maxLength": 16200
@@ -170,49 +68,51 @@
         "maxLength": 16200
       },
       {
+        "name": "Numéro de feuillet",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "Num_Acc",
         "type": "string",
         "maxLength": 16200
       },
       {
         "name": "Organisme",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
-        "name": "statutBaac",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "typeAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "IdTechniqueFO",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lon",
+        "name": "Code route",
         "type": "bigint"
       },
       {
-        "name": "lat",
-        "type": "bigint"
-      },
-      {
-        "name": "gps",
+        "name": "catr",
         "type": "string",
         "maxLength": 16200
-      },
-      {
-        "name": "codeRoute",
-        "type": "bigint"
       },
       {
         "name": "voie",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "v1",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "v2",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "circ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "nbv",
         "type": "string",
         "maxLength": 16200
       },
@@ -222,35 +122,32 @@
         "maxLength": 16200
       },
       {
-        "name": "plan",
+        "name": "prof",
         "type": "string",
         "maxLength": 16200
       },
       {
         "name": "pr",
-        "type": "int",
-        "maxLength": 16200
-      },
-      {
-        "name": "vMA",
-        "type": "bigint"
-      },
-      {
-        "name": "nbv",
-        "type": "bigint",
-        "maxLength": 16200
-      },
-      {
-        "name": "catr",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "voieIndiceNum",
-        "type": "int"
+        "name": "pr1",
+        "type": "string",
+        "maxLength": 16200
       },
       {
-        "name": "circ",
+        "name": "plan",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "lartpc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "larrout",
         "type": "string",
         "maxLength": 16200
       },
@@ -260,8 +157,8 @@
         "maxLength": 16200
       },
       {
-        "name": "pr1",
-        "type": "int",
+        "name": "infra",
+        "type": "string",
         "maxLength": 16200
       },
       {
@@ -270,12 +167,29 @@
         "maxLength": 16200
       },
       {
-        "name": "infra",
+        "name": "env1",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "prof",
+        "name": "date",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "codeRoute",
+        "type": "bigint"
+      },
+      {
+        "name": "vMA",
+        "type": "bigint"
+      },
+      {
+        "name": "voieIndiceNum",
+        "type": "int"
+      },
+      {
+        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
@@ -296,6 +210,16 @@
         "maxLength": 16200
       },
       {
+        "name": "mapping_error",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "codeUnite",
         "type": "bigint"
       },
@@ -306,6 +230,21 @@
       {
         "name": "organisme",
         "type": "bigint"
+      },
+      {
+        "name": "statutBaac",
+        "type": "bigint",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeAccident",
+        "type": "bigint",
+        "maxLength": 16200
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "bigint",
+        "maxLength": 16200
       }
     ],
     "userModified": true
