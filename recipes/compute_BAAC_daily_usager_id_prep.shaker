@@ -110,6 +110,52 @@
         "matching": "PATTERN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "mo_perm",
+        "mapping": [
+          {
+            "from": "([0-9]{4})-([0-9]{2})",
+            "to": "$2"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "dateperm"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "an_perm",
+        "mapping": [
+          {
+            "from": "([0-9]{4})-([0-9]{2})",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "dateperm"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
