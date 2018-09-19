@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537349053024
+    "lastModifiedOn": 1537349140215
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,8 +103,9 @@
         "maxLength": 16200
       },
       {
-        "name": "an_naiss",
-        "type": "bigint"
+        "name": "an_nais",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "mo_nais",
@@ -199,6 +200,16 @@
       },
       {
         "name": "dateperm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "an_perm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mo_perm",
         "type": "string",
         "maxLength": 16200
       },
