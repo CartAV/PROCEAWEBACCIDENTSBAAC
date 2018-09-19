@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1520273448019
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "params": {
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,
@@ -57,75 +59,61 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Code Unité",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Numéro P.V.",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Numéro de feuillet",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Num_Acc",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Organisme",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Code route",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "inconnu2",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "inconnu3",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "inconnu4",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "adr2",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "date",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [

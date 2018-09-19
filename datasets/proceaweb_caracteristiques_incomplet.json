@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1520274022960
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "params": {
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,
@@ -57,159 +59,131 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Code Unité",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Numéro P.V.",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Numéro de feuillet",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Num_Acc",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Organisme",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "jour",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "mois",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "an",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Heure",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Minute",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "hrmn",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "lum",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "dep",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "com",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "agg",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "int",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "atm",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "col",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "adr",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Coordonnées GPS",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "gps",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "lat",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "long",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Id BAAC 2002",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "date"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [

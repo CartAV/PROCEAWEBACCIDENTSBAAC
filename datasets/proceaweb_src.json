@@ -57,7 +57,9 @@
     },
     "lastModifiedOn": 1519230846833
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "params": {
     "connection": "filesystem_root",
     "path": "/data/dsr/accidentalite/proceaweb/201802/",

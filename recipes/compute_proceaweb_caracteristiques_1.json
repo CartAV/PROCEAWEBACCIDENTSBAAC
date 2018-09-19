@@ -22,7 +22,8 @@
               "cache": false
             }
           }
-        }
+        },
+        "useGlobalMetastore": false
       },
       "hadoopConfigKeys": [],
       "maxThreads": 8
@@ -67,7 +68,9 @@
     },
     "lastModifiedOn": 1519235524491
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "checklists": {
     "checklists": []
   }

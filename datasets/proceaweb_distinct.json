@@ -50,7 +50,9 @@
     },
     "lastModifiedOn": 1521641196748
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "params": {
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,

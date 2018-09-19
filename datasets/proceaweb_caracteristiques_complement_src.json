@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1519232276389
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb Batch"
+  ],
   "params": {
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,
@@ -57,27 +59,24 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "source",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "data",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "date",
         "type": "string",
-        "timestampNoTzAsDate": false,
         "maxLength": 16200
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
