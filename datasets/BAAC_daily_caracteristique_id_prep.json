@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537362855539
+    "lastModifiedOn": 1537364089221
   },
   "creationTag": {
     "versionNumber": 0,
@@ -207,7 +207,8 @@
       },
       {
         "name": "lat",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "gps",
