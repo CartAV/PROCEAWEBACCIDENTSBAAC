@@ -26,7 +26,6 @@
     "occutc",
     "code CNIT",
     "date",
-    "codeRoute",
     "statutBaac",
     "typeAccident",
     "IdTechniqueFO"
@@ -127,7 +126,7 @@
           },
           {
             "name": "datv",
-            "type": "date"
+            "type": "string"
           },
           {
             "name": "première immat année",
@@ -176,10 +175,6 @@
           {
             "name": "date",
             "type": "string"
-          },
-          {
-            "name": "codeRoute",
-            "type": "bigint"
           },
           {
             "name": "statutBaac",
