@@ -1,6 +1,10 @@
 {
   "tags": {
-    "ProceaWeb Batch": {},
-    "ProceaWeb XML": {}
+    "ProceaWeb Batch": {
+      "color": "#74d66b"
+    },
+    "ProceaWeb XML": {
+      "color": "#8890bd"
+    }
   }
 }
