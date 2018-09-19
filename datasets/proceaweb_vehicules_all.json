@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942733135
+    "lastModifiedOn": 1537360654588
   },
   "creationTag": {
     "versionNumber": 0,
@@ -168,7 +168,7 @@
       },
       {
         "name": "occutc",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -182,42 +182,8 @@
         "maxLength": 16200
       },
       {
-        "name": "typeMotorisation",
-        "type": "bigint"
-      },
-      {
         "name": "codeRoute",
         "type": "bigint"
-      },
-      {
-        "name": "immatriculationPays",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "première immat",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "immatriculationParticuliere",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "dateHeureDernModFO",
-        "type": "string",
-        "maxLength": 16200
       },
       {
         "name": "statutBaac",
