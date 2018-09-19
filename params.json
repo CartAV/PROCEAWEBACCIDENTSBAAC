@@ -84,7 +84,7 @@
   },
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": true,
+    "flowAnchorSourcesAndSinks": false,
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
@@ -208,11 +208,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942421646
+    "lastModifiedOn": 1537350357996
   },
   "creationTag": {
     "versionNumber": 0,
