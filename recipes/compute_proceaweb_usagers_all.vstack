@@ -38,8 +38,6 @@
     "cSP",
     " num_veh",
     "natinf0",
-    "mapping_error",
-    "dateHeureDernModFO",
     " Organisme",
     "statutBaac",
     "typeAccident",
@@ -233,18 +231,10 @@
           },
           {
             "name": " num_veh",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "natinf0",
-            "type": "string"
-          },
-          {
-            "name": "mapping_error",
-            "type": "string"
-          },
-          {
-            "name": "dateHeureDernModFO",
             "type": "string"
           },
           {
