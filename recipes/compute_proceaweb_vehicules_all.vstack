@@ -25,7 +25,18 @@
     "manv",
     "occutc",
     "code CNIT",
-    "date"
+    "date",
+    "typeMotorisation",
+    "codeRoute",
+    "immatriculationPays",
+    "première immat",
+    "filename",
+    "immatriculationParticuliere",
+    "mapping_error",
+    "dateHeureDernModFO",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
