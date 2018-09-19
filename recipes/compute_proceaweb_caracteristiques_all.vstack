@@ -159,11 +159,11 @@
           },
           {
             "name": "lat",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "long",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "Id BAAC 2002",
