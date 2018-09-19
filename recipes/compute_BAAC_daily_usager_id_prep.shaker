@@ -130,7 +130,7 @@
         ],
         "normalization": "EXACT",
         "columns": [
-          "dateperm"
+          "datp"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
@@ -153,11 +153,27 @@
         ],
         "normalization": "EXACT",
         "columns": [
-          "dateperm"
+          "datp"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "infractions",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ",",
+        "outColPrefix": "natinf",
+        "limitOutput": false,
+        "target": "COLUMNS"
       },
       "alwaysShowComment": false
     }
