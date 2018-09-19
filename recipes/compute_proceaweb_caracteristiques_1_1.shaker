@@ -1,311 +1,338 @@
 {
-  "explorationFilters": [
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "ALPHANUM",
-        "column": "Code Unité",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:5644",
-      "validityFilter": {
-        "column": "Code Unité",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "Text"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "Code Unité",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "Code Unité",
-      "currentMode": "FACET",
-      "active": false,
-      "type": "columnFilter"
-    },
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "ALPHANUM",
-        "column": "Numéro de feuillet",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:6538",
-      "validityFilter": {
-        "column": "Numéro de feuillet",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "Text"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "Numéro de feuillet",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "Numéro de feuillet",
-      "currentMode": "FACET",
-      "active": false,
-      "type": "columnFilter"
-    },
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "ALPHANUM",
-        "column": "Numéro P.V.",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:8064",
-      "validityFilter": {
-        "column": "Numéro P.V.",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "Text"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "Numéro P.V.",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "Numéro P.V.",
-      "currentMode": "FACET",
-      "active": false,
-      "type": "columnFilter"
-    },
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "ALPHANUM",
-        "column": "Num_Acc",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:9856",
-      "validityFilter": {
-        "column": "Num_Acc",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "Text"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "Num_Acc",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "Num_Acc",
-      "currentMode": "FACET",
-      "active": true,
-      "type": "columnFilter"
-    }
-  ],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
-  "vizSampling": {
-    "_refreshTrigger": 0,
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "date",
+              "col": "data",
+              "string": "2017-12",
+              "num": 0.0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
     "autoRefreshSample": false
   },
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "Code Unité",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "Text",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "Code Unité",
+      "active": false,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Code Unité",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:5644",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Code Unité",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "Numéro de feuillet",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "Text",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "Numéro de feuillet",
+      "active": false,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Numéro de feuillet",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:6538",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Numéro de feuillet",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "Numéro P.V.",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "Text",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "Numéro P.V.",
+      "active": false,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Numéro P.V.",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:8064",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Numéro P.V.",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "Num_Acc",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "Text",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "Num_Acc",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Num_Acc",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:9856",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Num_Acc",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
-  "coloring": {
-    "individualColumns": [],
-    "scheme": "MEANING_AND_STATUS",
-    "valueColoringMode": "HASH"
+  "exploreUIParams": {
+    "autoRefresh": true
   },
   "steps": [
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Formattage proceaweb",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
           "params": {
-            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{2})(.{3})(.{2})(.{2}).{2}.{2}.{8}(.{1})(.{1})(.{1}).(.{1})(.{2})(.{1})(.{1})(.{2})(.{3})....(.*)",
             "found_col": false,
+            "extractAllOccurrences": false,
             "prefix": "",
             "column": "data",
-            "extractAllOccurrences": false
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{2})(.{3})(.{2})(.{2}).{2}.{2}.{8}(.{1})(.{1})(.{1}).(.{1})(.{2})(.{1})(.{1})(.{2})(.{3})....(.*)"
           },
-          "type": "RegexpExtractor",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping officiel de Proceaweb",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "source_bis",
-                "from": "1"
+                "from": "1",
+                "to": "source_bis"
               },
               {
-                "to": "Code Unité",
-                "from": "2"
+                "from": "2",
+                "to": "Code Unité"
               },
               {
-                "to": "Numéro P.V.",
-                "from": "3"
+                "from": "3",
+                "to": "Numéro P.V."
               },
               {
-                "to": "Numéro de feuillet",
-                "from": "4"
+                "from": "4",
+                "to": "Numéro de feuillet"
               },
               {
-                "to": "Organisme",
-                "from": "5"
+                "from": "5",
+                "to": "Organisme"
               },
               {
-                "to": "Lette conventionnelle",
-                "from": "6"
+                "from": "6",
+                "to": "Lette conventionnelle"
               },
               {
-                "to": "Code route",
-                "from": "7"
+                "from": "7",
+                "to": "Code route"
               },
               {
-                "to": "Véhicule en fuite",
-                "from": "8"
+                "from": "8",
+                "to": "Véhicule en fuite"
               },
               {
-                "to": "Sens de circulation",
-                "from": "9"
+                "from": "9",
+                "to": "Sens de circulation"
               },
               {
-                "to": "Catégorie administrative",
-                "from": "10"
+                "from": "10",
+                "to": "Catégorie administrative"
               },
               {
-                "to": "département ou pays",
-                "from": "11"
+                "from": "11",
+                "to": "département ou pays"
               },
               {
-                "to": "première immat mois",
-                "from": "12"
+                "from": "12",
+                "to": "première immat mois"
               },
               {
-                "to": "première immat année",
-                "from": "13"
+                "from": "13",
+                "to": "première immat année"
               },
               {
-                "to": "appartenant à",
-                "from": "14"
+                "from": "14",
+                "to": "appartenant à"
               },
               {
-                "to": "véhicule spécial",
-                "from": "15"
+                "from": "15",
+                "to": "véhicule spécial"
               },
               {
-                "to": "facteur lié au véhicule",
-                "from": "16"
+                "from": "16",
+                "to": "facteur lié au véhicule"
               },
               {
-                "to": "assurance",
-                "from": "17"
+                "from": "17",
+                "to": "assurance"
               },
               {
-                "to": "obstacle fixe",
-                "from": "18"
+                "from": "18",
+                "to": "obstacle fixe"
               },
               {
-                "to": "obstacle mobile",
-                "from": "19"
+                "from": "19",
+                "to": "obstacle mobile"
               },
               {
-                "to": "point de choc initial",
-                "from": "20"
+                "from": "20",
+                "to": "point de choc initial"
               },
               {
-                "to": "manoeuvre",
-                "from": "21"
+                "from": "21",
+                "to": "manoeuvre"
               },
               {
-                "to": "nombre d\u0027occupants",
-                "from": "22"
+                "from": "22",
+                "to": "nombre d\u0027occupants"
               },
               {
-                "to": "code CNIT",
-                "from": "23"
+                "from": "23",
+                "to": "code CNIT"
               }
             ]
           },
-          "comment": "Mapping officiel de Proceaweb",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": true
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
           "params": {
-            "appliesTo": "COLUMNS",
             "columns": [
               "source",
               "source_bis",
               "data"
             ],
-            "keep": false
+            "keep": false,
+            "appliesTo": "COLUMNS"
           },
-          "type": "ColumnsSelector",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Mapping BAAC/CartAV",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "Num_Acc",
             "columns": [
@@ -316,119 +343,119 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping BAAC CartAV",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "senc",
-                "from": "Sens de circulation"
+                "from": "Sens de circulation",
+                "to": "senc"
               },
               {
-                "to": "catv",
-                "from": "Catégorie administrative"
+                "from": "Catégorie administrative",
+                "to": "catv"
               },
               {
-                "to": "obsm",
-                "from": "obstacle mobile"
+                "from": "obstacle mobile",
+                "to": "obsm"
               },
               {
-                "to": "obs",
-                "from": "obstacle fixe"
+                "from": "obstacle fixe",
+                "to": "obs"
               },
               {
-                "to": "choc",
-                "from": "point de choc initial"
+                "from": "point de choc initial",
+                "to": "choc"
               },
               {
-                "to": "manv",
-                "from": "manoeuvre"
+                "from": "manoeuvre",
+                "to": "manv"
               },
               {
-                "to": "spev",
-                "from": "véhicule spécial"
+                "from": "véhicule spécial",
+                "to": "spev"
               },
               {
-                "to": "facv",
-                "from": "facteur lié au véhicule"
+                "from": "facteur lié au véhicule",
+                "to": "facv"
               },
               {
-                "to": "assu",
-                "from": "assurance"
+                "from": "assurance",
+                "to": "assu"
               },
               {
-                "to": "prop",
-                "from": "appartenant à"
+                "from": "appartenant à",
+                "to": "prop"
               },
               {
-                "to": "occutc",
-                "from": "nombre d\u0027occupants"
+                "from": "nombre d\u0027occupants",
+                "to": "occutc"
               },
               {
-                "to": "num_veh",
-                "from": "Lette conventionnelle"
+                "from": "Lette conventionnelle",
+                "to": "num_veh"
               }
             ]
           },
-          "comment": "Mapping BAAC CartAV",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
-          "params": {
-            "usePythonUnicode": true,
-            "stopOnError": true,
-            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"senc\": {\n        \"0\": \"\",\n        \"1\": \"PK-PR-num rue croissant\",\n        \"2\": \"PK-PR-num rue décroissant\"\n      },\n      \"catv\": {\n        \"00\": \"\",\n        \"10\": \"utilitaire\",\n        \"11\": \"utilitaire+caravane (ref obsolète)\",\n        \"12\": \"utilitaire+remorque (ref obsolète)\",\n        \"13\": \"poids lourd\",\n        \"14\": \"poids lourd\",\n        \"15\": \"poids lourd\",\n        \"16\": \"tracteur\",\n        \"17\": \"tracteur+semi-remorque\",\n        \"18\": \"transport en commun (ref obsolète)\",\n        \"19\": \"tramway (ref obsolète)\",\n        \"20\": \"engin spécial\",\n        \"21\": \"tracteur\",\n        \"30\": \"scooter -50cm3\",\n        \"31\": \"motocyclette +50cm3-125cm3\",\n        \"33\": \"motocyclette +125cm3\",\n        \"34\": \"scooter +125cm3\",\n        \"35\": \"quad -50cm3\",\n        \"36\": \"quad +50cm3\",\n        \"37\": \"bus\",\n        \"39\": \"train\",\n        \"40\": \"tramway\",\n        \"99\": \"autre véhicule\",\n        \"01\": \"bicyclette\",\n        \"02\": \"cyclomoteur -50cm3\",\n        \"03\": \"voiturette\",\n        \"04\": \"scooter immatriculé (ref obsolète)\",\n        \"05\": \"motocyclette (ref obsolète)\",\n        \"06\": \"side-car (ref obsolète)\",\n        \"07\": \"voiture\",\n        \"08\": \"voiture+caravane (ref obsolète)\",\n        \"09\": \"voiture+remorque (ref obsolète)\"\n      },\n      \"obsm\": {\n        \"0\": \"\",\n        \"1\": \"choc piéton\",\n        \"2\": \"choc véhicule\",\n        \"4\": \"choc sur rail\",\n        \"6\": \"choc animal domestique\",\n        \"9\": \"choc autre obstacle mobile\"\n      },\n      \"obs\": {\n        \"00\": \"\",\n        \"01\": \"Véhicule en stationnement\",\n        \"02\": \"Arbre\",\n        \"03\": \"Glissière métallique\",\n        \"04\": \"Glissière béton\",\n        \"05\": \"Autre glissière\",\n        \"06\": \"Bâtiment, mur, pile de pont\",\n        \"07\": \"Support de signalisation verticale ou poste d’appel d’urgence\",\n        \"08\": \"Poteau\",\n        \"09\": \"Mobilier urbain\",\n        \"10\": \"Parapet\",\n        \"11\": \"Ilot, refuge, borne haute\",\n        \"12\": \"Bordure de trottoir\",\n        \"13\": \"Fossé, talus, paroi rocheuse\",\n        \"14\": \"Autre obstacle fixe sur chaussée\",\n        \"15\": \"Autre obstacle fixe sur trottoir ou accotement\",\n        \"16\": \"Sortie de chaussée sans obtacle\"\n      },\n      \"choc\": {\n        \"0\": \"\",\n        \"1\": \"avant\",\n        \"2\": \"avant droit\",\n        \"3\": \"avant gauche\",\n        \"4\": \"arrière\",\n        \"5\": \"arrière droit\",\n        \"6\": \"arrière gauche\",\n        \"7\": \"côté droit\",\n        \"8\": \"côté gauche\",\n        \"9\": \"multiples\"\n      },\n      \"manv\": {\n        \"00\": \"\",\n        \"01\": \"sans changement de direction\",\n        \"02\": \"même sens, même file\",\n        \"03\": \"entre 2 files\",\n        \"04\": \"en marche arrière\",\n        \"05\": \"à contresens\",\n        \"06\": \"en franchissant le terre-plein central\",\n        \"07\": \"dans le couloir bus, dans le même sens\",\n        \"08\": \"dans le couloir bus, dans le sens inverse\",\n        \"09\": \"en s’insérant\",\n        \"10\": \"en faisant demi-tour sur la chaussée\",\n        \"11\": \"changeant de file à gauche\",\n        \"12\": \"changeant de file à droite\",\n        \"13\": \"déporté à gauche\",\n        \"14\": \"déporté à droite\",\n        \"15\": \"tournant à gauche\",\n        \"16\": \"tournant à droite\",\n        \"17\": \"tournant à gauche\",\n        \"18\": \"tournant à droite\",\n        \"19\": \"traversant la chaussée\",\n        \"20\": \"manoeuvre de stationnement\",\n        \"21\": \"manoeuvre d’évitement\",\n        \"22\": \"ouverture de porte\",\n        \"23\": \"arrêté non stationné\",\n        \"24\": \"stationné\"\n      },\n      \"prop\": {\n          \"0\": \"\",\n          \"1\": \"conducteur\",\n          \"2\": \"véhicule volé\",\n          \"3\": \"propriétaire consentant\",\n          \"4\": \"administration\",\n          \"5\": \"entreprise\"\n      },\n      \"spev\": {\n          \"0\": \"\",\n          \"1\": \"taxi\",\n          \"2\": \"ambulance\",\n          \"3\": \"pompiers\",\n          \"4\": \"police - gendarmerie\",\n          \"5\": \"transports scolaires\",\n          \"6\": \"matières dangereuses\",\n          \"9\": \"autres\"\n      },\n      \"assu\": {\n          \"0\": \"\",\n          \"1\": \"oui\",\n          \"2\": \"non\",\n          \"3\": \"non présentation\"\n      },\n      \"facv\": {\n          \"0\": \"\",\n          \"1\": \"défectuosité mécanique\",\n          \"2\": \"éclairage - signalisation\",\n          \"3\": \"pneu usé\",\n          \"4\": \"éclatement de pneu\",\n          \"5\": \"chargement\",\n          \"6\": \"déplacement du véhicule\",\n          \"7\": \"incendie du véhicule\",\n          \"9\": \"autre\"\n      }   \n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
-            "mode": "ROW"
-          },
+          "metaType": "PROCESSOR",
+          "disabled": false,
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
           "type": "PythonUDF",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "params": {
+            "mode": "ROW",
+            "stopOnError": true,
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"senc\": {\n        \"0\": \"\",\n        \"1\": \"PK-PR-num rue croissant\",\n        \"2\": \"PK-PR-num rue décroissant\"\n      },\n      \"catv\": {\n        \"00\": \"\",\n        \"10\": \"utilitaire\",\n        \"11\": \"utilitaire+caravane (ref obsolète)\",\n        \"12\": \"utilitaire+remorque (ref obsolète)\",\n        \"13\": \"poids lourd\",\n        \"14\": \"poids lourd\",\n        \"15\": \"poids lourd\",\n        \"16\": \"tracteur\",\n        \"17\": \"tracteur+semi-remorque\",\n        \"18\": \"transport en commun (ref obsolète)\",\n        \"19\": \"tramway (ref obsolète)\",\n        \"20\": \"engin spécial\",\n        \"21\": \"tracteur\",\n        \"30\": \"scooter -50cm3\",\n        \"31\": \"motocyclette +50cm3-125cm3\",\n        \"33\": \"motocyclette +125cm3\",\n        \"34\": \"scooter +125cm3\",\n        \"35\": \"quad -50cm3\",\n        \"36\": \"quad +50cm3\",\n        \"37\": \"bus\",\n        \"39\": \"train\",\n        \"40\": \"tramway\",\n        \"99\": \"autre véhicule\",\n        \"01\": \"bicyclette\",\n        \"02\": \"cyclomoteur -50cm3\",\n        \"03\": \"voiturette\",\n        \"04\": \"scooter immatriculé (ref obsolète)\",\n        \"05\": \"motocyclette (ref obsolète)\",\n        \"06\": \"side-car (ref obsolète)\",\n        \"07\": \"voiture\",\n        \"08\": \"voiture+caravane (ref obsolète)\",\n        \"09\": \"voiture+remorque (ref obsolète)\"\n      },\n      \"obsm\": {\n        \"0\": \"\",\n        \"1\": \"choc piéton\",\n        \"2\": \"choc véhicule\",\n        \"4\": \"choc sur rail\",\n        \"6\": \"choc animal domestique\",\n        \"9\": \"choc autre obstacle mobile\"\n      },\n      \"obs\": {\n        \"00\": \"\",\n        \"01\": \"Véhicule en stationnement\",\n        \"02\": \"Arbre\",\n        \"03\": \"Glissière métallique\",\n        \"04\": \"Glissière béton\",\n        \"05\": \"Autre glissière\",\n        \"06\": \"Bâtiment, mur, pile de pont\",\n        \"07\": \"Support de signalisation verticale ou poste d’appel d’urgence\",\n        \"08\": \"Poteau\",\n        \"09\": \"Mobilier urbain\",\n        \"10\": \"Parapet\",\n        \"11\": \"Ilot, refuge, borne haute\",\n        \"12\": \"Bordure de trottoir\",\n        \"13\": \"Fossé, talus, paroi rocheuse\",\n        \"14\": \"Autre obstacle fixe sur chaussée\",\n        \"15\": \"Autre obstacle fixe sur trottoir ou accotement\",\n        \"16\": \"Sortie de chaussée sans obtacle\"\n      },\n      \"choc\": {\n        \"0\": \"\",\n        \"1\": \"avant\",\n        \"2\": \"avant droit\",\n        \"3\": \"avant gauche\",\n        \"4\": \"arrière\",\n        \"5\": \"arrière droit\",\n        \"6\": \"arrière gauche\",\n        \"7\": \"côté droit\",\n        \"8\": \"côté gauche\",\n        \"9\": \"multiples\"\n      },\n      \"manv\": {\n        \"00\": \"\",\n        \"01\": \"sans changement de direction\",\n        \"02\": \"même sens, même file\",\n        \"03\": \"entre 2 files\",\n        \"04\": \"en marche arrière\",\n        \"05\": \"à contresens\",\n        \"06\": \"en franchissant le terre-plein central\",\n        \"07\": \"dans le couloir bus, dans le même sens\",\n        \"08\": \"dans le couloir bus, dans le sens inverse\",\n        \"09\": \"en s’insérant\",\n        \"10\": \"en faisant demi-tour sur la chaussée\",\n        \"11\": \"changeant de file à gauche\",\n        \"12\": \"changeant de file à droite\",\n        \"13\": \"déporté à gauche\",\n        \"14\": \"déporté à droite\",\n        \"15\": \"tournant à gauche\",\n        \"16\": \"tournant à droite\",\n        \"17\": \"tournant à gauche\",\n        \"18\": \"tournant à droite\",\n        \"19\": \"traversant la chaussée\",\n        \"20\": \"manoeuvre de stationnement\",\n        \"21\": \"manoeuvre d’évitement\",\n        \"22\": \"ouverture de porte\",\n        \"23\": \"arrêté non stationné\",\n        \"24\": \"stationné\"\n      },\n      \"prop\": {\n          \"0\": \"\",\n          \"1\": \"conducteur\",\n          \"2\": \"véhicule volé\",\n          \"3\": \"propriétaire consentant\",\n          \"4\": \"administration\",\n          \"5\": \"entreprise\"\n      },\n      \"spev\": {\n          \"0\": \"\",\n          \"1\": \"taxi\",\n          \"2\": \"ambulance\",\n          \"3\": \"pompiers\",\n          \"4\": \"police - gendarmerie\",\n          \"5\": \"transports scolaires\",\n          \"6\": \"matières dangereuses\",\n          \"9\": \"autres\"\n      },\n      \"assu\": {\n          \"0\": \"\",\n          \"1\": \"oui\",\n          \"2\": \"non\",\n          \"3\": \"non présentation\"\n      },\n      \"facv\": {\n          \"0\": \"\",\n          \"1\": \"défectuosité mécanique\",\n          \"2\": \"éclairage - signalisation\",\n          \"3\": \"pneu usé\",\n          \"4\": \"éclatement de pneu\",\n          \"5\": \"chargement\",\n          \"6\": \"déplacement du véhicule\",\n          \"7\": \"incendie du véhicule\",\n          \"9\": \"autre\"\n      }   \n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "usePythonUnicode": true
+          },
+          "alwaysShowComment": true
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
           "params": {
-            "matching": "SUBSTRING",
-            "stopAfterFirstMatch": false,
-            "appliesTo": "SINGLE_COLUMN",
+            "output": "",
+            "mapping": [
+              {
+                "from": "-",
+                "to": ""
+              }
+            ],
             "normalization": "EXACT",
             "columns": [
               "Num_Acc"
             ],
-            "mapping": [
-              {
-                "to": "",
-                "from": "-"
-              }
-            ],
-            "output": ""
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
           },
-          "type": "FindReplace",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Dates",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "datv",
             "columns": [
@@ -437,83 +464,56 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
           "params": {
-            "appliesTo": "SINGLE_COLUMN",
+            "formats": [
+              "yyMM"
+            ],
             "columns": [
               "datv"
             ],
             "timezone_id": "UTC",
-            "lang": "auto",
-            "formats": [
-              "yyMM"
-            ]
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
           },
-          "type": "DateParser",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
       "params": {
-        "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "Organisme"
         ],
-        "keep": false
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
-      "type": "RemoveRowsOnEmpty",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     }
   ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
+  "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 1,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": true,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0.0,
-              "col": "data",
-              "input": "date",
-              "string": "2017-12",
-              "operator": "contains"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
