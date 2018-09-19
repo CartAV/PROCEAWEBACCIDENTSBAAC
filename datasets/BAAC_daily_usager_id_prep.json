@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537349896867
+    "lastModifiedOn": 1537349902049
   },
   "creationTag": {
     "versionNumber": 0,
@@ -119,8 +119,9 @@
       },
       {
         "name": " num_veh",
-        "type": "bigint",
-        "meaning": "Text"
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
         "name": "sexe",
