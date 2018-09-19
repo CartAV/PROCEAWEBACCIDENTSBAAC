@@ -25,7 +25,6 @@
     "situ",
     "env1",
     "date",
-    "codeRoute",
     " Code Unité",
     "statutBaac",
     "typeAccident",
@@ -172,10 +171,6 @@
           {
             "name": "date",
             "type": "string"
-          },
-          {
-            "name": "codeRoute",
-            "type": "bigint"
           },
           {
             "name": " Code Unité",
