@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537360847720
+    "lastModifiedOn": 1537360856298
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,6 +71,7 @@
       {
         "name": "département ou pays",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
