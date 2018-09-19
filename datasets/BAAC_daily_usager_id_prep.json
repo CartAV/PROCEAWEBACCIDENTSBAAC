@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537349248947
+    "lastModifiedOn": 1537349719604
   },
   "creationTag": {
     "versionNumber": 0,
@@ -129,6 +129,22 @@
       {
         "name": "infractions",
         "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "natinf0",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "natinf1",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "natinf2",
+        "type": "string",
         "maxLength": 16200
       },
       {
@@ -204,6 +220,16 @@
         "maxLength": 16200
       },
       {
+        "name": "an_perm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mo_perm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
         "name": "mapping_error",
         "type": "string",
         "maxLength": 16200
@@ -250,21 +276,6 @@
       },
       {
         "name": "IdTechniqueFO",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "dateperm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "an_perm",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "mo_perm",
         "type": "string",
         "maxLength": 16200
       }
