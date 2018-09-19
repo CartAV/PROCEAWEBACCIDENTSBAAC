@@ -55,7 +55,7 @@
           },
           {
             "from": "numeroUsager",
-            "to": " num_veh"
+            "to": "num_veh"
           },
           {
             "from": "datenaiss",
