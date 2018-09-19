@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537358325622
+    "lastModifiedOn": 1537359800277
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,6 +62,7 @@
       {
         "name": "filename",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
