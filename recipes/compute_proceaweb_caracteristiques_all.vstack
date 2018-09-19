@@ -163,7 +163,7 @@
           },
           {
             "name": "long",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "Id BAAC 2002",
