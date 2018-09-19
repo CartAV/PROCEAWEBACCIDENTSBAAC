@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942861062
+    "lastModifiedOn": 1537360282671
   },
   "creationTag": {
     "versionNumber": 0,
@@ -115,7 +115,7 @@
       },
       {
         "name": "nbv",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -130,12 +130,12 @@
       },
       {
         "name": "pr",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
         "name": "pr1",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -175,49 +175,6 @@
       },
       {
         "name": "date",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "codeRoute",
-        "type": "bigint"
-      },
-      {
-        "name": "vMA",
-        "type": "bigint"
-      },
-      {
-        "name": "voieIndiceNum",
-        "type": "bigint"
-      },
-      {
-        "name": "filename",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "regimePriorite",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "facteursPresumesLieu",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voieIndiceAlpha",
-        "type": "string",
-        "meaning": "Text",
-        "maxLength": 16200
-      },
-      {
-        "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "dateHeureDernModFO",
         "type": "string",
         "maxLength": 16200
       },
