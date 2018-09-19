@@ -1,5 +1,5 @@
 {
-  "mode": "UNION",
+  "mode": "CUSTOM",
   "selectedColumns": [
     "Code Unité",
     "Numéro P.V.",
@@ -26,14 +26,7 @@
     "occutc",
     "code CNIT",
     "date",
-    "typeMotorisation",
     "codeRoute",
-    "immatriculationPays",
-    "première immat",
-    "filename",
-    "immatriculationParticuliere",
-    "mapping_error",
-    "dateHeureDernModFO",
     "statutBaac",
     "typeAccident",
     "IdTechniqueFO"
@@ -86,23 +79,19 @@
         "columns": [
           {
             "name": "Code Unité",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro P.V.",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro de feuillet",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Num_Acc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Organisme",
@@ -110,8 +99,7 @@
           },
           {
             "name": "num_veh",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Code route",
@@ -123,23 +111,19 @@
           },
           {
             "name": "senc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "catv",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "département ou pays",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "première immat mois",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "datv",
@@ -147,116 +131,67 @@
           },
           {
             "name": "première immat année",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "prop",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "spev",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "facv",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "assu",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "obs",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "obsm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "choc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "manv",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "occutc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "code CNIT",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "date",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "typeMotorisation",
-            "type": "bigint"
+            "type": "string"
           },
           {
             "name": "codeRoute",
             "type": "bigint"
           },
           {
-            "name": "immatriculationPays",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "première immat",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "filename",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "immatriculationParticuliere",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "mapping_error",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "dateHeureDernModFO",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
             "name": "statutBaac",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "typeAccident",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "IdTechniqueFO",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           }
         ],
         "userModified": false
