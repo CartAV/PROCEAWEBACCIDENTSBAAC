@@ -160,7 +160,7 @@
     },
     {
       "name": "Num_Acc",
-      "type": "bigint",
+      "type": "string",
       "table": 1
     },
     {
@@ -362,8 +362,10 @@
             "type": "bigint"
           },
           {
+            "meaning": "LongMeaning",
             "name": "Num_Acc",
-            "type": "bigint"
+            "type": "string",
+            "maxLength": 16200
           },
           {
             "name": "organisme",
