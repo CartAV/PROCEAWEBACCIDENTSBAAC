@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536942841079
+    "lastModifiedOn": 1537360205242
   },
   "creationTag": {
     "versionNumber": 0,
@@ -170,6 +170,7 @@
       {
         "name": " Code Unité",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
