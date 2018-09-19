@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537360856298
+    "lastModifiedOn": 1537360928436
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,17 +89,7 @@
         "maxLength": 16200
       },
       {
-        "name": "première immat",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "première immat année",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "première immat mois",
+        "name": "datv",
         "type": "string",
         "maxLength": 16200
       },
@@ -220,6 +210,21 @@
       },
       {
         "name": "IdTechniqueFO",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat année",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "première immat mois",
         "type": "string",
         "maxLength": 16200
       }
