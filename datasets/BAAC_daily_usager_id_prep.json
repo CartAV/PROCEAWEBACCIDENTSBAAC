@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536943268689
+    "lastModifiedOn": 1537349053024
   },
   "creationTag": {
     "versionNumber": 0,
@@ -107,7 +107,7 @@
         "type": "bigint"
       },
       {
-        "name": "mo_naiss",
+        "name": "mo_nais",
         "type": "string",
         "maxLength": 16200
       },
