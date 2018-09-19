@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536943291869
+    "lastModifiedOn": 1537349861220
   },
   "creationTag": {
     "versionNumber": 0,
@@ -162,7 +162,8 @@
       },
       {
         "name": "datp",
-        "type": "date"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "an_perm",
@@ -231,45 +232,11 @@
         "maxLength": 16200
       },
       {
-        "name": "lettreConventionnelle",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "an_naiss",
-        "type": "bigint"
-      },
-      {
-        "name": "mo_naiss",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
         "name": " num_veh",
         "type": "bigint"
       },
       {
-        "name": "infractions",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "paysResidence",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nationalite2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "dateperm",
+        "name": "natinf0",
         "type": "string",
         "maxLength": 16200
       },
