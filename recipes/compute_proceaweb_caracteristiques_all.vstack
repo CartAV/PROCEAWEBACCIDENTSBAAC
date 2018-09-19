@@ -26,11 +26,6 @@
     "long",
     "Id BAAC 2002",
     "date",
-    "Code route",
-    "inconnu2",
-    "inconnu3",
-    "inconnu4",
-    "filename",
     "statutBaac",
     "typeAccident",
     "IdTechniqueFO"
@@ -164,7 +159,7 @@
           },
           {
             "name": "lat",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "long",
@@ -176,26 +171,6 @@
           },
           {
             "name": "date",
-            "type": "string"
-          },
-          {
-            "name": "Code route",
-            "type": "bigint"
-          },
-          {
-            "name": "inconnu2",
-            "type": "string"
-          },
-          {
-            "name": "inconnu3",
-            "type": "string"
-          },
-          {
-            "name": "inconnu4",
-            "type": "string"
-          },
-          {
-            "name": "filename",
             "type": "string"
           },
           {
