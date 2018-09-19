@@ -1,5 +1,5 @@
 {
-  "mode": "UNION",
+  "mode": "CUSTOM",
   "selectedColumns": [
     "Code Unité",
     "Numéro P.V.",
@@ -36,15 +36,8 @@
     "date",
     "nationalite",
     "cSP",
-    "lettreConventionnelle",
-    "an_naiss",
-    "mo_naiss",
     " num_veh",
-    "infractions",
-    "filename",
-    "paysResidence",
-    "nationalite2",
-    "dateperm",
+    "natinf0",
     "mapping_error",
     "dateHeureDernModFO",
     " Organisme",
@@ -100,23 +93,19 @@
         "columns": [
           {
             "name": "Code Unité",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro P.V.",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro de feuillet",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Num_Acc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Organisme",
@@ -124,8 +113,7 @@
           },
           {
             "name": "num_veh",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "place",
@@ -133,38 +121,31 @@
           },
           {
             "name": "resp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "catu",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "grav",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "catso",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "sexe",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "depu",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "mo_nais",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "datn",
@@ -172,176 +153,115 @@
           },
           {
             "name": "an_nais",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "facu",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "alco",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "alcot",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "perm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "mo_perm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "datp",
-            "type": "date"
+            "type": "string"
           },
           {
             "name": "an_perm",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "trajet",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "natinf1",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "natinf2",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "secu",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "locp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "actp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "etatp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "drogd",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "drogp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "date",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "nationalite",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
-            "meaning": "Text",
             "name": "cSP",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "lettreConventionnelle",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "an_naiss",
-            "type": "bigint"
-          },
-          {
-            "name": "mo_naiss",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": " num_veh",
             "type": "bigint"
           },
           {
-            "name": "infractions",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "filename",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "paysResidence",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "nationalite2",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "dateperm",
-            "type": "string",
-            "maxLength": 16200
+            "name": "natinf0",
+            "type": "string"
           },
           {
             "name": "mapping_error",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "dateHeureDernModFO",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": " Organisme",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "statutBaac",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "typeAccident",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "IdTechniqueFO",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           }
         ],
         "userModified": false
