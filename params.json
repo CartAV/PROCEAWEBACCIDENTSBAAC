@@ -39,13 +39,6 @@
       },
       {
         "objectRef": {
-          "objectId": "proceaweb_lieux_all",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "proceaweb_vehicules_all",
           "objectType": "DATASET"
         },
@@ -98,16 +91,6 @@
       {
         "type": "DATASET",
         "localName": "proceaweb_usagers_all",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS_BRUT",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "proceaweb_lieux_all",
         "rules": [
           {
             "targetProject": "ACCIDENTS_BRUT",
@@ -299,11 +282,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537361320516
+    "lastModifiedOn": 1537361329801
   },
   "creationTag": {
     "versionNumber": 0,
