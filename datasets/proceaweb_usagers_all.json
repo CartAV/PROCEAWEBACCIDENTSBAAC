@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537363936274
+    "lastModifiedOn": 1537363941690
   },
   "creationTag": {
     "versionNumber": 0,
@@ -81,8 +81,9 @@
       },
       {
         "name": "Organisme",
-        "type": "bigint",
-        "meaning": "Text"
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
       },
       {
         "name": "num_veh",
