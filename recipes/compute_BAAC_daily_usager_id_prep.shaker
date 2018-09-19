@@ -71,7 +71,7 @@
       "disabled": false,
       "type": "FindReplace",
       "params": {
-        "output": "mo_naiss",
+        "output": "mo_nais",
         "mapping": [
           {
             "from": "([0-9]{4})-([0-9]{2})",
@@ -94,7 +94,7 @@
       "disabled": false,
       "type": "FindReplace",
       "params": {
-        "output": "an_naiss",
+        "output": "an_nais",
         "mapping": [
           {
             "from": "([0-9]{4})-([0-9]{2})",
