@@ -29,13 +29,6 @@
           "objectType": "DATASET"
         },
         "modes": []
-      },
-      {
-        "objectRef": {
-          "objectId": "proceaweb_usagers_all",
-          "objectType": "DATASET"
-        },
-        "modes": []
       }
     ]
   },
@@ -74,16 +67,6 @@
       {
         "type": "DATASET",
         "localName": "proceaweb_usagers",
-        "rules": [
-          {
-            "targetProject": "ACCIDENTS_BRUT",
-            "appearOnFlow": true
-          }
-        ]
-      },
-      {
-        "type": "DATASET",
-        "localName": "proceaweb_usagers_all",
         "rules": [
           {
             "targetProject": "ACCIDENTS_BRUT",
@@ -265,11 +248,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537361335557
+    "lastModifiedOn": 1537361344277
   },
   "creationTag": {
     "versionNumber": 0,
