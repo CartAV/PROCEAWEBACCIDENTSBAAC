@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537360205242
+    "lastModifiedOn": 1537360243330
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,7 +60,7 @@
   "schema": {
     "columns": [
       {
-        "name": "codeRoute",
+        "name": "Code route",
         "type": "bigint"
       },
       {
