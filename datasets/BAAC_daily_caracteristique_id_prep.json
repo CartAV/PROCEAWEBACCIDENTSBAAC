@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1536927729606
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb XML"
+  ],
   "params": {
     "connection": "datalabmaster",
     "notReadyIfEmpty": false,

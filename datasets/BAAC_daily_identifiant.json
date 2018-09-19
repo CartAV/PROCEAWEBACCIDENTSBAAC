@@ -53,7 +53,9 @@
     },
     "lastModifiedOn": 1536926672060
   },
-  "tags": [],
+  "tags": [
+    "ProceaWeb XML"
+  ],
   "params": {
     "connection": "filesystem_root",
     "path": "/data/sources/ines/input_cartav",
