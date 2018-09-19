@@ -1,5 +1,5 @@
 {
-  "mode": "UNION",
+  "mode": "CUSTOM",
   "selectedColumns": [
     "Code Unité",
     "Numéro P.V.",
@@ -24,7 +24,12 @@
     "infra",
     "situ",
     "env1",
-    "date"
+    "date",
+    "codeRoute",
+    " Code Unité",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
@@ -74,23 +79,19 @@
         "columns": [
           {
             "name": "Code Unité",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro P.V.",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Numéro de feuillet",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Num_Acc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "Organisme",
@@ -102,157 +103,95 @@
           },
           {
             "name": "catr",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "voie",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "v1",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "v2",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "circ",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "nbv",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "vosp",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "prof",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "pr",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "pr1",
-            "type": "string",
-            "maxLength": 16200
+            "type": "bigint"
           },
           {
             "name": "plan",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "lartpc",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "larrout",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "surf",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "infra",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "situ",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "env1",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "date",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "codeRoute",
             "type": "bigint"
           },
           {
-            "name": "vMA",
-            "type": "bigint"
-          },
-          {
-            "name": "voieIndiceNum",
-            "type": "bigint"
-          },
-          {
-            "meaning": "Text",
-            "name": "filename",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "regimePriorite",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "facteursPresumesLieu",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "meaning": "Text",
-            "name": "voieIndiceAlpha",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "mapping_error",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "name": "dateHeureDernModFO",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
             "name": " Code Unité",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "statutBaac",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "typeAccident",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           },
           {
             "name": "IdTechniqueFO",
-            "type": "string",
-            "maxLength": 16200
+            "type": "string"
           }
         ],
         "userModified": false
