@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536940931451
+    "lastModifiedOn": 1537348629490
   },
   "creationTag": {
     "versionNumber": 0,
@@ -164,7 +164,7 @@
       },
       {
         "name": "lat",
-        "type": "string",
+        "type": "bigint",
         "maxLength": 16200
       },
       {
@@ -179,30 +179,6 @@
       },
       {
         "name": "date",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "Code route",
-        "type": "bigint"
-      },
-      {
-        "name": "inconnu2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "inconnu3",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "inconnu4",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
