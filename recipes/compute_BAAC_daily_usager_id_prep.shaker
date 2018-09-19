@@ -60,6 +60,10 @@
           {
             "from": "datenaiss",
             "to": "datn"
+          },
+          {
+            "from": "dateperm",
+            "to": "datp"
           }
         ]
       },
