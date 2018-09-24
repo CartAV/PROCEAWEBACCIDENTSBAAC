@@ -203,6 +203,30 @@
         "sql": "SELECT MAX(\"Num_Acc\")\nFROM \"proceaweb_lieux\"\n",
         "expandedSql": "SELECT MAX(\"Num_Acc\")\nFROM \"proceaweb_lieux\"\n"
       }
+    ],
+    "8qe10kzg8c9": [
+      {
+        "mode": "SQL",
+        "id": "ig7KHVA3CPcx",
+        "runOn": 1537775761701,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "6sPNtafo",
+        "hash": "749931899f0563f95e684f289e597f59",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nWHERE DEP \u003d \u0027 \u0027",
+        "expandedSql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nWHERE DEP \u003d \u0027 \u0027"
+      }
     ]
   }
 }
