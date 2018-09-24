@@ -226,6 +226,28 @@
         },
         "sql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nWHERE DEP \u003d \u0027 \u0027",
         "expandedSql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nWHERE DEP \u003d \u0027 \u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wVulcwEkZczD",
+        "runOn": 1537775782466,
+        "runIn": 330,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "H1chaen7",
+        "hash": "b42d6a57343ed98e7d962dc0296006b6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DEP, COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nGROUP By DEP\n",
+        "expandedSql": "SELECT DEP, COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nGROUP By DEP\n"
       }
     ]
   }
