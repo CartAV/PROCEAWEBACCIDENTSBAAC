@@ -270,6 +270,28 @@
         },
         "sql": "SELECT DEP, COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nGROUP By DEP\nORDER ASC\n",
         "expandedSql": "SELECT DEP, COUNT(*)\nFROM \"proceaweb_caracteristiques\"\nGROUP By DEP\nORDER ASC\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "TXNMYLgN7S1L",
+        "runOn": 1537775811325,
+        "runIn": 74,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "FMMiaIQd",
+        "hash": "73736b1ead57f299721e9b839e436da4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DEP, COUNT(*) c\nFROM \"proceaweb_caracteristiques\"\nGROUP BY DEP\nORDER BY c ASC\n",
+        "expandedSql": "SELECT DEP, COUNT(*) c\nFROM \"proceaweb_caracteristiques\"\nGROUP BY DEP\nORDER BY c ASC\n"
       }
     ]
   }
