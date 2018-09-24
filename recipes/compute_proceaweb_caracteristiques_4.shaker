@@ -1,97 +1,115 @@
 {
-  "explorationFilters": [],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
-  "vizSampling": {
+  "explorationSampling": {
     "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
     "autoRefreshSample": false
   },
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
-  "coloring": {
-    "individualColumns": [],
-    "scheme": "MEANING_AND_STATUS",
-    "valueColoringMode": "HASH"
+  "exploreUIParams": {
+    "autoRefresh": true
   },
   "steps": [
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(adr2 !\u003d \"\",adr2, adr)",
         "column": "adr"
       },
-      "type": "CreateColumnWithGREL",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
       "params": {
-        "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "adr2"
         ],
-        "keep": false
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
-      "type": "ColumnsSelector",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
       "params": {
-        "matching": "PATTERN",
-        "stopAfterFirstMatch": false,
-        "appliesTo": "COLUMNS",
+        "output": "",
+        "mapping": [
+          {
+            "from": "^0",
+            "to": ""
+          }
+        ],
         "normalization": "EXACT",
         "columns": [
           "jour",
           "mois"
         ],
-        "mapping": [
-          {
-            "to": "",
-            "from": "^0"
-          }
-        ],
-        "output": ""
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
       },
-      "type": "FindReplace",
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
       "disabled": false,
-      "metaType": "PROCESSOR"
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "dep"
+        ],
+        "values": [],
+        "matchingMode": "PATTERN",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
+  "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
-  "explorationSampling": {
+  "vizSampling": {
     "_refreshTrigger": 0,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": false,
-        "distinct": false
-      }
-    }
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
