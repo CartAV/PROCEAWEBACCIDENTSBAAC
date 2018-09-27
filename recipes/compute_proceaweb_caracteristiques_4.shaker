@@ -78,24 +78,6 @@
         "matching": "PATTERN"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnValue",
-      "params": {
-        "normalizationMode": "EXACT",
-        "booleanMode": "AND",
-        "columns": [
-          "dep"
-        ],
-        "values": [],
-        "matchingMode": "PATTERN",
-        "action": "KEEP_ROW",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
