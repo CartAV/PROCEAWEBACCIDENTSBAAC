@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538038487486
+    "lastModifiedOn": 1538038490545
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,6 +67,7 @@
       {
         "name": "jour",
         "type": "string",
+        "meaning": "LongMeaning",
         "maxLength": 16200
       },
       {
