@@ -5,11 +5,11 @@
   "name": "ProceaWeb -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536659441355
+    "lastModifiedOn": 1538039000601
   },
   "checklists": {
     "checklists": []
@@ -38,22 +38,22 @@
           "builds": [
             {
               "type": "DATASET",
-              "itemId": "proceaweb_lieux",
+              "itemId": "proceaweb_caracteristiques_all",
               "partitionsSpec": ""
             },
             {
               "type": "DATASET",
-              "itemId": "proceaweb_caracteristiques",
+              "itemId": "proceaweb_lieux_all",
               "partitionsSpec": ""
             },
             {
               "type": "DATASET",
-              "itemId": "proceaweb_usagers",
+              "itemId": "proceaweb_usagers_all",
               "partitionsSpec": ""
             },
             {
               "type": "DATASET",
-              "itemId": "proceaweb_vehicules",
+              "itemId": "proceaweb_vehicules_all",
               "partitionsSpec": ""
             }
           ],
