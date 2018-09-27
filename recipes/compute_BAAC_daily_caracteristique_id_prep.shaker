@@ -74,7 +74,7 @@
         "output": "an",
         "mapping": [
           {
-            "from": "([0-9]{4})-([0-9]{2})-([0-9]{2})",
+            "from": "[0-9]{2}([0-9]{2})-([0-9]{2})-([0-9]{2})",
             "to": "$1"
           }
         ],
@@ -97,7 +97,7 @@
         "output": "mois",
         "mapping": [
           {
-            "from": "([0-9]{4})-([0-9]{2})-([0-9]{2})",
+            "from": "([0-9]{4})-0*([0-9]{1,2})-([0-9]{2})",
             "to": "$2"
           }
         ],
@@ -120,31 +120,8 @@
         "output": "jour",
         "mapping": [
           {
-            "from": "([0-9]{4})-([0-9]{2})-([0-9]{2})",
+            "from": "([0-9]{4})-([0-9]{2})-0?([0-9]{1,2})",
             "to": "$3"
-          }
-        ],
-        "normalization": "EXACT",
-        "columns": [
-          "dateAccident"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
-        "matching": "PATTERN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "an",
-        "mapping": [
-          {
-            "from": "([0-9]{4})-([0-9]{2})-([0-9]{2})",
-            "to": "$1"
           }
         ],
         "normalization": "EXACT",
@@ -219,7 +196,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
