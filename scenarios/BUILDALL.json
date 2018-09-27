@@ -5,11 +5,11 @@
   "name": "Build all",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538051811075
+    "lastModifiedOn": 1538051812723
   },
   "checklists": {
     "checklists": []
