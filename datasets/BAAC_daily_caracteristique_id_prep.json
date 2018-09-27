@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537364127443
+    "lastModifiedOn": 1538038487486
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,6 +72,7 @@
       {
         "name": "mois",
         "type": "string",
+        "meaning": "LongMeaning",
         "maxLength": 16200
       },
       {
