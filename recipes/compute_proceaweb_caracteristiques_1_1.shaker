@@ -351,7 +351,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RemoveRowsOnEmpty",
@@ -361,6 +361,17 @@
         ],
         "keep": false,
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnCustomFormula",
+      "params": {
+        "expression": "an \u003e\u003d 18",
+        "action": "KEEP_ROW"
       },
       "alwaysShowComment": false
     }
