@@ -1,174 +1,201 @@
 {
-  "explorationFilters": [],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
-  "vizSampling": {
-    "_refreshTrigger": 0,
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "date",
+              "col": "data",
+              "string": "2017-12",
+              "num": 0.0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 100000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
     "autoRefreshSample": false
   },
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
-  "coloring": {
-    "individualColumns": [],
-    "scheme": "MEANING_AND_STATUS",
-    "valueColoringMode": "HASH"
+  "exploreUIParams": {
+    "autoRefresh": true
   },
   "steps": [
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Formattage proceaweb",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
           "params": {
-            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{5})(.{1})(.{1})(.{1})(.{2}).(.{1})(.{1})(.{4})(.{4})(.{1}).(.{3})(.{3})(.{1})(.{1})(.{1})....(.{2})",
             "found_col": false,
+            "extractAllOccurrences": false,
             "prefix": "",
             "column": "data",
-            "extractAllOccurrences": false
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{5})(.{1})(.{1})(.{1})(.{2}).(.{1})(.{1})(.{4})(.{4})(.{1}).(.{3})(.{3})(.{1})(.{1})(.{1})....(.{2})"
           },
-          "type": "RegexpExtractor",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping officiel de Proceaweb",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "source_bis",
-                "from": "1"
+                "from": "1",
+                "to": "source_bis"
               },
               {
-                "to": "Code Unité",
-                "from": "2"
+                "from": "2",
+                "to": "Code Unité"
               },
               {
-                "to": "Numéro P.V.",
-                "from": "3"
+                "from": "3",
+                "to": "Numéro P.V."
               },
               {
-                "to": "Numéro de feuillet",
-                "from": "4"
+                "from": "4",
+                "to": "Numéro de feuillet"
               },
               {
-                "to": "Organisme",
-                "from": "5"
+                "from": "5",
+                "to": "Organisme"
               },
               {
-                "to": "Code route",
-                "from": "6"
+                "from": "6",
+                "to": "Code route"
               },
               {
-                "to": "Catégorie",
-                "from": "7"
+                "from": "7",
+                "to": "Catégorie"
               },
               {
-                "to": "Numéro de voie",
-                "from": "8"
+                "from": "8",
+                "to": "Numéro de voie"
               },
               {
-                "to": "Bis ou ter",
-                "from": "9"
+                "from": "9",
+                "to": "Bis ou ter"
               },
               {
-                "to": "Lettre indice de voie",
-                "from": "10"
+                "from": "10",
+                "to": "Lettre indice de voie"
               },
               {
-                "to": "Régime de circulation",
-                "from": "11"
+                "from": "11",
+                "to": "Régime de circulation"
               },
               {
-                "to": "Nb voies de circulation",
-                "from": "12"
+                "from": "12",
+                "to": "Nb voies de circulation"
               },
               {
-                "to": "Voie spéciale",
-                "from": "13"
+                "from": "13",
+                "to": "Voie spéciale"
               },
               {
-                "to": "Profil en long",
-                "from": "14"
+                "from": "14",
+                "to": "Profil en long"
               },
               {
-                "to": "PK PR",
-                "from": "15"
+                "from": "15",
+                "to": "PK PR"
               },
               {
-                "to": "distance PK PR",
-                "from": "16"
+                "from": "16",
+                "to": "distance PK PR"
               },
               {
-                "to": "Tracé en plan",
-                "from": "17"
+                "from": "17",
+                "to": "Tracé en plan"
               },
               {
-                "to": "Largeur terre-plein",
-                "from": "18"
+                "from": "18",
+                "to": "Largeur terre-plein"
               },
               {
-                "to": "Largeur de route",
-                "from": "19"
+                "from": "19",
+                "to": "Largeur de route"
               },
               {
-                "to": "Etat de la surface",
-                "from": "20"
+                "from": "20",
+                "to": "Etat de la surface"
               },
               {
-                "to": "Aménagement infrastructure",
-                "from": "21"
+                "from": "21",
+                "to": "Aménagement infrastructure"
               },
               {
-                "to": "Situation de l\u0027accident",
-                "from": "22"
+                "from": "22",
+                "to": "Situation de l\u0027accident"
               },
               {
-                "to": "Proximité d\u0027une école",
-                "from": "23"
+                "from": "23",
+                "to": "Proximité d\u0027une école"
               }
             ]
           },
-          "comment": "Mapping officiel de Proceaweb",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": true
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
           "params": {
-            "appliesTo": "COLUMNS",
             "columns": [
               "source",
               "source_bis",
               "data"
             ],
-            "keep": false
+            "keep": false,
+            "appliesTo": "COLUMNS"
           },
-          "type": "ColumnsSelector",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Mapping BAAC/CartAV",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "Num_Acc",
             "columns": [
@@ -179,192 +206,176 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping BAAC CartAV",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "catr",
-                "from": "Catégorie"
+                "from": "Catégorie",
+                "to": "catr"
               },
               {
-                "to": "circ",
-                "from": "Régime de circulation"
+                "from": "Régime de circulation",
+                "to": "circ"
               },
               {
-                "to": "vosp",
-                "from": "Voie spéciale"
+                "from": "Voie spéciale",
+                "to": "vosp"
               },
               {
-                "to": "prof",
-                "from": "Profil en long"
+                "from": "Profil en long",
+                "to": "prof"
               },
               {
-                "to": "plan",
-                "from": "Tracé en plan"
+                "from": "Tracé en plan",
+                "to": "plan"
               },
               {
-                "to": "surf",
-                "from": "Etat de la surface"
+                "from": "Etat de la surface",
+                "to": "surf"
               },
               {
-                "to": "infra",
-                "from": "Aménagement infrastructure"
+                "from": "Aménagement infrastructure",
+                "to": "infra"
               },
               {
-                "to": "situ",
-                "from": "Situation de l\u0027accident"
+                "from": "Situation de l\u0027accident",
+                "to": "situ"
               },
               {
-                "to": "env1",
-                "from": "Proximité d\u0027une école"
+                "from": "Proximité d\u0027une école",
+                "to": "env1"
               },
               {
-                "to": "lartpc",
-                "from": "Largeur terre-plein"
+                "from": "Largeur terre-plein",
+                "to": "lartpc"
               },
               {
-                "to": "larrout",
-                "from": "Largeur de route"
+                "from": "Largeur de route",
+                "to": "larrout"
               },
               {
-                "to": "pr",
-                "from": "PK PR"
+                "from": "PK PR",
+                "to": "pr"
               },
               {
-                "to": "pr1",
-                "from": "distance PK PR"
+                "from": "distance PK PR",
+                "to": "pr1"
               },
               {
-                "to": "nbv",
-                "from": "Nb voies de circulation"
+                "from": "Nb voies de circulation",
+                "to": "nbv"
               },
               {
-                "to": "circ",
-                "from": "Régime de circulation"
+                "from": "Régime de circulation",
+                "to": "circ"
               },
               {
-                "to": "v1",
-                "from": "Bis ou ter"
+                "from": "Bis ou ter",
+                "to": "v1"
               },
               {
-                "to": "v2",
-                "from": "Lettre indice de voie"
+                "from": "Lettre indice de voie",
+                "to": "v2"
               },
               {
-                "to": "voie",
-                "from": "Numéro de voie"
+                "from": "Numéro de voie",
+                "to": "voie"
               }
             ]
           },
-          "comment": "Mapping BAAC CartAV",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
-          "params": {
-            "usePythonUnicode": true,
-            "stopOnError": true,
-            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n          \"catr\": {\n            \"0\": \"\",\n            \"1\": \"autoroute\",\n            \"2\": \"route nationale\",\n            \"3\": \"route départementale\",\n            \"4\": \"voie communale\",\n            \"5\": \"hors réseau public\",\n            \"6\": \"parking\",\n            \"9\": \"autre route\"\n          },\n          \"circ\": {\n            \"0\": \"\",\n            \"1\": \"sens unique\",\n            \"2\": \"bidirectionnel\",\n            \"3\": \"chaussées séparées\",\n            \"4\": \"affectation variable\"\n          },\n          \"vosp\": {\n            \"0\": \"\",\n            \"1\": \"piste cyclable\",\n            \"2\": \"banque cyclable\",\n            \"3\": \"voie réservée\"\n          },\n          \"prof\": {\n            \"0\": \"\",\n            \"1\": \"plat\",\n            \"2\": \"pente\",\n            \"3\": \"sommet de côte\",\n            \"4\": \"bas de côte\"\n          },\n          \"plan\": {\n            \"0\": \"\",\n            \"1\": \"rectiligne\",\n            \"2\": \"courbe à gauche\",\n            \"3\": \"courbe à droite\",\n            \"4\": \"en S\"\n          },\n          \"surf\": {\n            \"0\": \"\",\n            \"1\": \"surface normale\",\n            \"2\": \"surface mouillée\",\n            \"3\": \"flaques\",\n            \"4\": \"surface innondée\",\n            \"5\": \"surface enneigée\",\n            \"6\": \"boue\",\n            \"7\": \"surface verglacée\",\n            \"8\": \"corps gras-huile\",\n            \"9\": \"autre surface\"\n          },\n          \"infra\": {\n            \"0\": \"\",\n            \"1\": \"souterrain ou tunnel\",\n            \"2\": \"pont\",\n            \"3\": \"échangeur\",\n            \"4\": \"rails\",\n            \"5\": \"carrefour aménagé\",\n            \"6\": \"zone piétonne\",\n            \"7\": \"zone de péage\"\n          },\n          \"situ\": {\n            \"0\": \"\",\n            \"1\": \"chaussée\",\n            \"2\": \"bande d\u0027arrêt d\u0027urgence\",\n            \"3\": \"accotement\",\n            \"4\": \"trottoir\",\n            \"5\": \"piste cyclable\"\n          },\n          \"env1\": {\n            \"00\": \"\",\n            \"03\": \"école proche\",\n            \"99\": \"pas d\u0027école à proximté\"\n          }\n        }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
-            "mode": "ROW"
-          },
+          "metaType": "PROCESSOR",
+          "disabled": false,
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
           "type": "PythonUDF",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "params": {
+            "mode": "ROW",
+            "stopOnError": true,
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n          \"catr\": {\n            \"0\": \"\",\n            \"1\": \"autoroute\",\n            \"2\": \"route nationale\",\n            \"3\": \"route départementale\",\n            \"4\": \"voie communale\",\n            \"5\": \"hors réseau public\",\n            \"6\": \"parking\",\n            \"9\": \"autre route\"\n          },\n          \"circ\": {\n            \"0\": \"\",\n            \"1\": \"sens unique\",\n            \"2\": \"bidirectionnel\",\n            \"3\": \"chaussées séparées\",\n            \"4\": \"affectation variable\"\n          },\n          \"vosp\": {\n            \"0\": \"\",\n            \"1\": \"piste cyclable\",\n            \"2\": \"banque cyclable\",\n            \"3\": \"voie réservée\"\n          },\n          \"prof\": {\n            \"0\": \"\",\n            \"1\": \"plat\",\n            \"2\": \"pente\",\n            \"3\": \"sommet de côte\",\n            \"4\": \"bas de côte\"\n          },\n          \"plan\": {\n            \"0\": \"\",\n            \"1\": \"rectiligne\",\n            \"2\": \"courbe à gauche\",\n            \"3\": \"courbe à droite\",\n            \"4\": \"en S\"\n          },\n          \"surf\": {\n            \"0\": \"\",\n            \"1\": \"surface normale\",\n            \"2\": \"surface mouillée\",\n            \"3\": \"flaques\",\n            \"4\": \"surface innondée\",\n            \"5\": \"surface enneigée\",\n            \"6\": \"boue\",\n            \"7\": \"surface verglacée\",\n            \"8\": \"corps gras-huile\",\n            \"9\": \"autre surface\"\n          },\n          \"infra\": {\n            \"0\": \"\",\n            \"1\": \"souterrain ou tunnel\",\n            \"2\": \"pont\",\n            \"3\": \"échangeur\",\n            \"4\": \"rails\",\n            \"5\": \"carrefour aménagé\",\n            \"6\": \"zone piétonne\",\n            \"7\": \"zone de péage\"\n          },\n          \"situ\": {\n            \"0\": \"\",\n            \"1\": \"chaussée\",\n            \"2\": \"bande d\u0027arrêt d\u0027urgence\",\n            \"3\": \"accotement\",\n            \"4\": \"trottoir\",\n            \"5\": \"piste cyclable\"\n          },\n          \"env1\": {\n            \"00\": \"\",\n            \"03\": \"école proche\",\n            \"99\": \"pas d\u0027école à proximté\"\n          }\n        }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "usePythonUnicode": true
+          },
+          "alwaysShowComment": true
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
           "params": {
-            "matching": "SUBSTRING",
-            "stopAfterFirstMatch": false,
-            "appliesTo": "SINGLE_COLUMN",
+            "output": "",
+            "mapping": [
+              {
+                "from": "-",
+                "to": ""
+              }
+            ],
             "normalization": "EXACT",
             "columns": [
               "Num_Acc"
             ],
-            "mapping": [
-              {
-                "to": "",
-                "from": "-"
-              }
-            ],
-            "output": ""
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
           },
-          "type": "FindReplace",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
       "params": {
-        "matchingMode": "FULL_STRING",
-        "values": [
-          "1"
-        ],
-        "booleanMode": "AND",
         "normalizationMode": "EXACT",
-        "appliesTo": "SINGLE_COLUMN",
+        "booleanMode": "AND",
         "columns": [
           "Code route"
         ],
+        "values": [
+          "1"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnCustomFormula",
+      "params": {
+        "expression": "an \u003e\u003d 18",
         "action": "KEEP_ROW"
       },
-      "type": "FilterOnValue",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     }
   ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
+  "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 1,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 100000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": true,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0.0,
-              "col": "data",
-              "input": "date",
-              "string": "2017-12",
-              "operator": "contains"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
