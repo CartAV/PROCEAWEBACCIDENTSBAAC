@@ -1,241 +1,267 @@
 {
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 1,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "source",
+              "col": "data",
+              "num": 0.0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 1000000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
   "explorationFilters": [
     {
-      "facet": {
-        "sort": "count",
-        "columnType": "NUMERICAL",
-        "column": "Organisme",
-        "currentMode": "NUMERICAL",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:44020",
       "validityFilter": {
         "column": "Organisme",
         "params": {
           "nok": false,
-          "empty": true,
           "ok": false,
-          "type": "LongMeaning"
+          "type": "LongMeaning",
+          "empty": true
         },
         "type": "validity"
       },
+      "column": "Organisme",
+      "active": true,
       "alphanumFilter": {
         "values": [],
         "column": "Organisme",
         "params": {
-          "normalization": "exact",
-          "mode": "full_string"
+          "mode": "full_string",
+          "normalization": "exact"
         },
         "type": "alphanum"
       },
-      "column": "Organisme",
-      "currentMode": "FACET",
-      "active": true,
-      "type": "columnFilter"
+      "$$hashKey": "object:44020",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "Organisme",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "NUMERICAL"
+      },
+      "currentMode": "FACET"
     }
   ],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
-  "columnsSelection": {
-    "mode": "ALL"
-  },
-  "globalSearchQuery": "",
-  "vizSampling": {
-    "_refreshTrigger": 0,
-    "autoRefreshSample": false
-  },
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
-  "coloring": {
-    "individualColumns": [],
-    "scheme": "MEANING_AND_STATUS",
-    "valueColoringMode": "HASH"
+  "exploreUIParams": {
+    "autoRefresh": true
   },
   "steps": [
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Formattage proceaweb",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
           "params": {
-            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{1}).{2}.{2}.{2}(.{1})(.{1})...(.{3})(.{2})(.{4})(.{1})(.{1})(.{3})(.{1})(.{2})(.{2})(.{1})(.{5})(.{5})(.{1})(.{1})(.{1})(.{1})(.{1}).{1}.{3}(.{1})(.{1})",
             "found_col": false,
+            "extractAllOccurrences": false,
             "prefix": "",
             "column": "data",
-            "extractAllOccurrences": false
+            "pattern": "^(.{1})(.{7})(.{5})(.{2})(.{1})(.{1})(.{1})(.{1})(.{1})(.{1}).{2}.{2}.{2}(.{1})(.{1})...(.{3})(.{2})(.{4})(.{1})(.{1})(.{3})(.{1})(.{2})(.{2})(.{1})(.{5})(.{5})(.{1})(.{1})(.{1})(.{1})(.{1}).{1}.{3}(.{1})(.{1})"
           },
-          "type": "RegexpExtractor",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping officiel de Proceaweb",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "source_bis",
-                "from": "1"
+                "from": "1",
+                "to": "source_bis"
               },
               {
-                "to": "Code Unité",
-                "from": "2"
+                "from": "2",
+                "to": "Code Unité"
               },
               {
-                "to": "Numéro P.V.",
-                "from": "3"
+                "from": "3",
+                "to": "Numéro P.V."
               },
               {
-                "to": "Numéro de feuillet",
-                "from": "4"
+                "from": "4",
+                "to": "Numéro de feuillet"
               },
               {
-                "to": "Organisme",
-                "from": "5"
+                "from": "5",
+                "to": "Organisme"
               },
               {
-                "to": "Lette conventionnelle",
-                "from": "6"
+                "from": "6",
+                "to": "Lette conventionnelle"
               },
               {
-                "to": "Place",
-                "from": "7"
+                "from": "7",
+                "to": "Place"
               },
               {
-                "to": "Responsabilité présumée",
-                "from": "8"
+                "from": "8",
+                "to": "Responsabilité présumée"
               },
               {
-                "to": "Catégorie",
-                "from": "9"
+                "from": "9",
+                "to": "Catégorie"
               },
               {
-                "to": "Gravité",
-                "from": "10"
+                "from": "10",
+                "to": "Gravité"
               },
               {
-                "to": "Catégorie socio professionnelle",
-                "from": "11"
+                "from": "11",
+                "to": "Catégorie socio professionnelle"
               },
               {
-                "to": "Sexe",
-                "from": "12"
+                "from": "12",
+                "to": "Sexe"
               },
               {
-                "to": "Résidence : département ou pays",
-                "from": "13"
+                "from": "13",
+                "to": "Résidence : département ou pays"
               },
               {
-                "to": "Naissance mois",
-                "from": "14"
+                "from": "14",
+                "to": "Naissance mois"
               },
               {
-                "to": "Naissance année",
-                "from": "15"
+                "from": "15",
+                "to": "Naissance année"
               },
               {
-                "to": "facteur lié à l\u0027usager",
-                "from": "16"
+                "from": "16",
+                "to": "facteur lié à l\u0027usager"
               },
               {
-                "to": "alcoolémie",
-                "from": "17"
+                "from": "17",
+                "to": "alcoolémie"
               },
               {
-                "to": "taux alcooléie",
-                "from": "18"
+                "from": "18",
+                "to": "taux alcooléie"
               },
               {
-                "to": "permis de conduire",
-                "from": "19"
+                "from": "19",
+                "to": "permis de conduire"
               },
               {
-                "to": "mois permis",
-                "from": "20"
+                "from": "20",
+                "to": "mois permis"
               },
               {
-                "to": "année permis",
-                "from": "21"
+                "from": "21",
+                "to": "année permis"
               },
               {
-                "to": "trajet",
-                "from": "22"
+                "from": "22",
+                "to": "trajet"
               },
               {
-                "to": "NATINF 1",
-                "from": "23"
+                "from": "23",
+                "to": "NATINF 1"
               },
               {
-                "to": "NATINF 2",
-                "from": "24"
+                "from": "24",
+                "to": "NATINF 2"
               },
               {
-                "to": "équipement sécurité existence",
-                "from": "25"
+                "from": "25",
+                "to": "équipement sécurité existence"
               },
               {
-                "to": "équipement sécurité usage",
-                "from": "26"
+                "from": "26",
+                "to": "équipement sécurité usage"
               },
               {
-                "to": "manoeuvre lieu piéton",
-                "from": "27"
+                "from": "27",
+                "to": "manoeuvre lieu piéton"
               },
               {
-                "to": "manoeuvre action piéton",
-                "from": "28"
+                "from": "28",
+                "to": "manoeuvre action piéton"
               },
               {
-                "to": "piéton",
-                "from": "29"
+                "from": "29",
+                "to": "piéton"
               },
               {
-                "to": "drogue dépistage",
-                "from": "30"
+                "from": "30",
+                "to": "drogue dépistage"
               },
               {
-                "to": "drogue prise de sang",
-                "from": "31"
+                "from": "31",
+                "to": "drogue prise de sang"
               }
             ]
           },
-          "comment": "Mapping officiel de Proceaweb",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": true
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
           "params": {
-            "appliesTo": "COLUMNS",
             "columns": [
               "source_bis",
               "source",
               "data"
             ],
-            "keep": false
+            "keep": false,
+            "appliesTo": "COLUMNS"
           },
-          "type": "ColumnsSelector",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Mapping BAAC/CartAV",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "Num_Acc",
             "columns": [
@@ -246,198 +272,198 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
           "params": {
-            "matching": "SUBSTRING",
-            "stopAfterFirstMatch": false,
-            "appliesTo": "SINGLE_COLUMN",
+            "output": "",
+            "mapping": [
+              {
+                "from": "-",
+                "to": ""
+              }
+            ],
             "normalization": "EXACT",
             "columns": [
               "Num_Acc"
             ],
-            "mapping": [
-              {
-                "to": "",
-                "from": "-"
-              }
-            ],
-            "output": ""
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
           },
-          "type": "FindReplace",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "comment": "Mapping BAAC CartAV",
+          "type": "ColumnRenamer",
           "params": {
             "renamings": [
               {
-                "to": "grav",
-                "from": "Gravité"
+                "from": "Gravité",
+                "to": "grav"
               },
               {
-                "to": "catu",
-                "from": "Catégorie"
+                "from": "Catégorie",
+                "to": "catu"
               },
               {
-                "to": "sexe",
-                "from": "Sexe"
+                "from": "Sexe",
+                "to": "sexe"
               },
               {
-                "to": "trajet",
-                "from": "trajet"
+                "from": "trajet",
+                "to": "trajet"
               },
               {
-                "to": "secu",
-                "from": "équipement sécurité usage"
+                "from": "équipement sécurité usage",
+                "to": "secu"
               },
               {
-                "to": "sece",
-                "from": "équipement sécurité existence"
+                "from": "équipement sécurité existence",
+                "to": "sece"
               },
               {
-                "to": "actp",
-                "from": "manoeuvre action piéton"
+                "from": "manoeuvre action piéton",
+                "to": "actp"
               },
               {
-                "to": "locp",
-                "from": "manoeuvre lieu piéton"
+                "from": "manoeuvre lieu piéton",
+                "to": "locp"
               },
               {
-                "to": "etatp",
-                "from": "piéton"
+                "from": "piéton",
+                "to": "etatp"
               },
               {
-                "to": "drogd",
-                "from": "drogue dépistage"
+                "from": "drogue dépistage",
+                "to": "drogd"
               },
               {
-                "to": "drogp",
-                "from": "drogue prise de sang"
+                "from": "drogue prise de sang",
+                "to": "drogp"
               },
               {
-                "to": "natinf1",
-                "from": "NATINF 1"
+                "from": "NATINF 1",
+                "to": "natinf1"
               },
               {
-                "to": "natinf2",
-                "from": "NATINF 2"
+                "from": "NATINF 2",
+                "to": "natinf2"
               },
               {
-                "to": "perm",
-                "from": "permis de conduire"
+                "from": "permis de conduire",
+                "to": "perm"
               },
               {
-                "to": "alco",
-                "from": "alcoolémie"
+                "from": "alcoolémie",
+                "to": "alco"
               },
               {
-                "to": "alcot",
-                "from": "taux alcooléie"
+                "from": "taux alcooléie",
+                "to": "alcot"
               },
               {
-                "to": "facu",
-                "from": "facteur lié à l\u0027usager"
+                "from": "facteur lié à l\u0027usager",
+                "to": "facu"
               },
               {
-                "to": "depu",
-                "from": "Résidence : département ou pays"
+                "from": "Résidence : département ou pays",
+                "to": "depu"
               },
               {
-                "to": "catso",
-                "from": "Catégorie socio professionnelle"
+                "from": "Catégorie socio professionnelle",
+                "to": "catso"
               },
               {
-                "to": "resp",
-                "from": "Responsabilité présumée"
+                "from": "Responsabilité présumée",
+                "to": "resp"
               },
               {
-                "to": "place",
-                "from": "Place"
+                "from": "Place",
+                "to": "place"
               },
               {
-                "to": "num_veh",
-                "from": "Lette conventionnelle"
+                "from": "Lette conventionnelle",
+                "to": "num_veh"
               },
               {
-                "to": "an_nais",
-                "from": "Naissance année"
+                "from": "Naissance année",
+                "to": "an_nais"
               },
               {
-                "to": "mo_nais",
-                "from": "Naissance mois"
+                "from": "Naissance mois",
+                "to": "mo_nais"
               },
               {
-                "to": "an_perm",
-                "from": "année permis"
+                "from": "année permis",
+                "to": "an_perm"
               },
               {
-                "to": "mo_perm",
-                "from": "mois permis"
+                "from": "mois permis",
+                "to": "mo_perm"
               }
             ]
           },
-          "comment": "Mapping BAAC CartAV",
-          "type": "ColumnRenamer",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
           "params": {
-            "matching": "SUBSTRING",
-            "stopAfterFirstMatch": false,
-            "appliesTo": "SINGLE_COLUMN",
+            "output": "",
+            "mapping": [
+              {
+                "from": "3",
+                "to": "0"
+              }
+            ],
             "normalization": "EXACT",
             "columns": [
               "secu"
             ],
-            "mapping": [
-              {
-                "to": "0",
-                "from": "3"
-              }
-            ],
-            "output": ""
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
           },
-          "type": "FindReplace",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
           "params": {
-            "matching": "SUBSTRING",
-            "stopAfterFirstMatch": false,
-            "appliesTo": "SINGLE_COLUMN",
+            "output": "",
+            "mapping": [
+              {
+                "from": "9",
+                "to": "0"
+              }
+            ],
             "normalization": "EXACT",
             "columns": [
               "sece"
             ],
-            "mapping": [
-              {
-                "to": "0",
-                "from": "9"
-              }
-            ],
-            "output": ""
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
           },
-          "type": "FindReplace",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "secu",
             "columns": [
@@ -446,50 +472,50 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
           "params": {
-            "appliesTo": "SINGLE_COLUMN",
             "columns": [
               "sece"
             ],
-            "keep": false
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
           },
-          "type": "ColumnsSelector",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": true,
           "preview": false,
-          "params": {
-            "usePythonUnicode": true,
-            "stopOnError": true,
-            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"grav\": {\n        \"1\": \"indemne\",\n        \"2\": \"tué\",\n        \"3\": \"hospitalisé\",\n        \"4\": \"blessé léger\"\n      },\n      \"catu\": {\n        \"1\": \"conducteur\",\n        \"2\": \"passager\",\n        \"3\": \"piéton\",\n        \"4\": \"trottinette\"\n      },\n      \"sexe\": {\n        \"1\": \"homme\",\n        \"2\": \"femme\"\n      },\n      \"trajet\": {\n        \"0\": \"\",\n        \"1\": \"domicile travail\",\n        \"2\": \"domicile école\",\n        \"3\": \"courses\",\n        \"4\": \"professionnel\",\n        \"5\": \"loisirs\",\n        \"9\": \"autres\"\n      },\n      \"secu\": {\n        \"11\": \"avec ceinture\",\n        \"12\": \"sans ceinture\",\n        \"10\": \"sans ceinture\",  \n        \"21\": \"avec casque\",\n        \"22\": \"sans casque\",\n        \"22\": \"sans casque\",  \n        \"31\": \"avec siège enfant\",\n        \"32\": \"sans siège enfant\",\n        \"30\": \"sans siège enfant\",\n        \"41\": \"avec réflecteur\",\n        \"42\": \"sans réflecteur\",\n        \"40\": \"sans réflecteur\",  \n        \"00\": \"\",\n        \"01\": \"avec\",\n        \"01\": \"sans\"  \n      },\n      \"actp\": {\n        \"0\": \"\",\n        \"1\": \"piéton sens véhicule\",\n        \"2\": \"piéton sens inverse véhicule\",\n        \"3\": \"piéton traversant\",\n        \"4\": \"piéton masqué\",\n        \"5\": \"piéton jouant\",\n        \"6\": \"piéton avec animal\"\n      },\n      \"locp\": {\n        \"0\": \"\",\n        \"1\": \"plus de 50m un passage piéton\",\n        \"2\": \"moins de 50m passage piéton\",\n        \"3\": \"sans signalisation lumineuse\",\n        \"4\": \"avec signalisation lumineuse\"\n      },\n      \"etatp\": {\n        \"0\": \"\",\n        \"1\": \"piéton seul\",\n        \"2\": \"piéton accompagné\",\n        \"3\": \"piéton en groupe\"\n      },\n      \"resp\": {\n          \"0\": \"non\",\n          \"1\": \"présumé\"\n      },\n        \"catso\": {\n            \"1\": \"conducteur professionnel\",\n            \"2\": \"agriculteur\",\n            \"3\": \"indépendant\",\n            \"4\": \"cadre supérieur\",\n            \"5\": \"employé\",\n            \"6\": \"ouvrier\",\n            \"7\": \"retraité\",\n            \"8\": \"chômeur\",\n            \"A\": \"étudiant\",\n            \"9\": \"autre\"\n        },\n        \"facu\": {\n            \"0\": \"\",\n            \"1\": \"malaise - fatigue\",\n            \"2\": \"médicament - drogue\",\n            \"3\": \"infirmité\",\n            \"4\": \"attention perturbée\",\n            \"5\": \"ivresse apparente\"\n        },\n        \"alco\": {\n            \"0\": \"\",\n            \"1\": \"impossible\",\n            \"2\": \"refusé\",\n            \"3\": \"prise de sang\",\n            \"4\": \"éthylomètre\",\n            \"5\": \"résultat non connu\",\n            \"6\": \"dépistage négatif\"\n        },\n        \"perm\": {\n            \"0\": \"\",\n            \"1\": \"valide\",\n            \"2\": \"périmé\",\n            \"3\": \"suspendu\",\n            \"4\": \"conduite en auto-école\",\n            \"5\": \"catégorie non valable\",\n            \"6\": \"défaut de permis\",\n            \"7\": \"conduite accompagnée\"\n        },\n        \"drogp\": {\n            \"0\": \"\",\n            \"1\": \"non fait\",\n            \"2\": \"impossible\",\n            \"3\": \"refusé\",\n            \"4\": \"positif\",\n            \"5\": \"négatif\",\n            \"6\": \"inconnu\"\n        },\n        \"drogd\": {\n            \"0\": \"\",\n            \"1\": \"non fait\",\n            \"2\": \"impossible\",\n            \"3\": \"refusé\",\n            \"4\": \"positif\",\n            \"5\": \"négatif\"\n        }\n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
-            "mode": "ROW"
-          },
+          "metaType": "PROCESSOR",
+          "disabled": false,
           "comment": "Mapping des valeurs (dictionnaire de données BAAC/CartAV)",
           "type": "PythonUDF",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "params": {
+            "mode": "ROW",
+            "stopOnError": true,
+            "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    dic \u003d {\n      \"grav\": {\n        \"1\": \"indemne\",\n        \"2\": \"tué\",\n        \"3\": \"hospitalisé\",\n        \"4\": \"blessé léger\"\n      },\n      \"catu\": {\n        \"1\": \"conducteur\",\n        \"2\": \"passager\",\n        \"3\": \"piéton\",\n        \"4\": \"trottinette\"\n      },\n      \"sexe\": {\n        \"1\": \"homme\",\n        \"2\": \"femme\"\n      },\n      \"trajet\": {\n        \"0\": \"\",\n        \"1\": \"domicile travail\",\n        \"2\": \"domicile école\",\n        \"3\": \"courses\",\n        \"4\": \"professionnel\",\n        \"5\": \"loisirs\",\n        \"9\": \"autres\"\n      },\n      \"secu\": {\n        \"11\": \"avec ceinture\",\n        \"12\": \"sans ceinture\",\n        \"10\": \"sans ceinture\",  \n        \"21\": \"avec casque\",\n        \"22\": \"sans casque\",\n        \"22\": \"sans casque\",  \n        \"31\": \"avec siège enfant\",\n        \"32\": \"sans siège enfant\",\n        \"30\": \"sans siège enfant\",\n        \"41\": \"avec réflecteur\",\n        \"42\": \"sans réflecteur\",\n        \"40\": \"sans réflecteur\",  \n        \"00\": \"\",\n        \"01\": \"avec\",\n        \"01\": \"sans\"  \n      },\n      \"actp\": {\n        \"0\": \"\",\n        \"1\": \"piéton sens véhicule\",\n        \"2\": \"piéton sens inverse véhicule\",\n        \"3\": \"piéton traversant\",\n        \"4\": \"piéton masqué\",\n        \"5\": \"piéton jouant\",\n        \"6\": \"piéton avec animal\"\n      },\n      \"locp\": {\n        \"0\": \"\",\n        \"1\": \"plus de 50m un passage piéton\",\n        \"2\": \"moins de 50m passage piéton\",\n        \"3\": \"sans signalisation lumineuse\",\n        \"4\": \"avec signalisation lumineuse\"\n      },\n      \"etatp\": {\n        \"0\": \"\",\n        \"1\": \"piéton seul\",\n        \"2\": \"piéton accompagné\",\n        \"3\": \"piéton en groupe\"\n      },\n      \"resp\": {\n          \"0\": \"non\",\n          \"1\": \"présumé\"\n      },\n        \"catso\": {\n            \"1\": \"conducteur professionnel\",\n            \"2\": \"agriculteur\",\n            \"3\": \"indépendant\",\n            \"4\": \"cadre supérieur\",\n            \"5\": \"employé\",\n            \"6\": \"ouvrier\",\n            \"7\": \"retraité\",\n            \"8\": \"chômeur\",\n            \"A\": \"étudiant\",\n            \"9\": \"autre\"\n        },\n        \"facu\": {\n            \"0\": \"\",\n            \"1\": \"malaise - fatigue\",\n            \"2\": \"médicament - drogue\",\n            \"3\": \"infirmité\",\n            \"4\": \"attention perturbée\",\n            \"5\": \"ivresse apparente\"\n        },\n        \"alco\": {\n            \"0\": \"\",\n            \"1\": \"impossible\",\n            \"2\": \"refusé\",\n            \"3\": \"prise de sang\",\n            \"4\": \"éthylomètre\",\n            \"5\": \"résultat non connu\",\n            \"6\": \"dépistage négatif\"\n        },\n        \"perm\": {\n            \"0\": \"\",\n            \"1\": \"valide\",\n            \"2\": \"périmé\",\n            \"3\": \"suspendu\",\n            \"4\": \"conduite en auto-école\",\n            \"5\": \"catégorie non valable\",\n            \"6\": \"défaut de permis\",\n            \"7\": \"conduite accompagnée\"\n        },\n        \"drogp\": {\n            \"0\": \"\",\n            \"1\": \"non fait\",\n            \"2\": \"impossible\",\n            \"3\": \"refusé\",\n            \"4\": \"positif\",\n            \"5\": \"négatif\",\n            \"6\": \"inconnu\"\n        },\n        \"drogd\": {\n            \"0\": \"\",\n            \"1\": \"non fait\",\n            \"2\": \"impossible\",\n            \"3\": \"refusé\",\n            \"4\": \"positif\",\n            \"5\": \"négatif\"\n        }\n    }\n    for key in dic:\n        if row[key] in dic[key]:\n            row[key] \u003d dic[key][row[key]]\n        #else:\n        #    row[key] \u003d \"\"\n    return row\n",
+            "usePythonUnicode": true
+          },
+          "alwaysShowComment": true
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
       "name": "Dates",
+      "metaType": "GROUP",
+      "disabled": false,
       "steps": [
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "datn",
             "columns": [
@@ -498,13 +524,13 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsConcat",
           "params": {
             "outputColumn": "datp",
             "columns": [
@@ -513,84 +539,69 @@
             ],
             "join": ""
           },
-          "type": "ColumnsConcat",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         },
         {
-          "alwaysShowComment": false,
           "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
           "params": {
-            "appliesTo": "COLUMNS",
+            "formats": [
+              "yyyyMM",
+              "yyMM"
+            ],
             "columns": [
               "datp",
               "datn"
             ],
             "timezone_id": "UTC",
-            "lang": "auto",
-            "formats": [
-              "yyyyMM",
-              "yyMM"
-            ]
+            "appliesTo": "COLUMNS",
+            "lang": "auto"
           },
-          "type": "DateParser",
-          "disabled": false,
-          "metaType": "PROCESSOR"
+          "alwaysShowComment": false
         }
       ],
-      "disabled": false,
-      "metaType": "GROUP"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
       "params": {
-        "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "Organisme"
         ],
-        "keep": false
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
-      "type": "RemoveRowsOnEmpty",
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
       "disabled": false,
-      "metaType": "PROCESSOR"
+      "type": "FilterOnCustomFormula",
+      "params": {
+        "expression": "an \u003e\u003d 18",
+        "action": "KEEP_ROW"
+      },
+      "alwaysShowComment": false
     }
   ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
+  "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 1,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 1000000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": false,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0.0,
-              "col": "data",
-              "input": "source",
-              "operator": "contains"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
