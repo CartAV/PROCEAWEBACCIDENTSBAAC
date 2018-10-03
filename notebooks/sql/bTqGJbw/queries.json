@@ -316,6 +316,28 @@
         },
         "sql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027",
         "expandedSql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "JXdEeXK824bq",
+        "runOn": 1538561078373,
+        "runIn": 45,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "6Afiz4Xr",
+        "hash": "58e24525a45426a5a2280a95e88463ce",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027 AND \"Organisme\" \u003e 0",
+        "expandedSql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027 AND \"Organisme\" \u003e 0"
       }
     ]
   }
