@@ -293,6 +293,30 @@
         "sql": "SELECT DEP, COUNT(*) c\nFROM \"proceaweb_caracteristiques\"\nGROUP BY DEP\nORDER BY c ASC\n",
         "expandedSql": "SELECT DEP, COUNT(*) c\nFROM \"proceaweb_caracteristiques\"\nGROUP BY DEP\nORDER BY c ASC\n"
       }
+    ],
+    "dgjad8cqsdr": [
+      {
+        "mode": "SQL",
+        "id": "aPETGiLvumie",
+        "runOn": 1538556055256,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "bu7tCs0P",
+        "hash": "159971492f13e9762a5b0f8f63586bfa",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027",
+        "expandedSql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027"
+      }
     ]
   }
 }
