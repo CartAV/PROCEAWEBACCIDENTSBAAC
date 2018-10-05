@@ -339,6 +339,30 @@
         "sql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027 AND \"Organisme\" \u003e 0",
         "expandedSql": "SELECT \"Num_Acc\"\nFROM \"proceaweb_caracteristiques\"\nWHERE \"an\" \u003d \u002718\u0027 AND \"Organisme\" \u003e 0"
       }
+    ],
+    "ganh47lt15a": [
+      {
+        "mode": "SQL",
+        "id": "AmQ58DlbQSvp",
+        "runOn": 1538733614400,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "XbS78lzT",
+        "hash": "0a7f392006a425404dca8ba177148bc8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM  \"proceaweb_caracteristiques\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM  \"proceaweb_caracteristiques\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l"
+      }
     ]
   }
 }
