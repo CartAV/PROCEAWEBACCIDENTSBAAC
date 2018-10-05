@@ -543,6 +543,30 @@
         "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\"",
         "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\""
       }
+    ],
+    "31re2x7s85c": [
+      {
+        "mode": "SQL",
+        "id": "UfUld7JeSVcL",
+        "runOn": 1538753183230,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "iogoqn3z",
+        "hash": "663b61938f022803f7fb11bedcb0b91a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"jour\", \"mois\", \"an\", \"dateAccident\"\nFROM \"baac_daily_caracteristique_id_prep\"",
+        "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"dateAccident\"\nFROM \"baac_daily_caracteristique_id_prep\""
+      }
     ]
   }
 }
