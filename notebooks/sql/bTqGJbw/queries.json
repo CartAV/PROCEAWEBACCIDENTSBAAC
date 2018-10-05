@@ -387,6 +387,30 @@
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"baac_daily_caracteristique_prep\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"baac_daily_caracteristique_prep\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l"
       }
+    ],
+    "9wg9fps92ot": [
+      {
+        "mode": "SQL",
+        "id": "0Qp07mjhsqNz",
+        "runOn": 1538745596582,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "5MXSCisu",
+        "hash": "ae3b088afa940141ad72921dc693e7a0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_caracteristique_prep\"",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_caracteristique_prep\""
+      }
     ]
   }
 }
