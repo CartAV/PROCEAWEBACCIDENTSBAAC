@@ -454,6 +454,72 @@
         },
         "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\"",
         "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "hb66I19DOd8C",
+        "runOn": 1538745762822,
+        "runIn": 1396,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YhCJzMmq",
+        "hash": "64afb09cd020546241a4e036916ffaed",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\"",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "PqaN6WeaK4NX",
+        "runOn": 1538745777289,
+        "runIn": 1396,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "hO45XSQd",
+        "hash": "64afb09cd020546241a4e036916ffaed",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\"",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "KnuflMKtU0hp",
+        "runOn": 1538745783971,
+        "runIn": 1396,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "wPItX3d2",
+        "hash": "ef0435b43928fa36ecd5502736fbfea3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\"",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\""
       }
     ]
   }
