@@ -588,6 +588,28 @@
         },
         "sql": "SELECT \"jour\", \"mois\", \"an\", \"date\"\nFROM \"baac_daily_caracteristique_id_prep\"",
         "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"date\"\nFROM \"baac_daily_caracteristique_id_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "fvch2hbXgt5P",
+        "runOn": 1538753247843,
+        "runIn": 37,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "CqFne8Ox",
+        "hash": "17fa3170a79dc3cbcb243af43a175af7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"jour\", \"mois\", \"an\", \"date\", \"statutBaac\"\nFROM \"baac_daily_caracteristique_id_prep\"",
+        "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"date\", \"statutBaac\"\nFROM \"baac_daily_caracteristique_id_prep\""
       }
     ]
   }
