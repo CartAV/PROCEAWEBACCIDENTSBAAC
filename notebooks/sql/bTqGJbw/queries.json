@@ -520,6 +520,28 @@
         },
         "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\"",
         "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_usager_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "UIKrE0QGtUHy",
+        "runOn": 1538745801076,
+        "runIn": 1396,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "5KqfdIt6",
+        "hash": "64afb09cd020546241a4e036916ffaed",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\"",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_vehicule_prep\""
       }
     ]
   }
