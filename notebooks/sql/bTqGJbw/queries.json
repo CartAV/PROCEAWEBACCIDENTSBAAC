@@ -410,6 +410,28 @@
         },
         "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_caracteristique_prep\"",
         "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_caracteristique_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "RpPajcBGJ38H",
+        "runOn": 1538745612210,
+        "runIn": 38,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Ch06WINq",
+        "hash": "33d91d9c139711c35b365f9f73db31ed",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_lieu_prep\"\n",
+        "expandedSql": "SELECT DISTINCT mapping_error\nFROM \"baac_daily_lieu_prep\"\n"
       }
     ]
   }
