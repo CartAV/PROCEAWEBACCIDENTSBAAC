@@ -566,6 +566,28 @@
         },
         "sql": "SELECT \"jour\", \"mois\", \"an\", \"dateAccident\"\nFROM \"baac_daily_caracteristique_id_prep\"",
         "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"dateAccident\"\nFROM \"baac_daily_caracteristique_id_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "MEuq7xc14XoT",
+        "runOn": 1538753209141,
+        "runIn": 37,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ALfcqqoH",
+        "hash": "4046d5c1dee3502cd14072bf0450e748",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"jour\", \"mois\", \"an\", \"date\"\nFROM \"baac_daily_caracteristique_id_prep\"",
+        "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"date\"\nFROM \"baac_daily_caracteristique_id_prep\""
       }
     ]
   }
