@@ -363,6 +363,30 @@
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM  \"proceaweb_caracteristiques\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM  \"proceaweb_caracteristiques\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l"
       }
+    ],
+    "0.2995117404446186": [
+      {
+        "mode": "SQL",
+        "id": "eSbmdwtzgYyq",
+        "runOn": 1538733674858,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "qXVgZGgu",
+        "hash": "be99560c1b455e1d50e1433a8a4002a0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"baac_daily_caracteristique_prep\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"baac_daily_caracteristique_prep\"\n--WHERE LENGTH(\"adr\") \u003e 23\nGROUP BY l"
+      }
     ]
   }
 }
