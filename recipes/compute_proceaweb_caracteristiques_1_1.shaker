@@ -370,7 +370,7 @@
       "disabled": false,
       "type": "FilterOnCustomFormula",
       "params": {
-        "expression": "an \u003e\u003d 18",
+        "expression": "date.startsWith(\u00272018\u0027)",
         "action": "KEEP_ROW"
       },
       "alwaysShowComment": false
