@@ -35,42 +35,7 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [
-    {
-      "validityFilter": {
-        "column": "Organisme",
-        "params": {
-          "nok": false,
-          "ok": false,
-          "type": "LongMeaning",
-          "empty": true
-        },
-        "type": "validity"
-      },
-      "column": "Organisme",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "Organisme",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        },
-        "type": "alphanum"
-      },
-      "$$hashKey": "object:44020",
-      "type": "columnFilter",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {},
-        "column": "Organisme",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "NUMERICAL"
-      },
-      "currentMode": "FACET"
-    }
-  ],
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -579,7 +544,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnCustomFormula",
