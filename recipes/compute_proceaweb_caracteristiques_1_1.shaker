@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 1,
+    "_refreshTrigger": 2,
     "selection": {
       "filter": {
         "uiData": {
@@ -19,7 +19,7 @@
           ]
         },
         "distinct": false,
-        "enabled": true
+        "enabled": false
       },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
@@ -353,7 +353,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "RemoveRowsOnEmpty",
       "params": {
         "columns": [
@@ -365,9 +365,9 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnCustomFormula",
       "params": {
         "expression": "an \u003e\u003d 18",
