@@ -367,7 +367,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "FilterOnCustomFormula",
       "params": {
         "expression": "an \u003e\u003d 18",
