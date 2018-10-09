@@ -159,6 +159,20 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
+    },
+    {
+      "id": "0.06892848319253497",
+      "type": "QUERY",
+      "name": "Pb de jointure",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
     }
   ],
   "automationLocal": false,
@@ -167,7 +181,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539103539965
+    "lastModifiedOn": 1539103589990
   },
   "creationTag": {
     "versionNumber": 0,
