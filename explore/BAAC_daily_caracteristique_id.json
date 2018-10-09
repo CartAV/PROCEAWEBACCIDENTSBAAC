@@ -42,43 +42,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "filename",
-        "type": "columnFilter",
-        "currentMode": "SIMPLE_ALPHANUM",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "filename",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {}
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "filename",
-          "values": [
-            "BAAC_1_SP_029720900086_20181004-185939.xml"
-          ],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "filename",
-          "params": {
-            "type": "DateSource",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": []
