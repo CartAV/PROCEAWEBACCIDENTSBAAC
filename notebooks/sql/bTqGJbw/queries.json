@@ -902,6 +902,28 @@
         },
         "sql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"Num_Acc\" IS NULL",
         "expandedSql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"Num_Acc\" IS NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "aFOQn4rhfXIm",
+        "runOn": 1539103622964,
+        "runIn": 72,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ptBXbpQi",
+        "hash": "3e6e12df655a1388bcace3729f30575e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    --WHERE \"Num_Acc\" IS NULL",
+        "expandedSql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    --WHERE \"Num_Acc\" IS NULL"
       }
     ],
     "0.06892848319253497": [
