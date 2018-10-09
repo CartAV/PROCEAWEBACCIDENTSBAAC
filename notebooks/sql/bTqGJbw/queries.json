@@ -639,10 +639,10 @@
         "mode": "SQL",
         "id": "JaKkYAzJjsLy",
         "runOn": 1539076225004,
-        "runIn": 54,
+        "runIn": 253,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "map9AceY",
         "hash": "f8d556caa90d08ad65cb90417df964af",
         "querySettings": {
