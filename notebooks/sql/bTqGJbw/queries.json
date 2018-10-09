@@ -723,6 +723,30 @@
         "sql": "SELECT cnt, COUNT(DISTINCT \"Num_Acc\") n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC",
         "expandedSql": "SELECT cnt, COUNT(DISTINCT \"Num_Acc\") n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC"
       }
+    ],
+    "0.41452677020062645": [
+      {
+        "mode": "SQL",
+        "id": "JuBMbZSOdQog",
+        "runOn": 1539076322908,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "mF6EXKex",
+        "hash": "3a419f07738445b7a19cdd01e4ec0487",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT cnt, \"Num_Acc\"\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt ",
+        "expandedSql": "SELECT cnt, \"Num_Acc\"\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt "
+      }
     ]
   }
 }
