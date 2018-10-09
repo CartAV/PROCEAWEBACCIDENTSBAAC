@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539089155787
+    "lastModifiedOn": 1539090307136
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,7 +75,8 @@
       },
       {
         "name": "departement",
-        "type": "bigint"
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "agg",
