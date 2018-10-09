@@ -926,6 +926,28 @@
         },
         "sql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"Num_Acc\" IS NULL OR \"filename\" IS NULL",
         "expandedSql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"Num_Acc\" IS NULL OR \"filename\" IS NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "Px1tiN81uNAt",
+        "runOn": 1539103614751,
+        "runIn": 18,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "7FP5DcRd",
+        "hash": "d02ad3e8f3f8d78ba32fa33c7b1f98ba",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL",
+        "expandedSql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL"
       }
     ]
   }
