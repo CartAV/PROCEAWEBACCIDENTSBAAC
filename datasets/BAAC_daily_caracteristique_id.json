@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537360304618
+    "lastModifiedOn": 1539089155787
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,6 +67,11 @@
       {
         "name": "com",
         "type": "bigint"
+      },
+      {
+        "name": "filename",
+        "type": "string",
+        "maxLength": 16200
       },
       {
         "name": "departement",
@@ -118,11 +123,6 @@
       },
       {
         "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
