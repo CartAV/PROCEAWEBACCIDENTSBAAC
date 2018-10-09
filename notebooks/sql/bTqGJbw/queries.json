@@ -909,10 +909,10 @@
         "mode": "SQL",
         "id": "2VWR1zUZL9LU",
         "runOn": 1539103608799,
-        "runIn": -1,
+        "runIn": 18,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "oXPAGQqv",
         "hash": "ac882e344f8c24f67cd83218a2371831",
         "querySettings": {
