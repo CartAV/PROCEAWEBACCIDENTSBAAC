@@ -790,6 +790,28 @@
         },
         "sql": "    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE cnt \u003d 3\n    GROUP BY \"Num_Acc\"\n",
         "expandedSql": "    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE cnt \u003d 3\n    GROUP BY \"Num_Acc\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "tz980xEIA1Xt",
+        "runOn": 1539076358664,
+        "runIn": 12,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "BRibMGYc",
+        "hash": "12544bf5c62047524b836d71da074e3d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    SELECT * FROM \n    (SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n    )     WHERE cnt \u003d 3\n",
+        "expandedSql": "    SELECT * FROM \n    (SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n    )     WHERE cnt \u003d 3\n"
       }
     ]
   }
