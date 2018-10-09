@@ -678,6 +678,28 @@
         },
         "sql": "SELECT cnt, COUNT(*) n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC",
         "expandedSql": "SELECT cnt, COUNT(*) n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC"
+      },
+      {
+        "mode": "SQL",
+        "id": "1LzLA90qsMT5",
+        "runOn": 1539076267978,
+        "runIn": 114,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "cu0ZYlUj",
+        "hash": "9126d85abbbd272f3aa436913a4e5478",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT cnt, COUNT(\"Num_Acc\") n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC",
+        "expandedSql": "SELECT cnt, COUNT(\"Num_Acc\") n\nFROM(\n    SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n) a\nGROUP BY cnt\nORDER BY n DESC"
       }
     ]
   }
