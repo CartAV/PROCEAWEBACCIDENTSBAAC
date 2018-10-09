@@ -39,6 +39,11 @@
       "table": 0
     },
     {
+      "name": "filename",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "departement",
       "type": "bigint",
       "table": 0
@@ -92,11 +97,6 @@
       "name": "mapping_error",
       "type": "string",
       "table": 0
-    },
-    {
-      "name": "filename",
-      "type": "string",
-      "table": 1
     },
     {
       "name": "dateHeureDernModFO",
@@ -205,6 +205,11 @@
             "type": "bigint"
           },
           {
+            "name": "filename",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
             "name": "departement",
             "type": "bigint"
           },
@@ -254,12 +259,6 @@
           },
           {
             "name": "mapping_error",
-            "type": "string",
-            "maxLength": 16200
-          },
-          {
-            "meaning": "Text",
-            "name": "filename",
             "type": "string",
             "maxLength": 16200
           },
