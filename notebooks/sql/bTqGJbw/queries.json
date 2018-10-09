@@ -879,6 +879,30 @@
         "sql": "    SELECT * FROM \n    (SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n    ) a    WHERE cnt \u003d 2720\n",
         "expandedSql": "    SELECT * FROM \n    (SELECT COUNT(*) cnt, \"Num_Acc\"\n    FROM \"proceaweb_caracteristiques_all\"\n    GROUP BY \"Num_Acc\"\n    ) a    WHERE cnt \u003d 2720\n"
       }
+    ],
+    "0.8049134044460963": [
+      {
+        "mode": "SQL",
+        "id": "ECR7T0pV4eUg",
+        "runOn": 1539103553474,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WbYFW6eZ",
+        "hash": "ff685068512da2514d292d5273b3fbfe",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"Num_Acc\" IS NULL",
+        "expandedSql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"Num_Acc\" IS NULL"
+      }
     ]
   }
 }
