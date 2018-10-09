@@ -611,6 +611,30 @@
         "sql": "SELECT \"jour\", \"mois\", \"an\", \"date\", \"statutBaac\"\nFROM \"baac_daily_caracteristique_id_prep\"",
         "expandedSql": "SELECT \"jour\", \"mois\", \"an\", \"date\", \"statutBaac\"\nFROM \"baac_daily_caracteristique_id_prep\""
       }
+    ],
+    "jvmulfc5vwi": [
+      {
+        "mode": "SQL",
+        "id": "3b9zxmIxeuj7",
+        "runOn": 1539076212468,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "U6rSaY3d",
+        "hash": "8adb57692ddc4acc4162970c5e0cb09f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT cnt, COUNT(*) n\n(SELECT COUNT(*) cnt, \"Num_Acc\"\nFROM \"proceaweb_caracteristiques_all\"\nGROUP BY \"Num_Acc\"\n)\nGROUP BY cnt\nORDER BY n DESC",
+        "expandedSql": "SELECT cnt, COUNT(*) n\n(SELECT COUNT(*) cnt, \"Num_Acc\"\nFROM \"proceaweb_caracteristiques_all\"\nGROUP BY \"Num_Acc\"\n)\nGROUP BY cnt\nORDER BY n DESC"
+      }
     ]
   }
 }
