@@ -5,11 +5,11 @@
   "name": "Build all",
   "active": false,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539158684003
+    "lastModifiedOn": 1539261530182
   },
   "checklists": {
     "checklists": []
@@ -24,7 +24,7 @@
     {
       "id": "teDYu055",
       "type": "ds_modified",
-      "name": "",
+      "name": "New daily BAAC",
       "delay": 3600,
       "active": true,
       "params": {
