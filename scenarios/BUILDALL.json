@@ -5,11 +5,11 @@
   "name": "Build all",
   "active": false,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539261530182
+    "lastModifiedOn": 1539261562680
   },
   "checklists": {
     "checklists": []
@@ -38,7 +38,7 @@
       },
       "graceDelaySettings": {
         "delay": 120,
-        "checkAgainAfterGraceDelay": true
+        "checkAgainAfterGraceDelay": false
       }
     }
   ],
