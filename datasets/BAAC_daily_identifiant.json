@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1536926672060
+    "lastModifiedOn": 1539615240887
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,7 @@
     "connection": "filesystem_root",
     "path": "/data/sources/ines/input_cartav",
     "notReadyIfEmpty": false,
+    "markerFile": "changes",
     "filesSelectionRules": {
       "mode": "ALL",
       "excludeRules": [],
