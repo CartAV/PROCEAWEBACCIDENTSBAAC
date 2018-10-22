@@ -5,11 +5,11 @@
   "name": "Build all",
   "active": false,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539261562680
+    "lastModifiedOn": 1540198327014
   },
   "checklists": {
     "checklists": []
@@ -26,7 +26,7 @@
       "type": "ds_modified",
       "name": "New daily BAAC",
       "delay": 3600,
-      "active": true,
+      "active": false,
       "params": {
         "watches": [
           {
@@ -39,6 +39,23 @@
       "graceDelaySettings": {
         "delay": 120,
         "checkAgainAfterGraceDelay": false
+      }
+    },
+    {
+      "id": "u3M1SGYE",
+      "type": "temporal",
+      "name": "Daily trigger",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "frequency": "Daily",
+        "daysOfWeek": [
+          "Saturday"
+        ],
+        "dayOfMonth": 1,
+        "minute": 0,
+        "hour": 2,
+        "count": 5
       }
     }
   ],
