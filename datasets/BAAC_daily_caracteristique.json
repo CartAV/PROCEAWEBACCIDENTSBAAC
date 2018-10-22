@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1540211095520
+    "lastModifiedOn": 1540211116167
   },
   "creationTag": {
     "versionNumber": 0,
@@ -113,7 +113,8 @@
       },
       {
         "name": "localisation",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "coordonneesGeo",
