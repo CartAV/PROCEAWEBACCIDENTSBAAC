@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1540211120572
+    "lastModifiedOn": 1540211127905
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,7 +97,8 @@
       },
       {
         "name": "conditionAtmospherique",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "codeCommuneInsee",
