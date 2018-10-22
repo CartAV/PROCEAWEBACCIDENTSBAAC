@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1540211116167
+    "lastModifiedOn": 1540211118277
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,7 +75,8 @@
       },
       {
         "name": "intersection",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "identifiantBAAC",
