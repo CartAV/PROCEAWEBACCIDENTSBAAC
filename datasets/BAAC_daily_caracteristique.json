@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1540211118277
+    "lastModifiedOn": 1540211120572
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,8 @@
       },
       {
         "name": "lumiere",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "adressePostale",
