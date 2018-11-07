@@ -971,6 +971,30 @@
         "sql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL",
         "expandedSql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL"
       }
+    ],
+    "6qlcn9ko5ij": [
+      {
+        "mode": "SQL",
+        "id": "DPh153GbXfRM",
+        "runOn": 1541614072884,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "wccFpR0M",
+        "hash": "d125157c48cc53c059b05d6c935ba62f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"proceaweb_caracteristiques\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM \"proceaweb_caracteristiques\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      }
     ]
   }
 }
