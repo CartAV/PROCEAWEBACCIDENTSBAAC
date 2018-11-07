@@ -977,10 +977,10 @@
         "mode": "SQL",
         "id": "DPh153GbXfRM",
         "runOn": 1541614072884,
-        "runIn": -1,
+        "runIn": 41,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "wccFpR0M",
         "hash": "d125157c48cc53c059b05d6c935ba62f",
         "querySettings": {
