@@ -1043,10 +1043,10 @@
         "mode": "SQL",
         "id": "Q2IJhVskkYgC",
         "runOn": 1541689896013,
-        "runIn": 74,
+        "runIn": 41,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "PTsDX9V3",
         "hash": "9eb4caa7cda43b572b07f67db8ddc4c3",
         "querySettings": {
