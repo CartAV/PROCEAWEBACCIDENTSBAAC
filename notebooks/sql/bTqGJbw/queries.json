@@ -1024,7 +1024,7 @@
         "runIn": 74,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "YP454WpX",
         "hash": "4da47fa4d0352341e205132f5016dda3",
         "querySettings": {
