@@ -4,7 +4,9 @@
     "enabled": false
   },
   "firstRows": 1,
-  "keys": [],
+  "keys": [
+    "Num_Acc"
+  ],
   "computedColumns": [],
   "retrievedColumns": [
     "dateAccident",
@@ -70,7 +72,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "Id BAAC 2002",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
