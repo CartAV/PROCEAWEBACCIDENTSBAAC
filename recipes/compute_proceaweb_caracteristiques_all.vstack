@@ -65,7 +65,7 @@
     },
     {
       "preFilter": {},
-      "originLabel": "BAAC_daily_caracteristique_id_prep",
+      "originLabel": "BAAC_daily_caracteristique_id_prep_distinct",
       "index": 1
     }
   ],
