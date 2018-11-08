@@ -1,0 +1,136 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "dateAccident"
+    },
+    {
+      "column": "jour"
+    },
+    {
+      "column": "mois"
+    },
+    {
+      "column": "an"
+    },
+    {
+      "column": "com"
+    },
+    {
+      "column": "dep"
+    },
+    {
+      "column": "agg"
+    },
+    {
+      "column": "int"
+    },
+    {
+      "column": "Id BAAC 2002"
+    },
+    {
+      "column": "lum"
+    },
+    {
+      "column": "atm"
+    },
+    {
+      "column": "col"
+    },
+    {
+      "column": "heureAccident"
+    },
+    {
+      "column": "Minute"
+    },
+    {
+      "column": "hrmn"
+    },
+    {
+      "column": "Heure"
+    },
+    {
+      "column": "adr"
+    },
+    {
+      "column": "Coordonnées GPS"
+    },
+    {
+      "column": "mapping_error"
+    },
+    {
+      "column": "filename"
+    },
+    {
+      "column": "dateHeureDernModFO"
+    },
+    {
+      "column": "date"
+    },
+    {
+      "column": "Code Unité"
+    },
+    {
+      "column": "Numéro P.V."
+    },
+    {
+      "column": "Num_Acc"
+    },
+    {
+      "column": "Organisme"
+    },
+    {
+      "column": "statutBaac"
+    },
+    {
+      "column": "typeAccident"
+    },
+    {
+      "column": "IdTechniqueFO"
+    },
+    {
+      "column": "long"
+    },
+    {
+      "column": "lat"
+    },
+    {
+      "column": "gps"
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
