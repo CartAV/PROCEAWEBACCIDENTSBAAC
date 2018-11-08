@@ -130,6 +130,176 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "dateAccident",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "jour",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "mois",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "an",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "com",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "meaning": "Text",
+            "name": "dep",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "agg",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "int",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Id BAAC 2002",
+            "type": "bigint"
+          },
+          {
+            "name": "lum",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "atm",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "col",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "heureAccident",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Minute",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "hrmn",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Heure",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "adr",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Coordonnées GPS",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "mapping_error",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "filename",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "dateHeureDernModFO",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "date",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Code Unité",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Numéro P.V.",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Num_Acc",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "Organisme",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "statutBaac",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "typeAccident",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "IdTechniqueFO",
+            "type": "string",
+            "maxLength": 16200
+          },
+          {
+            "name": "long",
+            "type": "bigint",
+            "maxLength": 16200
+          },
+          {
+            "name": "lat",
+            "type": "bigint",
+            "maxLength": 16200
+          },
+          {
+            "name": "gps",
+            "type": "string",
+            "maxLength": 16200
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
