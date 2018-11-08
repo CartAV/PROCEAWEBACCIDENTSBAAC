@@ -1060,6 +1060,28 @@
         },
         "sql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques_all\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques_all\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "St2eaJb3eHRF",
+        "runOn": 1541693311044,
+        "runIn": 41,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "FzernFi1",
+        "hash": "9eb4caa7cda43b572b07f67db8ddc4c3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques_all\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT COUNT(*)\nFROM \"proceaweb_caracteristiques_all\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
