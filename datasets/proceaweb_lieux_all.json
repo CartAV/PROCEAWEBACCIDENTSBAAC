@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537363916757
+    "lastModifiedOn": 1542046374830
   },
   "creationTag": {
     "versionNumber": 0,
@@ -176,26 +176,6 @@
       },
       {
         "name": "date",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": " Code Unité",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "statutBaac",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "typeAccident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "IdTechniqueFO",
         "type": "string",
         "maxLength": 16200
       }
