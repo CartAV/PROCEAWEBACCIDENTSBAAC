@@ -4,7 +4,9 @@
     "enabled": false
   },
   "firstRows": 1,
-  "keys": [],
+  "keys": [
+    "Num_Acc"
+  ],
   "computedColumns": [],
   "retrievedColumns": [
     "Code route",
@@ -67,7 +69,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "IdTechniqueFO",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
