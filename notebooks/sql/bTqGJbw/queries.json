@@ -992,6 +992,28 @@
         },
         "sql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"filename\" IS NULL",
         "expandedSql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"filename\" IS NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "225RZ41eOJ4Y",
+        "runOn": 1542040370839,
+        "runIn": 8,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "DfhzIRwB",
+        "hash": "62f6ecabe0ee3ea56409f6a18f90b37b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM   \"proceaweb_caracteristiques\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM   \"proceaweb_caracteristiques\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ],
     "6qlcn9ko5ij": [
