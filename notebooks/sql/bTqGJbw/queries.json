@@ -1219,10 +1219,10 @@
         "mode": "SQL",
         "id": "drOA7afmv5jp",
         "runOn": 1542040252300,
-        "runIn": 45,
+        "runIn": 50,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "RHYFtyJO",
         "hash": "3a4e5c4e53097f4c21d6ccbbbbd970d6",
         "querySettings": {
