@@ -970,6 +970,28 @@
         },
         "sql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL",
         "expandedSql": "    SELECT COUNT(*)\n    FROM \"baac_daily_caracteristique_prep\"\n    WHERE \"filename\" IS NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "TLqpEP9f8Tjz",
+        "runOn": 1542039945577,
+        "runIn": 25,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "rEo3Yu1e",
+        "hash": "14456c0c52b5cdc2a9fe8c461ad47e69",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"filename\" IS NULL",
+        "expandedSql": "    SELECT COUNT(*)\n    FROM \"proceaweb_caracteristiques_all\"\n    WHERE \"filename\" IS NULL"
       }
     ],
     "6qlcn9ko5ij": [
