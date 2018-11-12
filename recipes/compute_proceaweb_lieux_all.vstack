@@ -24,11 +24,7 @@
     "infra",
     "situ",
     "env1",
-    "date",
-    " Code Unité",
-    "statutBaac",
-    "typeAccident",
-    "IdTechniqueFO"
+    "date"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
@@ -68,7 +64,7 @@
     },
     {
       "preFilter": {},
-      "originLabel": "BAAC_daily_lieu_id_prep",
+      "originLabel": "BAAC_daily_lieu_id_prep_distinct",
       "index": 1
     }
   ],
@@ -170,22 +166,6 @@
           },
           {
             "name": "date",
-            "type": "string"
-          },
-          {
-            "name": " Code Unité",
-            "type": "string"
-          },
-          {
-            "name": "statutBaac",
-            "type": "string"
-          },
-          {
-            "name": "typeAccident",
-            "type": "string"
-          },
-          {
-            "name": "IdTechniqueFO",
             "type": "string"
           }
         ],
