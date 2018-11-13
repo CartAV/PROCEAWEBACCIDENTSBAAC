@@ -1300,6 +1300,28 @@
         },
         "sql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\n--WHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027",
         "expandedSql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\n--WHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "eTcolngC7tyO",
+        "runOn": 1542113634166,
+        "runIn": 39,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "z3BLStwf",
+        "hash": "919eb752ad674b0e701bf557e8c35313",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027",
+        "expandedSql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027"
       }
     ],
     "6qlcn9ko5ij": [
