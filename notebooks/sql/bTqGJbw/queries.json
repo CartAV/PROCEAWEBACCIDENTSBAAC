@@ -1283,10 +1283,10 @@
         "mode": "SQL",
         "id": "OiLoNEfgzvup",
         "runOn": 1542113626640,
-        "runIn": 36,
+        "runIn": 39,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "MtsmKkG1",
         "hash": "35a62acb3e10c10c29eb4954468ea879",
         "querySettings": {
