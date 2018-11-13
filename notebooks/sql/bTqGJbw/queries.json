@@ -1652,6 +1652,28 @@
         },
         "sql": "SELECT COUNT (DISTINCT \"IdTechniqueFO\")\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%\u0027",
         "expandedSql": "SELECT COUNT (DISTINCT \"IdTechniqueFO\")\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "10xCxqLj2dgU",
+        "runOn": 1542114894727,
+        "runIn": 27,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "jeERprpX",
+        "hash": "4ab94c190d656c87d727d602e6cfcb49",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT (*)\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%\u0027",
+        "expandedSql": "SELECT COUNT (*)\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%\u0027"
       }
     ],
     "6qlcn9ko5ij": [
