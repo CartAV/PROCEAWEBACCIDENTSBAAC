@@ -1476,6 +1476,28 @@
         },
         "sql": "SELECT \"Num_Acc\", \nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT \"Num_Acc\", \nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "5A1hMUtA3Cge",
+        "runOn": 1542114658933,
+        "runIn": 12,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YkN1KSh6",
+        "hash": "dcf727f18cbb979135608b8963a4caea",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ],
     "6qlcn9ko5ij": [
