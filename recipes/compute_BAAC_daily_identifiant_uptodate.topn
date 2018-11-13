@@ -1,0 +1,52 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "firstRows": 1,
+  "keys": [],
+  "computedColumns": [],
+  "retrievedColumns": [
+    "filename",
+    "dateHeureDernModFO",
+    "codeUnite",
+    "numPV",
+    "organisme",
+    "statutBaac",
+    "typeAccident",
+    "IdTechniqueFO"
+  ],
+  "lastRows": 0,
+  "duplicateCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "rank": false,
+  "denseRank": false,
+  "orders": [],
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
+}
