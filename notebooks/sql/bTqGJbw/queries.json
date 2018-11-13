@@ -1261,10 +1261,10 @@
         "mode": "SQL",
         "id": "VuUFt0llmS1x",
         "runOn": 1542113619007,
-        "runIn": 43,
+        "runIn": 36,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "SZtd8Dod",
         "hash": "919eb752ad674b0e701bf557e8c35313",
         "querySettings": {
