@@ -1102,6 +1102,28 @@
         },
         "sql": "SELECT *\nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "2L5g6Z6olj4L",
+        "runOn": 1542113435699,
+        "runIn": 1043,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "W7XxpadZ",
+        "hash": "ee0a82c7ee4091d98c10b2055067e165",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT *\nFROM \"baac_daily_lieu_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ],
     "6qlcn9ko5ij": [
