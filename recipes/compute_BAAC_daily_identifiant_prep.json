@@ -16,6 +16,10 @@
             "BAAC_daily_identifiant": {
               "repartition": 10,
               "cache": false
+            },
+            "BAAC_daily_identifiant_uptodate": {
+              "repartition": 10,
+              "cache": false
             }
           }
         },
@@ -51,11 +55,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1542115058085
+    "lastModifiedOn": 1542115060329
   },
   "creationTag": {
     "versionNumber": 0,
