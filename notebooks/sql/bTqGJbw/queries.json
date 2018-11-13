@@ -1613,10 +1613,10 @@
         "mode": "SQL",
         "id": "P67xT52qO6PR",
         "runOn": 1542114881957,
-        "runIn": 25,
+        "runIn": 10,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "YCcNU52x",
         "hash": "45a2a422d1b7019cbb1ef47b947e9558",
         "querySettings": {
