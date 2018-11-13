@@ -1217,10 +1217,10 @@
         "mode": "SQL",
         "id": "CxbkDv23HyLU",
         "runOn": 1542113572819,
-        "runIn": 40,
+        "runIn": 134,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "BogRGr2l",
         "hash": "2d06c4f69c2b6543307f517a6d3cd366",
         "querySettings": {
