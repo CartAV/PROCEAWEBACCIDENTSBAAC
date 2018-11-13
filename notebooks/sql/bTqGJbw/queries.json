@@ -1498,6 +1498,28 @@
         },
         "sql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "VsdtrF9jXQRo",
+        "runOn": 1542114690029,
+        "runIn": 10,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "amORWnAF",
+        "hash": "4b313d4e8ae9649dfc1cd21093c15ceb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809..001357201346\u0027",
+        "expandedSql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809..001357201346\u0027"
       }
     ],
     "6qlcn9ko5ij": [
