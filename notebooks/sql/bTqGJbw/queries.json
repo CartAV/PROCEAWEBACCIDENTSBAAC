@@ -1146,6 +1146,28 @@
         },
         "sql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "joOEh7qW2F8G",
+        "runOn": 1542113481363,
+        "runIn": 284,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "vDgK80cY",
+        "hash": "804a9893b3ab6b6a7459d16ed15d9243",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027",
+        "expandedSql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027"
       }
     ],
     "6qlcn9ko5ij": [
