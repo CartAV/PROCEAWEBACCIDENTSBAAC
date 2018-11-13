@@ -4,7 +4,9 @@
     "enabled": false
   },
   "firstRows": 1,
-  "keys": [],
+  "keys": [
+    "IdTechniqueFO"
+  ],
   "computedColumns": [],
   "retrievedColumns": [
     "filename",
@@ -46,7 +48,20 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "statutBaac",
+      "desc": true
+    },
+    {
+      "column": "dateHeureDernModFO",
+      "desc": true
+    },
+    {
+      "column": "filename",
+      "desc": true
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
