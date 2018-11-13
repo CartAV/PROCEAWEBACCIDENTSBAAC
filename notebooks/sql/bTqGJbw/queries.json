@@ -1212,6 +1212,28 @@
         },
         "sql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027",
         "expandedSql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "CxbkDv23HyLU",
+        "runOn": 1542113572819,
+        "runIn": 40,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "BogRGr2l",
+        "hash": "2d06c4f69c2b6543307f517a6d3cd366",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep_distinct\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027",
+        "expandedSql": "SELECT *\nFROM \"baac_daily_vehicule_id_prep_distinct\"\n--WHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027\nWHERE \"Num_Acc\" \u003d \u002720181103000686901110\u0027"
       }
     ],
     "6qlcn9ko5ij": [
