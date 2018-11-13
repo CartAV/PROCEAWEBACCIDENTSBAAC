@@ -177,7 +177,7 @@
     {
       "id": "6qlcn9ko5ij",
       "type": "QUERY",
-      "name": "BUG DOUBLONS",
+      "name": "BUG DOUBLONS 2018-11-13",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -195,7 +195,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1542113824651
+    "lastModifiedOn": 1542113830403
   },
   "creationTag": {
     "versionNumber": 0,
