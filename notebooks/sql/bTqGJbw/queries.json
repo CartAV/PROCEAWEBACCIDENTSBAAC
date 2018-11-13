@@ -1542,6 +1542,28 @@
         },
         "sql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809??001357201346\u0027",
         "expandedSql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809??001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "6PRDU9TKspWE",
+        "runOn": 1542114718219,
+        "runIn": 35,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Z9zkZG7o",
+        "hash": "5394b8ceaf6483e0d5b6b88c7f459dad",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%%001357201346\u0027",
+        "expandedSql": "SELECT \"Num_Acc\"\nFROM  \"baac_daily_identifiant_prep\"\nWHERE \"Num_Acc\" LIKE \u0027201809%%001357201346\u0027"
       }
     ],
     "6qlcn9ko5ij": [
