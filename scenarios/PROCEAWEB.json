@@ -3,13 +3,13 @@
   "id": "PROCEAWEB",
   "type": "step_based",
   "name": "ProceaWeb -\u003e Prod (full chain)",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1550681886042
+    "lastModifiedOn": 1552399921423
   },
   "checklists": {
     "checklists": []
@@ -98,5 +98,6 @@
       }
     ]
   },
-  "automationLocal": false
+  "automationLocal": false,
+  "customFields": {}
 }
