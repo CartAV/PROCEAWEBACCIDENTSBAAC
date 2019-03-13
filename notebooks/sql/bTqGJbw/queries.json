@@ -2233,10 +2233,10 @@
         "mode": "SQL",
         "id": "RNhg6bNTtqoj",
         "runOn": 1552484446525,
-        "runIn": 112,
+        "runIn": 508,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "JewqcoOP",
         "hash": "3ba9f6afbdba374ba34291caf8c5c3da",
         "querySettings": {
