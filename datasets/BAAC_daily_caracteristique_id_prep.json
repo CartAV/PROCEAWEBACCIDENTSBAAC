@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1542042477033
+    "lastModifiedOn": 1552473687455
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,11 @@
         "name": "com",
         "type": "string",
         "meaning": "Text",
+        "maxLength": 16200
+      },
+      {
+        "name": "filename",
+        "type": "string",
         "maxLength": 16200
       },
       {
@@ -154,11 +159,6 @@
       },
       {
         "name": "mapping_error",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "filename",
         "type": "string",
         "maxLength": 16200
       },
@@ -299,5 +299,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
