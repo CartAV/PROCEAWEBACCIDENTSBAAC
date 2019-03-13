@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552483262311
+    "lastModifiedOn": 1552483359296
   },
   "creationTag": {
     "versionNumber": 0,
@@ -153,7 +153,7 @@
         "maxLength": 16200
       },
       {
-        "name": "Coordonnees GPS",
+        "name": "Coordonnées GPS ",
         "type": "string",
         "maxLength": 16200
       },
