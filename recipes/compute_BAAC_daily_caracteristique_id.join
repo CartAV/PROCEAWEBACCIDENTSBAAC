@@ -35,7 +35,7 @@
     },
     {
       "name": "com",
-      "type": "bigint",
+      "type": "string",
       "table": 0
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "name": "departement",
-      "type": "bigint",
+      "type": "string",
       "table": 0
     },
     {
@@ -202,16 +202,20 @@
           },
           {
             "name": "com",
-            "type": "bigint"
+            "type": "string",
+            "maxLength": 16200
           },
           {
+            "meaning": "Text",
             "name": "filename",
             "type": "string",
             "maxLength": 16200
           },
           {
+            "meaning": "Text",
             "name": "departement",
-            "type": "bigint"
+            "type": "string",
+            "maxLength": 16200
           },
           {
             "name": "agg",
