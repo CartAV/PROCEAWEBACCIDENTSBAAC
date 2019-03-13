@@ -24,7 +24,41 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "Coordonnees GPS",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "Text",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "Coordonnees GPS",
+      "active": true,
+      "alphanumFilter": {
+        "values": [
+          "nil"
+        ],
+        "column": "Coordonnees GPS",
+        "type": "alphanum",
+        "params": {}
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:28357",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Coordonnees GPS",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "SIMPLE_ALPHANUM"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -198,12 +232,12 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "PythonUDF",
       "params": {
         "mode": "ROW",
         "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    try:\n        # Produce GPS coordinates\n        lat, lon \u003d row[\u0027Coordonnées GPS\u0027].split(\u0027,\u0027)\n        new_lat \u003d int(float(lat) * 100000)\n        row[\u0027lat\u0027] \u003d new_lat\n        assert row[\u0027lat\u0027]\u003e\u003e5 \u003d\u003d int(float(lat))\n        new_long \u003d int(float(lon) * 100000)\n        row[\u0027long\u0027] \u003d new_long\n        assert row[\u0027lon\u0027]\u003e\u003e5 \u003d\u003d int(float(lon))\n        row[\u0027gps\u0027] \u003d \u0027M\u0027\n    except:\n        # print(\u0027Invalid GPS coordinates\u0027, row[\u0027Coordonnées GPS\u0027] if \u0027Coordonnées GPS\u0027 in row else \u0027N/A\u0027)\n        print row\n        row[\u0027lat\u0027] \u003d \u0027N/A\u0027\n        row[\u0027long\u0027] \u003d \u0027N/A\u0027\n        row[\u0027gps\u0027] \u003d \u0027M\u0027\n        \n    # Correct commune\n    row[\u0027com\u0027] \u003d row[\u0027com\u0027][-3:]\n    return row\n",
+        "pythonSourceCode": "def process(row):\n    # Produce GPS coordinates\n    lat, lon \u003d row[\u0027Coordonnees GPS\u0027].split(\u0027,\u0027)\n    new_lat \u003d int(float(lat) * 100000)\n    row[\u0027lat\u0027] \u003d new_lat\n    # assert row[\u0027lat\u0027]\u003e\u003e5 \u003d\u003d int(float(lat))\n    new_long \u003d int(float(lon) * 100000)\n    row[\u0027long\u0027] \u003d new_long\n    # assert row[\u0027lon\u0027]\u003e\u003e5 \u003d\u003d int(float(lon))\n    row[\u0027gps\u0027] \u003d \u0027M\u0027    \n    # Correct commune\n    row[\u0027com\u0027] \u003d row[\u0027com\u0027][-3:]\n    return row\n",
         "usePythonUnicode": true
       },
       "alwaysShowComment": false
