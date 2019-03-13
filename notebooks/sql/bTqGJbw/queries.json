@@ -2051,6 +2051,30 @@
         "sql": "SELECT *\nFROM  \"baac_daily_caracteristique_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027",
         "expandedSql": "SELECT *\nFROM  \"baac_daily_caracteristique_id_prep\"\nWHERE \"Num_Acc\" \u003d \u002720180927001357201346\u0027"
       }
+    ],
+    "ui8mo3i0mh8": [
+      {
+        "mode": "SQL",
+        "id": "M7vjsHYQc0GT",
+        "runOn": 1552482978245,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "JE7H8Doo",
+        "hash": "a5fe9f58d70f71e907307ce884cc50c2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT LIKE \u0027[0-9,\\-]*\u0027",
+        "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT LIKE \u0027[0-9,\\-]*\u0027"
+      }
     ]
   }
 }
