@@ -10,7 +10,7 @@
         "enabled": false
       },
       "latestPartitionsN": 1,
-      "maxRecords": 10000,
+      "maxRecords": 1000,
       "ordering": {
         "rules": [],
         "enabled": false
@@ -78,6 +78,29 @@
         "output": "",
         "mapping": [
           {
+            "from": "{\"xsi:nil\":\"true\"}",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "coordonneesGeo"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
             "from": "\\.*\"latitude\":\"(\\-?[0-9]+\\.?[0-9]*)\"\\.*",
             "to": "$1"
           },
@@ -105,7 +128,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "PythonUDF",
