@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552473687455
+    "lastModifiedOn": 1552474052189
   },
   "creationTag": {
     "versionNumber": 0,
@@ -205,21 +205,6 @@
       },
       {
         "name": "IdTechniqueFO",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "long",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lat",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "gps",
         "type": "string",
         "maxLength": 16200
       }
