@@ -2074,6 +2074,28 @@
         },
         "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT LIKE \u0027[0-9,\\-]*\u0027",
         "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT LIKE \u0027[0-9,\\-]*\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "NQWHrCBaujcb",
+        "runOn": 1552483021216,
+        "runIn": 300,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "0GZmBTRa",
+        "hash": "12b3f9888e4b3820b6e23f6365a9ee9e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT regex_like(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)",
+        "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT regex_like(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)"
       }
     ]
   }
