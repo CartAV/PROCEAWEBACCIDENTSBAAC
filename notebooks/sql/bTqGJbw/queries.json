@@ -2277,10 +2277,10 @@
         "mode": "SQL",
         "id": "WphSyjgp3LC6",
         "runOn": 1552484473327,
-        "runIn": 64,
+        "runIn": 108,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "dDhCyWdL",
         "hash": "c1fafd52eae100b7a3d9863119fd1a1d",
         "querySettings": {
