@@ -2096,6 +2096,28 @@
         },
         "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT regex_like(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)",
         "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT regex_like(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "Ds2AjzdbT4Sb",
+        "runOn": 1552483031949,
+        "runIn": 155,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WoaYdSxG",
+        "hash": "a62fe2e65f8b84540d70345edb957ea1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT REGEXP_LIKE(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)",
+        "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id\"\nWHERE NOT REGEXP_LIKE(\"coordonneesGeo\", \u0027[0-9,\\-]*\u0027)"
       }
     ]
   }
