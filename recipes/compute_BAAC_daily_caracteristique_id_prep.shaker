@@ -198,7 +198,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "PythonUDF",
       "params": {
         "mode": "ROW",
