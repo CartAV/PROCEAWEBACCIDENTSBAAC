@@ -55,7 +55,7 @@
           },
           {
             "from": "coordonneesGeo",
-            "to": "Coordonnees GPS"
+            "to": "Coordonnées GPS"
           },
           {
             "from": "identifiantBAAC",
@@ -205,21 +205,6 @@
         "stopOnError": true,
         "pythonSourceCode": "def process(row):\n    try:\n        # Produce GPS coordinates\n        lat, lon \u003d row[\u0027Coordonnees GPS\u0027].split(\u0027,\u0027)\n        new_lat \u003d int(float(lat) * 100000)\n        row[\u0027lat\u0027] \u003d new_lat\n        # assert row[\u0027lat\u0027]\u003e\u003e5 \u003d\u003d int(float(lat))\n        new_long \u003d int(float(lon) * 100000)\n        row[\u0027long\u0027] \u003d new_long\n        # assert row[\u0027lon\u0027]\u003e\u003e5 \u003d\u003d int(float(lon))\n        row[\u0027gps\u0027] \u003d \u0027M\u0027\n    except:\n        row[\u0027lat\u0027] \u003d None\n        row[\u0027long\u0027] \u003d None\n        row[\u0027gps\u0027] \u003d None\n\n    # Correct commune\n    row[\u0027com\u0027] \u003d row[\u0027com\u0027][-3:]\n    return row\n",
         "usePythonUnicode": true
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnRenamer",
-      "params": {
-        "renamings": [
-          {
-            "from": "Coordonnees GPS",
-            "to": "Coordonnées GPS "
-          }
-        ]
       },
       "alwaysShowComment": false
     }
