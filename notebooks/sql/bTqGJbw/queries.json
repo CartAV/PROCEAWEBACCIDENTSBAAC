@@ -2272,6 +2272,28 @@
         },
         "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \n--REGEXP_LIKE(\"coordonneesGeo\", \u002701\u0027) \nNOT REGEXP_LIKE(\"Coordonnées GPS\", \u0027^[0-9,.\\-]*$\u0027)",
         "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \n--REGEXP_LIKE(\"coordonneesGeo\", \u002701\u0027) \nNOT REGEXP_LIKE(\"Coordonnées GPS\", \u0027^[0-9,.\\-]*$\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "WphSyjgp3LC6",
+        "runOn": 1552484473327,
+        "runIn": 64,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "dDhCyWdL",
+        "hash": "c1fafd52eae100b7a3d9863119fd1a1d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \n--REGEXP_LIKE(\"coordonneesGeo\", \u002701\u0027) \nNOT REGEXP_LIKE(\"Coordonnées GPS \", \u0027^[0-9,.\\-]*$\u0027)",
+        "expandedSql": "SELECT * \nFROM \"baac_daily_caracteristique_id_prep\"\nWHERE \n--REGEXP_LIKE(\"coordonneesGeo\", \u002701\u0027) \nNOT REGEXP_LIKE(\"Coordonnées GPS \", \u0027^[0-9,.\\-]*$\u0027)"
       }
     ]
   }
