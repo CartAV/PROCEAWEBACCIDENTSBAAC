@@ -27,17 +27,17 @@
       "items": [
         {
           "ref": "BAAC_daily_caracteristique_id_prep_distinct_stock",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552555609600
+    "lastModifiedOn": 1552555636620
   },
   "creationTag": {
     "versionNumber": 0,

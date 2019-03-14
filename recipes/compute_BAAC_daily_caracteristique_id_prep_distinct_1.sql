@@ -68,7 +68,7 @@ SELECT
         ROW_NUMBER() OVER (PARTITION BY "__origin_table"."Num_Acc" ORDER BY "__origin_table"."Id BAAC 2002" ASC) AS "_row_number"
       FROM (
         SELECT *
-          FROM "baac_daily_caracteristique_id_prep" "__origin_table"
+          FROM "baac_daily_caracteristique_id_prep_delta" "__origin_table"
         ) "__origin_table"
     ) "__topn_btmm"
   WHERE "_row_number" <= (1)
