@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552555458393
+    "lastModifiedOn": 1552555500354
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,196 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "dateAccident",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "jour",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "mois",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "an",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "com",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "filename",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "dep",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "agg",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "int",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Id BAAC 2002",
+        "type": "bigint",
+        "originalType": "Integer"
+      },
+      {
+        "name": "lum",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "atm",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "col",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "heureAccident",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Minute",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "hrmn",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Heure",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Coordonnées GPS",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "mapping_error",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "dateHeureDernModFO",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Code Unité",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Numéro P.V.",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint",
+        "originalType": "Integer"
+      },
+      {
+        "name": "statutBaac",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "typeAccident",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "IdTechniqueFO",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      },
+      {
+        "name": "long",
+        "type": "bigint",
+        "originalType": "Integer"
+      },
+      {
+        "name": "lat",
+        "type": "bigint",
+        "originalType": "Integer"
+      },
+      {
+        "name": "gps",
+        "type": "string",
+        "originalType": "Varchar",
+        "maxLength": 16200
+      }
+    ],
     "userModified": true
   },
   "metrics": {
