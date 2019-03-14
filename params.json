@@ -57,6 +57,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "BAAC_daily_caracteristique_id_prep_distinct_delta",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -135,6 +142,16 @@
       {
         "type": "DATASET",
         "localName": "BAAC_daily_lieu_id_prep_distinct",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS_BRUT",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "BAAC_daily_caracteristique_id_prep_distinct_delta",
         "rules": [
           {
             "targetProject": "ACCIDENTS_BRUT",
@@ -282,11 +299,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552556027136
+    "lastModifiedOn": 1552556291557
   },
   "creationTag": {
     "versionNumber": 0,
