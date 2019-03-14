@@ -20,7 +20,7 @@
           "deps": []
         },
         {
-          "ref": "BAAC_daily_lieu_id_prep_distinct",
+          "ref": "BAAC_daily_caracteristique_id_prep_distinct_stock",
           "deps": []
         }
       ]
@@ -37,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552555500040
+    "lastModifiedOn": 1552555700419
   },
   "creationTag": {
     "versionNumber": 0,
