@@ -50,14 +50,14 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by mois and an",
+        "name": "Count by mois",
         "userEditedName": false,
         "genericDimension0": [
           {
             "column": "mois",
             "type": "NUMERICAL",
             "numParams": {
-              "mode": "NONE",
+              "mode": "TREAT_AS_ALPHANUM",
               "nbBins": 10,
               "binSize": 100,
               "emptyBinsMode": "ZEROS"
@@ -92,46 +92,7 @@
             }
           }
         ],
-        "genericDimension1": [
-          {
-            "column": "an",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "NONE",
-              "nbBins": 5,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
+        "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -163,7 +124,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "an",
+            "columnType": "NUMERICAL",
+            "minValue": 19.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -223,7 +194,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAdUlEQVRoge3Puw2AMBAE0ZOICFwBdVENAaVRml0CCPs+Ws2LV6cbMwCAgH7tR/YPofrdnuwfQhGsjmB1BKsjWB3B6ghWR7A6gtURnHzHXWTwqs2UyEcJ/rmZUi3m0+a07W3j/0SxTYknCHbclHiCYMcNAJQ2ACggoOgirTdpAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAZ0lEQVRoge3PsQ2AMBAEQTeC6NI0QTnOaY3YEUhnXgSz0qenn9Y0tx/jenurtrY+zgpb9CRwsAVcGTAwcLwFXBkwMHC8BVwZMDBwvAVcGTAwcLz1BF75EzAwMDAwMDAwMPBXYEn6Uzc+J/gfi3wQtAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
