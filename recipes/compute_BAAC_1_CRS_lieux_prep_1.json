@@ -11,6 +11,7 @@
           "inheritConf": "default",
           "conf": []
         },
+        "executionEngine": "SPARK_SUBMIT",
         "readParams": {
           "map": {
             "BAAC_1_CRS_lieux": {
@@ -23,7 +24,18 @@
             }
           }
         },
-        "useGlobalMetastore": false
+        "useGlobalMetastore": false,
+        "useNativeProcessors": true
+      },
+      "hive": {
+        "inheritConf": "default",
+        "hiveconf": [],
+        "executionEngine": "HIVECLI_LOCAL",
+        "addDkuUdf": false,
+        "skipPrerunValidate": false
+      },
+      "impala": {
+        "forceStreamMode": true
       },
       "hadoopConfigKeys": [],
       "maxThreads": 8
@@ -55,11 +67,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537359700955
+    "lastModifiedOn": 1557495193752
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,6 +83,7 @@
   "tags": [
     "ProceaWeb XML"
   ],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
