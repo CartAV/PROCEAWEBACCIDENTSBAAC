@@ -34,6 +34,33 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
+          },
+          {
+            "from": "{\"xsi:nil\":\"true\"}",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "coordonneesGeo"
+        ],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "ColumnRenamer",
       "params": {
         "renamings": [
@@ -66,33 +93,6 @@
             "to": "adr"
           }
         ]
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "mapping": [
-          {
-            "from": "{\"xsi:nil\":\"true\"}",
-            "to": ""
-          },
-          {
-            "from": "[{\"xsi:nil\":\"true\"}]",
-            "to": ""
-          }
-        ],
-        "normalization": "EXACT",
-        "columns": [
-          "coordonneesGeo"
-        ],
-        "appliesTo": "ALL",
-        "stopAfterFirstMatch": false,
-        "matching": "SUBSTRING"
       },
       "alwaysShowComment": false
     },
