@@ -39,11 +39,11 @@
         "output": "",
         "mapping": [
           {
-            "from": "{\"xsi:nil\":\"true\"}",
+            "from": "[{\"xsi:nil\":\"true\"}]",
             "to": ""
           },
           {
-            "from": "[{\"xsi:nil\":\"true\"}]",
+            "from": "{\"xsi:nil\":\"true\"}",
             "to": ""
           }
         ],
