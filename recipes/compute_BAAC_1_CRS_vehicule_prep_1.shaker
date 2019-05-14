@@ -76,6 +76,10 @@
           {
             "from": "[{\"xsi:nil\":\"true\"}]",
             "to": ""
+          },
+          {
+            "from": "{\"xsi:nil\":\"true\"}",
+            "to": ""
           }
         ],
         "normalization": "EXACT",
@@ -91,7 +95,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "FindReplace",
       "params": {
         "output": "",
