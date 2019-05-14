@@ -80,13 +80,17 @@
           {
             "from": "{\"xsi:nil\":\"true\"}",
             "to": ""
+          },
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
           }
         ],
         "normalization": "EXACT",
         "columns": [
           "coordonneesGeo"
         ],
-        "appliesTo": "SINGLE_COLUMN",
+        "appliesTo": "ALL",
         "stopAfterFirstMatch": false,
         "matching": "SUBSTRING"
       },
