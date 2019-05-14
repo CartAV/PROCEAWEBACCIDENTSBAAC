@@ -36,6 +36,31 @@
       "disabled": false,
       "type": "FindReplace",
       "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[{\"xsi:nil\":\"true\"}]",
+            "to": ""
+          },
+          {
+            "from": "{\"xsi:nil\":\"true\"}",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
         "output": "date",
         "mapping": [
           {
@@ -91,7 +116,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
