@@ -14,7 +14,7 @@
           "consider404AsEmpty": true,
           "fallbackHeadToGet": true,
           "trustAnySSLCertificate": false,
-          "connection": "filesystem_folders"
+          "connection": "filesystem_root"
         }
       }
     ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "candussojp"
     },
-    "lastModifiedOn": 1565106536857
+    "lastModifiedOn": 1565106560749
   },
   "creationTag": {
     "versionNumber": 0,
