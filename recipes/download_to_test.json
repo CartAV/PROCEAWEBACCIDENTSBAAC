@@ -5,7 +5,19 @@
   "params": {
     "deleteExtraFiles": true,
     "copyEvenUpToDateFiles": false,
-    "sources": []
+    "sources": [
+      {
+        "useGlobalProxy": true,
+        "providerType": "Filesystem",
+        "params": {
+          "path": "/data/sources/ines/input_cartav",
+          "consider404AsEmpty": true,
+          "fallbackHeadToGet": true,
+          "trustAnySSLCertificate": false,
+          "connection": "filesystem_folders"
+        }
+      }
+    ]
   },
   "customMeta": {
     "kv": {}
@@ -24,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "candussojp"
     },
-    "lastModifiedOn": 1565106116117
+    "lastModifiedOn": 1565106535296
   },
   "creationTag": {
     "versionNumber": 0,
